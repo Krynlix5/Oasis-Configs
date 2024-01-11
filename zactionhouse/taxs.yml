@@ -1,0 +1,22 @@
+taxs:
+  '1':
+    percent: 5.0
+    item:
+      material: STONE
+      data: 0
+      amount: 1
+      durability: 0
+  '2':
+    percent: 10.0
+    item:
+      material: IRON_ORE
+      data: 0
+      amount: 1
+      durability: 0
+  '3':
+    percent: 30.0
+    item:
+      material: IRON_INGOT
+      data: 0
+      amount: 1
+      durability: 0

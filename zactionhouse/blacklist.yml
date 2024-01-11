@@ -1,0 +1,37 @@
+#########################################################################################################################################
+#
+#
+#   Sponsor: https://serveur-minecraft-vote.fr/
+#   5€ gift code on Minecraft Vote Server : ZAUCTIONHOUSE (https://serveur-minecraft-vote.fr/utiliser/un/code/cadeau?code=ZAUCTIONHOUSE)
+#
+#   Documentation: https://zauctionhouse.groupez.dev/
+#   Discord: https://discord.groupez.dev/
+#
+#   You can find the list of blacklisted items here. Here are the different types of blacklist:
+#   - zauctionhouse:similar_model_id
+#   - zauctionhouse:names_contains
+#   - zauctionhouse:zauctionhouse:contains_lore
+#   - zauctionhouse:material_similar
+#
+#   Documentation: https://zauctionhouse.groupez.dev/blacklist
+#
+#########################################################################################################################################
+
+blacklists:
+
+    # Blacklist items if their name contains an element
+  - type: "zauctionhouse:names_contains"
+    key: "Custom Sword"
+      
+    # Blacklist of items with a custom model id
+  - type: "zauctionhouse:similar_model_id"
+    key: PAPER # Material name (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
+    modelId: 10001    
+    
+    # Blacklist of items with lore contains key
+  - type: "zauctionhouse:contains_lore"
+    key: "Cosmetics"    
+    
+    # Blacklist of items with lore contains key
+  - type: "zauctionhouse:material_similar"
+    key: STONE_HOE # (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)

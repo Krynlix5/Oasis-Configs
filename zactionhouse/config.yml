@@ -25,7 +25,7 @@ language:
   purchaseItemMenuName: '&9&lAH ➤ &8Purchase Item'
   menuItemText:
     listedItem:
-      lore: ['&7Price ➤ &2£&f%price%', '&7Auctioneer ➤ &3%seller%', '&7Expires ➤ &3%time%', '&8', '&9&l* CLICK TO BUY *']
+      lore: ['&7Precio ➤ &2£&f%price%', '&7Subastador ➤ &3%seller%', '&7Expira en ➤ &3%time%', '&8', '&9&l* CLICK TO BUY *']
     yourListedItem:
       lore: ['&7Price ➤ &2£&f%price%', '&7Expires ➤ &3%time%', '&8', '&9&l* CLICK TO CANCEL *']
     yourExpiredItem:

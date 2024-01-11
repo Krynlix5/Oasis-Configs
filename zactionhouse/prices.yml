@@ -1,0 +1,19 @@
+prices:
+  '1':
+    minPrice: 10
+    maxPrice: 100000
+    onlyMaterial: false
+    item:
+      material: STONE
+      data: 0
+      amount: 1
+      durability: 0
+  '2':
+    minPrice: 999
+    maxPrice: 9999
+    onlyMaterial: true
+    item:
+      material: IRON_INGOT
+      data: 0
+      amount: 1
+      durability: 0

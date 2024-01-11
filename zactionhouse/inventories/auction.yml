@@ -1,0 +1,158 @@
+# You have the plugin documentation here
+# https://zauctionhouse.groupez.xyz/
+
+# First you have the name of the invetaire that will be displayed.
+name: "&8Casa de subasta &8(&f%page%&8/&f%maxPage%&8)"
+
+# Here you have the size of the inventory, which must be a multiple of 9
+size: 54
+
+# You have here the type of inventory, you have all the list of inventories here:
+# https://zauctionhouse.groupez.xyz/inventories/inventories
+type: AUCTION
+
+# You have here the list of buttons
+# You can find the list of buttons here:  https://zauctionhouse.groupez.xyz/inventories/buttons
+items:
+  # Will display an item that has no action on the different slots
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item:
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&e"
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 18
+      - 27
+      - 17
+      - 26
+      - 35
+      - 36
+      - 44
+  # Go open the "expire" inventory
+  expireItems:
+    type: INVENTORY
+    slot: 45
+    isPermanent: true
+    inventory: "expire"
+    item:
+      material: CHEST
+      name: "&fArtículos caducados"
+      lore:
+        - "&f» &7Tienes &b%zauctionhouse_expired_item% &7artículos vencidos"
+  
+  # Go open the "buying" inventory
+  buyItem:
+    type: INVENTORY
+    slot: 46
+    isPermanent: true
+    inventory: "buying"
+    item:
+      material: ENDER_CHEST
+      name: "&fArtículos comprados"
+      lore:
+        - "&f» &7Tienes &b%zauctionhouse_buying_item% &7artículos comprados"      
+  # Allows you to go to the next page        
+  next:
+    type: NEXT
+    isPermanent: true
+    slot: 50
+    item:
+      material: ARROW
+      name: "&fPróximo"
+  # Allows you to go to the previous page        
+  previous:
+    type: PREVIOUS
+    isPermanent: true
+    slot: 48
+    item:
+      material: ARROW
+      name: "&fPrevio"
+  # You will be able to change the sort type and display the information of the plugin
+  informations:
+    type: CHANGE_SORT
+    slot: 49
+    isPermanent: true
+    item:
+      material: NETHER_STAR
+      name: "&fInformaciones"
+      lore:
+        - "&7&m-------------------------------------"
+        - "&f&l» &7Bienvenido a la casa de subastas"
+        - "&f&l» &7Es un mercado donde todos los jugadores"
+        - "&f&l» &7pueden vender o comprar artículos."
+        - ""
+        - "&f&l» &7Para poder vender artículos debes hacer"
+        - "&f&l» &a/ah sell &7<&aprecio&7> &8[&7<&fnúmero de items&7>&8]"
+        - ""
+        - "&f&l» &7Número de artículos disponibles&7: &b%zauctionhouse_counts%"
+        - "&f&l» &7Tipo de clasificación&7: &b%zauctionhouse_sorting%"
+        - ""
+        - "&f&l» &e¡Haz click para &bcambiar &eel tipo de clasificación!"
+        - "&7&m-------------------------------------"
+              
+  # Go open the "items" inventory
+  playerItems:
+    type: INVENTORY
+    inventory: "items"
+    isPermanent: true
+    slot: 52
+    item:
+      material: SUNFLOWER
+      name: "&fTus artículos"
+      lore:
+        - "&f» &7Tienes &b%zauctionhouse_currents_item% &7artículos"        
+  
+  # Go open the "categories" inventory   
+  categories:
+    type: INVENTORY
+    inventory: "categories"
+    slot: 53
+    isPermanent: true
+    item:
+      material: CHEST_MINECART
+      name: "&fCategorías"
+  
+  # Here you have the list of slots where the items for sale will appear.
+  items:
+    type: AUCTION_ITEM
+    isPermanent: true
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43

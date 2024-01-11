@@ -1,0 +1,133 @@
+name: "&7%zauctionhouse_category% &8(&f%page%&8/&f%maxPage%&8)"
+size: 54
+type: CATEGORY
+items:
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item:
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&e"
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 18
+      - 27
+      - 17
+      - 26
+      - 35
+      - 36
+      - 44
+  expireItems:
+    type: INVENTORY
+    slot: 45
+    isPermanent: true
+    inventory: "expire"
+    item:
+      material: CHEST
+      name: "&fArtículos caducados"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_expired_item% &7artículos vencidos."
+  buyItem:
+    type: INVENTORY
+    slot: 46
+    isPermanent: true
+    inventory: "buying"
+    item:
+      material: ENDER_CHEST
+      name: "&fBought items"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_buying_item% &7artículos comprados."      
+  next:
+    type: NEXT
+    isPermanent: true
+    slot: 50
+    item:
+      material: ARROW
+      name: "&fPróximo"
+  previous:
+    type: PREVIOUS
+    isPermanent: true
+    slot: 48
+    item:
+      material: ARROW
+      name: "&fPrevio"
+  informations:
+    type: CHANGE_SORT
+    slot: 49
+    isPermanent: true
+    item:
+      material: NETHER_STAR
+      name: "&fInformaciones"
+      lore:
+        - "&7&m-------------------------------------"
+        - "&f&l» &7Bienvenido a la casa de subastas"
+        - "&f&l» &7Es un mercado donde todos los jugadores"
+        - "&f&l» &7pueden vender o comprar artículos."
+        - ""
+        - "&f&l» &7Para poder vender artículos debes hacer"
+        - "&f&l» &a/ah sell &7<&aprecio&7> &8[&7<&fnúmero de items&7>&8]"
+        - ""
+        - "&f&l» &7Número de artículos disponibles&7: &b%zauctionhouse_counts%"
+        - "&f&l» &7Tipo de clasificación&7: &b%zauctionhouse_sorting%"
+        - ""
+        - "&f&l» &e¡Haz click para &bcambiar &eel tipo de clasificación!"
+        - "&7&m-------------------------------------"
+  playerItems:
+    type: INVENTORY
+    inventory: "items"
+    isPermanent: true
+    slot: 52
+    item:
+      material: SUNFLOWER
+      name: "&fTus artículos"
+      lore:
+        - "&f» &7Tienes &b%zauctionhouse_currents_item% &7artículos"        
+  categories:
+    type: INVENTORY
+    inventory: "categories"
+    slot: 53
+    isPermanent: true
+    item:
+      material: CHEST_MINECART
+      name: "&fCategorías"
+  items:
+    type: AUCTION_ITEM
+    isPermanent: true
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43

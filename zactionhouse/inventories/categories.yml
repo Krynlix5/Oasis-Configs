@@ -1,0 +1,87 @@
+name: "&7Categorías"
+size: 54
+type: CATEGORIES
+items:
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item:
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&e"
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 18
+      - 27
+      - 17
+      - 26
+      - 35
+      - 36
+      - 44
+      - 45
+      - 46
+      - 47
+      - 53
+      - 52
+      - 51
+      - 48
+      - 50
+  back:
+    type: BACK
+    item:
+      material: NETHER_STAR
+      name: "&cVolver"
+    slot: 49   
+  block:
+    type: CATEGORIES
+    category: "blocks"
+    item:
+      material: GRASS_BLOCK
+      name: "&fCategoría: Bloque"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_category_item_blocks% &7artículos en la categoría de bloques."
+    slot: 20
+  weapons:
+    type: CATEGORIES
+    category: "weapons"
+    item:
+      material: DIAMOND_SWORD
+      name: "&fCategoría: Armas"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_category_item_weapons% &7artículos en la categoría de armas."
+    slot: 21         
+  tools:
+    type: CATEGORIES
+    category: "tools"
+    item:
+      material: IRON_AXE
+      name: "&fCategoría: Herramientas"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_category_item_tools% &7artículos en la categoría de herramientas."
+    slot: 22
+  potions:
+    type: CATEGORIES
+    category: "potions"
+    item:
+      material: BLAZE_ROD
+      name: "&fCategoría: Pociones"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_category_item_potions% &7artículos en la categoría de pociones."
+    slot: 23    
+  misc:
+    type: CATEGORIES
+    category: "misc"
+    item:
+      material: EXPERIENCE_BOTTLE
+      name: "&fCategoría: Varios"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_category_item_misc% &7artículos en la categoría de varios."
+    slot: 24    

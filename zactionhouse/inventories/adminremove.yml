@@ -1,0 +1,99 @@
+name: "&7Administrador"
+size: 54
+type: ADMIN_REMOVE
+items:
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item:
+      material: GRAY_STAINED_GLASS_PANE
+      unbreakable: true
+      name: "&e"
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 18
+      - 27
+      - 17
+      - 26
+      - 35
+      - 36
+      - 44
+      - 46
+      - 47
+      - 53
+      - 52
+      - 51
+      - 45
+      - 50
+      - 48
+  show:
+    type: SHOW_ITEM
+    slot: 22
+  back:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cAtrás"
+    slot: 49
+  removeSilent:
+    type: ADMIN_REMOVE
+    item:
+      material: GREEN_TERRACOTTA 
+      name: "&fEliminar en silencio y dar elemento al jugador"
+      lore:
+        - "&7&m-------------------------------------"
+        - "&f&l» &7Es silencioso&7: &atrue"
+        - "&f&l» &7Retiro forzoso&7: &cfalse"
+        - "&7&m-------------------------------------"
+    isSilent: true
+    isForceRemove: false
+    slot: 30
+  remove:
+    type: ADMIN_REMOVE
+    item:
+      material: LIME_TERRACOTTA 
+      name: "&fEliminar y dar elemento al jugador"
+      lore:
+        - "&7&m-------------------------------------"
+        - "&f&l» &7Es silencioso&7: &cfalse"
+        - "&f&l» &7Retiro forzoso&7: &cfalse"
+        - "&7&m-------------------------------------"
+    isSilent: false
+    isForceRemove: false
+    slot: 29
+  removeSilentForce:
+    type: ADMIN_REMOVE
+    item:
+      material: RED_TERRACOTTA 
+      name: "&fEliminar en silencio y eliminar el elemento del jugador"
+      lore:
+        - "&7&m-------------------------------------"
+        - "&f&l» &7Es silencioso&7: &atrue"
+        - "&f&l» &7Retiro forzoso&7: &atrue"
+        - "&7&m-------------------------------------"
+    isSilent: true
+    isForceRemove: true
+    slot: 32
+  removeForce:
+    type: ADMIN_REMOVE
+    item:
+      material: ORANGE_TERRACOTTA 
+
+      name: "&fEliminar sin dar elemento al jugador"
+      lore:
+        - "&7&m-------------------------------------"
+        - "&f&l» &7Es silencioso&7: &cfalse"
+        - "&f&l» &7Retiro forzoso&7: &atrue"
+        - "&7&m-------------------------------------"
+    isSilent: false
+    isForceRemove: true
+    slot: 33     

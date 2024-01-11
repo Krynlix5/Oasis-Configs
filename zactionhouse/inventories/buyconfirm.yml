@@ -1,0 +1,130 @@
+name: "&8Compra"
+size: 27
+type: BUY_CONFIRM
+items:
+  buy:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aComprar"
+    slot: 0
+  buy1:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aComprar"
+    slot: 1
+  buy2:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aComprar"
+    slot: 2
+  buy3:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aComprar"
+    slot: 9
+  buy4:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aComprar"
+    slot: 10
+  buy5:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aComprar"
+    slot: 11
+  buy6:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aComprar"
+    slot: 18
+  buy7:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aComprar"
+    slot: 19
+  buy8:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aComprar"
+    slot: 20
+  deny:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      data: 14
+      name: "&cVolver"
+    slot: 6
+  deny2:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cVolver"
+    slot: 7
+  deny3:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cVolver"
+    slot: 8
+  deny4:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cVolver"
+    slot: 15
+  deny5:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cVolver"
+    slot: 16
+  deny6:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cVolver"
+    slot: 17
+  deny7:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cVolver"
+    slot: 24
+  deny8:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cVolver"
+    slot: 25
+  deny9:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cVolver"
+    slot: 26
+  slot:
+    type: NONE_SLOT
+    item:
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&e"
+    slots:
+      - 3
+      - 4
+      - 5
+      - 12
+      - 14
+      - 21
+      - 22
+      - 23 
+  show:
+    type: SHOW_ITEM
+    slot: 13
