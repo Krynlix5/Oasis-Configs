@@ -1,0 +1,114 @@
+SQLite: false
+sql:
+  host: 127.0.0.1
+  port: '3306'
+  database: database
+  user: user
+  pass: password
+auction:
+  listingPrice: 2
+  listingHours: 48
+  unclaimedHours: 240
+  preventCreativeSale: false
+  maxSellPrice: 100000000000000000
+  taxPercentage: 5
+  maxPermissionIncludeExpired: false
+  useAuctionNoAHPermission: true
+blacklist:
+  - '136'
+blacklistLore:
+  - 'Blacklisted Line Of Lore'
+language:
+  mainMenuName: '&9&lAH ➤ &8Subastas'
+  currentListingsMenuName: '&9&lAH ➤ &8'
+  expiredMenuName: '&9&lAH ➤ &8Refundable Items'
+  purchaseItemMenuName: '&9&lAH ➤ &8Purchase Item'
+  menuItemText:
+    listedItem:
+      lore: ['&7Price ➤ &2£&f%price%', '&7Auctioneer ➤ &3%seller%', '&7Expires ➤ &3%time%', '&8', '&9&l* CLICK TO BUY *']
+    yourListedItem:
+      lore: ['&7Price ➤ &2£&f%price%', '&7Expires ➤ &3%time%', '&8', '&9&l* CLICK TO CANCEL *']
+    yourExpiredItem:
+      lore: ['&8', '&9&l* CLICK TO CLAIM ITEM BACK *']
+    yourListedItems:
+      id: '325'
+      name: '&b&lItems you''ve auctioned'
+      lore: ['&7Click here to recieve of a list of all', '&7the items you have put up for auction.', '&7You are currently selling &3%selling% &7items.']
+    yourExpiredItems:
+      id: '54'
+      name: '&b&lCollected Expired or Cancelled Items'
+      lore: ['&7Click here to recieve a list and collect all of', '&7the items that have expired or you have cancelled.', '&7You have &3%expired% &7items to collect.']
+    returnAllItems:
+      id: '342'
+      name: '&b&lReturn All'
+      lore: ['&7Click here to recieve all the cancelled', '&7and expired items that you auctioned.']
+    previousPage:
+      id: '262'
+      name: '&b&lPrevious Page'
+    refreshPage:
+      id: '345'
+      name: '&b&lRefresh Page'
+    nextPage:
+      id: '262'
+      name: '&b&lNext Page'
+    backButton:
+      id: '330'
+      name: '&b&lBack'
+    howToSell:
+      id: '340'
+      name: '&b&lHow to auction your items:'
+      lore: ['&7To auction, hold the item in hand you want', '&7to put for sale, then do the following', '&7command: &3/ah sell &7following a price.', '&7For example: &3/ah sell 1000&7 - this', '&7would sell the item in your hand for', '&2£&f1000&7.']
+    mainWhatIsThisPage:
+      id: '340'
+      name: '&b&lAuction House explanation:'
+      lore: ['&7This is the auction house, here you can', '&7put items for auction, and purchase items', '&7that others have auctioned.', '&7The auction is also a great way to make', '&7money by selling items to other', '&7players may be interested in buying from you.']
+    yourListedWhatIsThisPage:
+      id: '339'
+      name: '&b&lThe Auction House:'
+      lore: ['&7You can auction items to other', '&7prisoners easily and safely.']
+    expiredWhatIsThisPage:
+      id: '340'
+      name: '&b&lCancellation and expiration page:'
+      lore: ['&7This page houses all of your cancelled and', '&7expired items. When an auction is cancelled', '&7or it expires you will be able to return that', '&7item back to your inventory from this page.', '&7Just click on the item you want to return to', '&7yourself and if you have enough avaliable', '&7inventory slots you will be refunded of your item.']
+    purchaseConfirm:
+      name: '&b&lConfirm'
+    purchaseCancel:
+      name: '&b&lCancel'
+    purchaseItem:
+      lore: ['&8', '&7Price: &2£&f%price%', '&7Auctioneer: &3%seller%']
+    recentSalesLog:
+      id: '266'
+      name: '&b&lLatest sold item'
+      logLineFormat: '&3%item% &7was sold to &3%buyer% &7for &2£&f%price%&7.'
+      noneSoldLore: '&7You haven''t sold anything recently.'
+  clickFails:
+    notEnoughInventory: '&cInsufficient inventory slots.'
+    cannotPurchaseSelf: '&cUnable to purchase self-auctioned item.'
+    notExists: '&cThis item has either expired, been cancelled, &cor has been bought by someone else.'
+    cannotAfford: '&cYou have insufficient funds to buy this item.'
+    noListingsToReturn: '&cYou have insufficient listing to refund.'
+  chatMessages:
+    itemPurchased: '&9&l✰ United Designs ✰ &7Purchased item from the Auction House!'
+    buyerPurchased: '&9&l✰ United Designs ✰ &7Your auction was purchased by &3%buyer% &7and you have received &2£&f%taxedPrice%&7!'
+    listedItem: '&9&l✰ United Designs ✰ &7You have auctioned an item on the Auction House!'
+    listingCancel: '&9&l✰ United Designs ✰ &7Auction cancelled on the Auction House!'
+    adminRemoveListing: '&9&l✰ United Designs ✰ &7Auction has been removed from the list.'
+    expiredReturned: '&9&l✰ United Designs ✰ &7Refunded your item from the Auction House!'
+    notEnoughInventory: '&9&l✰ United Designs ✰ &7Insufficient inventory slots.'
+    returnedAll: '&9&l✰ United Designs ✰ &7Refunded all cancelled and expired auctions.'
+    unknownCommand: '&9&l✰ United Designs ✰ &7Unknown command.'
+    notHoldingItem: '&9&l✰ United Designs ✰ &7You must have an item in your hand to auction at the Auction House!'
+    inCreative: '&9&l✰ United Designs ✰ &7Creative selling is prohibited.'
+    noMore: '&9&l✰ United Designs ✰ &7Limit reached for max auction amount at one time.'
+    max: '&9&l✰ United Designs ✰ &7You are privileged to 45 auctions at one time.'
+    invalidPrice: '&9&l✰ United Designs ✰ &7Invalid price.'
+    maxMoney: '&9&l✰ United Designs ✰ &7Cannot auction your items with a higher price than &2£&f100&oQ&7!'
+    maxSetMoney: '&9&l✰ United Designs ✰ &7You cannot auction items above &2£&f100&oQ&7!'
+    notEnoughMoney: '&9&l✰ United Designs ✰ &7Insufficient funds.'
+    getHelp: '&9&l✰ United Designs ✰ &7Invalid syntax. Use &3/ah &7for help.'
+    isBlacklisted: '&9&l✰ United Designs ✰ &7You cannot auction blacklisted items.'
+    help:
+      - '&3/ah &8- &7Open the Auction house.'
+      - '&3/ah sell <amount> &8- &7Sell the item you are holding.'
+      - '&3/ah selling &8- &7View the items you are selling.'
+      - '&3/ah expired &8- &7View your expired items to return.'
