@@ -1,0 +1,405 @@
+#
+# The following variables can be used in most messages that involve a punishment:
+#
+# Punishment specific variables
+# $id - The ID of the punishment in the database.
+# $type - Type of punishment - ban, mute, warn, kick.
+# $reason - the reason for the punishment
+# $executor - the moderator's name, or their display name (/nick) if this is enabled in the configuration
+# $executorUUID - the moderator's UUID
+# $permanent - whether this punishment is permanent
+# $ipban - whether this is an IP-ban
+# $silent - whether this punishment was executed silently (-s)
+# $active - whether this punishment is active
+#
+# Punished player specific variables
+# $playerDisplayName - player display name. If display names are not enabled in the configuration or if the player's display name is not available in the message's context, the player's regular name will be used instead.
+# $playerName - player name, only available in certain contexts
+# $playerUUID - UUID of punished player
+# $playerIP - IP of punished player
+# $geoip - Country of affected player, requires GeoIP to be enabled in the configuration, won't work with imported bans
+#
+# Servers
+# These variables represent a server.
+# If the plugin is installed on Spigot, a server is represented by the "server_name" option in config.yml.
+# If the plugin is installed on BungeeCord, a server is represented by their name in the "servers" section in the proxy's config.yml.
+# $serverScope - the scope of the punishment (the server(s) it will affect)
+# $serverOrigin - the origin of the punishment (the server/subserver it was placed on)
+#
+# Dates
+# Example format: "2017-02-03", depends on time_format
+# $dateStart - date the punishment was placed
+# $dateEnd - date the punishment will expire, "forever" if permanent
+#
+# Durations
+# Example format: "20 days, 5 hours, 2 minutes". If permanent, "forever", if expired, "expired" (both are configurable).
+# $duration - time until expiry
+# $originalDuration - the full duration of the punishment.
+# $timeSince - time since placement
+#
+# Placeholders
+# These variables represent messages in this configuration (messages.yml)
+# $base - banned_message_base
+# $appealMessage - banned_message_appeal_message
+#
+# Global variables
+# $activeBans, $activeMutes, $activeWarnings - total number of global active punishments
+# $totalBans, $totalMutes, $totalWarnings - total number of global punishments (including inactive ones)
+#
+# Any message can be disabled by setting it to "". Empty messages will not be sent by the plugin.
+time_format: dd-MM-yyyy
+history_time_format: dd-MM-yyyy
+banned_message_base: |-
+  &8&m----------------[&c&l Baneado &8&m]----------------
+  &r
+  &c&lMotivo: &7$reason
+  &c&lExpira en: &7$duration
+  &r
+  $appealMessage
+  &8&m---------------------------------------
+banned_message: |-
+  &8&m----------------[&c&l Baneado &8&m]----------------
+  &bHas sido baneado de &e&lVexmi
+  &r 
+  &c&lMotivo: &f$reason
+  &c&lExpira en: &f$duration
+  &r
+  $appealMessage
+  &8&m---------------------------------------
+banned_message_permanent: |-
+  &8&m----------------[&c&l Baneado &8&m]----------------
+  &c&lHas sido expulsado mientras te conectabas a Vexmi: &bHas sido baneado de &e&lVexmi
+  &r 
+  &c&lMotivo: &f$reason
+  &c&lExpira en: &f$duration
+  &r
+  $appealMessage
+  &8&m---------------------------------------
+banned_message_appeal_message: '&c&lsi crees que es injusto, puedes apelar en: &fhttps://discord.gg/vexmi'
+banned_message_geoip_blacklist: ''
+default_ban_reason: Mala conducta
+default_mute_reason: Mala conducta
+permission_error: '&cNo tienes permiso para hacer eso!'
+muted: '&cHas sido muteado ($duration restante)!'
+muted_permanent: '&cEstás permanentemente silenciado!'
+notify:
+  banned_player_join: '&b$player &cIntenta entrar pero esta baneado por &8[$duration&8]!'
+  banned_geoip_blacklist: '&c$jugador &fintentó unirse, pero está en la lista negra ($geoip)!'
+error_no_reason_provided: '&cDebes especificar un motivo para la sanción!'
+error_no_sql_connection: '&cLiteBans no está conectado a una base de datos!'
+internal_error: '&cSe ha producido un error interno al intentar ejecutar este comando.'
+duration_limit_error: '&cDuración máxima permitida: $duration'
+warned_join: '&cTiene nuevas advertencias:'
+warned_join_entry: |-
+  &7 - &c&lAdvertido por: &b$executor: &f$reason
+     &7(&c hace $timeSince&7)
+command:
+  ban:
+    usage: |-
+      &8&m---------------[&c&l Banear &8&m]----------------
+      &8&l» &c&lUso: &f/ban &7(&b-s&7) &7[&bJugador&7] [&bTiempo&7] [&bMotivo&7]
+      &8&l» &c&lEjemplo: &f/ban &bVexmi &f30d ''&fMala conducta''
+      &8&m----------------------------------------
+    unban_usage: |-
+      &8&m-----------------[&c&l UnBan &8&m]-----------------
+      &8&l» &c&lUso: &f/unban &7[&bJugadorr&7]
+      &8&l» &c&lJugador: &f/unban &bVexmi
+      &8&m------------------------------------------
+    example: ''
+    silent_prefix: ''
+    broadcast_ban: |-
+      &8&m-------------&r&8[&c&l Baneado &8]&m--------------
+      &c&l$bannedPlayer &bha sido baneado
+      &r
+      &8» &c&lMotivo: &f$reason
+      &8» &c&lDuración: &f$duration
+      &8&m----------------------------------------
+    broadcast_tempban: |-
+      &8&m----------------[&c&l Baneado &8&m]----------------
+      &c&l$bannedPlayer &bha sido baneado
+      &8» &c&lMotivo: &f$reason
+      &8» &c&lDuración: &f$duration
+      &8&m------------------------------------------
+    broadcast_ip_ban: |-
+      &8&m----------------[&c&l Baneado &8&m]----------------
+      &c&l$bannedPlayer &bha sido baneado
+      &r
+      &8» &c&lMotivo: &f$reason
+      &8» &c&lDuración: &f$duration
+      &8&m------------------------------------------
+    broadcast_temp_ip_ban: |-
+      &8&m----------------[&c&l Baneado &8&m]----------------
+      &c&l$bannedPlayer &bha sido baneado
+      &r
+      &8» &c&lMotivo: &f$reason
+      &8» &c&lDuración: &f$duration
+      &8&m------------------------------------------
+    broadcast_ip_ban_hidden: '[IP oculta]'
+    broadcast_unban: '&a$executor ha desbaneado $bannedPlayer'
+    previous_ban_removed: '&aEliminado el baneo anterior de $bannedPlayer.'
+    previous_ban_existing: '&c$bannedPlayer ya está baneado'
+    unban_queue: '&cSi intentan volver a conectarse, serán expulsados.'
+    error_no_spec: '&cNo se ha detectado ninguna especificación horaria válida!'
+    unban_fail: '&cEl objetivo no está prohibido!'
+    exempt: '&cNo se puede no hacer esto a un miembro del personal'
+    broadcast_unmute: '&a$executor ha desmuteado a $bannedPlayer'
+    no_override: '&cEl jugador ya está baneado!'
+    response: ''
+  mute:
+    usage: '&cUso: /mute [-s] <jugador> [tiempo] [motivo]'
+    unmute_usage: '&cUso: /unmute <jugador>'
+    example: ''
+    broadcast: |-
+      &8&m----------------[&c&l Muteado &8&m]----------------
+      &c&l$mutedPlayer &bha sido muteado
+      &r
+      &8» &c&lMotivo: &f$reason
+      &8» &c&lDuración: &f$duration
+      &8&m--------------------------------------
+    broadcast_tempmute: |-
+      &8&m----------------[&c&l Muteado &8&m]----------------
+      &c&l$mutedPlayer &bha sido muteado
+      &r
+      &8» &c&lMotivo: &f$reason
+      &8» &c&lDuración: &f$duration
+      &8&m--------------------------------------
+    message: ''
+    message_permanent: ''
+    unmute_fail: '&cEl jugador no está muteado!'
+    previous_mute_removed: ''
+    previous_mute_existing: '&c$mutedPlayer ya estaba muteado!'
+    exempt: '&cNo se puede no hacer esto a un miembro del personal'
+    notification: '&4$mutedPlayer &cha intentado escribir, pero esta muteado &8($duration)'
+    error_not_enabled: '&cEl mute no está activado en la configuración!'
+    broadcast_ip_mute: |-
+      &8&m----------------[&c&l Muteado &8&m]----------------
+      &c&l$mutedPlayer &bha sido muteado
+      &r
+      &8» &c&lMotivo: &f$reason
+      &8» &c&lDuración: &f$duration
+      &8&m---------------------------------------
+    broadcast_temp_ip_mute: |-
+      &8&m----------------[&c&l Muteado &8&m]----------------
+      &c&l$mutedPlayer &bha sido muteado
+      &r
+      &8» &c&lMotivo: &f$reason
+      &8» &c&lDuración: &f$duration
+      &8&m--------------------------------------
+    no_override: '&cPlayer ya esta muteado!'
+    response: ''
+  warn:
+    usage: '&cUso: /warn [-s] <jugador> [motivo]'
+    unwarn_usage: '&cUso: /unwarn <jugador>'
+    example: ''
+    broadcast: '&4Has sido advertido por $ejecutor&4 por &c''&4$razón&c'''
+    message: |-
+      &4You have been warned by $executor&4 for &c'&4$reason&c'&4.
+      &4Esta advertencia expirará en $duration.
+    list_entry: ' \- Advertido $executor: ''$reason&f'''
+    unwarn_response: '&aÚltima advertencia eliminada por $player.'
+    unwarn_fail: '&cEl jugador no tiene advertencias!'
+    exempt: '&cNo se puede no hacer esto a un miembro del personal'
+    cooldown: '&cYou need to wait $seconds seconds before $player can be warned again.'
+    response: '&cEs necesario esperar $seconds segundos antes de que $player pueda ser avisado de nuevo'
+  history:
+    usage: |-
+      &8&m--------------[&c&l Historial &8&m]--------------
+      &8» &c&lUso: &f/history &7[&bJugador&7] [&bcantidad&7]
+      &8» &c&lEjemplo: &f/history &bVexmi &f4
+      &8&m-----------------------------------------
+    start: '&8&m----------------[&c&l History &8&m]----------------'
+    ban_entry: |-
+      &8» &c$name &ffue baneado por &b'$reason'
+      &8» &cHace $timeSince 
+      &8&m-----------------------------------------
+    mute_entry: |-
+      &8» &c$name &ffue muteado por &b'$reason'
+      &8» &cHace $timeSince 
+      &8&m-----------------------------------------
+    warn_entry: |-
+      &8» &c$name &ffue expulsado por&b'$reason'
+      &8» &c$timeSince &cago
+      &8&m-----------------------------------------
+    kick_entry: |-
+      &8» &c$name &ffue expulsado por &b'$reason'
+      &8» &cHace $timeSince 
+      &8&m-----------------------------------------
+    active_suffix: ''
+    active_suffix_temp: ''
+    error_no_history: '&cNo se ha encontrado el historial.'
+    unban_entry: |2-
+
+      &f$name fue &7desbaneado &fpor $executor.
+    unmute_entry: |2-
+
+      &f$name fue &7desmuteado &fpor $executor.
+    expired_suffix: '&f [&8Expirado&f]'
+  warnings:
+    usage: '&c/warnings <jugador>'
+    start: '&aAdvertencias activas para $target:'
+  prunehistory:
+    usage: '&c/prunehistory <jugador> [duración]'
+    message: '&aHistorial limpiado.'
+  staffhistory:
+    usage: '&c/staffhistory <jugador> [entries=10]'
+    start: '&aStaff history para $target (Limite: $limit):'
+  staffrollback:
+    usage: '&c/staffrollback <jugador> [duración]'
+    message: '&aRollback completado, entradas totales eliminadas: $amount'
+  banlist:
+    start: '&8&m----------------&r&8[&c&lBanList &7Page &b$page&8/&7$total&8]&m----------------'
+  iphistory:
+    usage: '&c/iphistory <jugador> [entries=10]'
+    start: '&aHistorial de login para $target (Limite: $limit):'
+    entry: '&a - [&f$date&a]&f $name&a:&f $ip'
+    error_no_history: '&cNo se encontró historial.'
+  dupeip:
+    usage: |-
+      &8&m----------------[&c&l DupeIP &8&m]----------------
+      &8» &c&lUso: &f/dupeip &7[&bJugador&7]
+      &8» &c&lEjemplo: &f/dupeip &bVexmi
+      &8&m------------------------------------------
+    start: |-
+      &8&m----------------[&c&l DupeIP &8&m]----------------
+      &8» &c&lUsuario: &f$name
+      &8» &c&lIP: &f$ip
+      &8» &c&lEstado: &f[&aConectado&f] [&7Desconectado&f] [&cBaneado&f]
+      &8&m------------------------------------------
+      &b&lCuentas
+    separator: '&f, '
+    online: '&a'
+    offline: '&7'
+    banned: '&c'
+    multiple_addresses: '[$num addresses]'
+    start_no_ip: '&fAnalizando a &7$name&f. &f[&aConectado&f] [&7Desconectado&f] [&cBaneado&f]'
+    muted: '&c'
+  ipreport:
+    start: '&fAnalizando &a$num&f jugadores online.. [&aConectado&f] [&7Desconectado&f] [&cBaneado&f]'
+    entry: '&f$player&a: $result'
+  checkban:
+    usage: '&c/checkban <jugador>'
+    no_ban: '&cEl jugador no esta baneado!'
+    banned: |-
+      &aEl jugador &f[&a$target&f]&a esta baneado:
+      &aBaneado por: $executor
+      &aMotivo: $reason&a
+      &aBaneado en: $dateStart
+      &aBaneado hasta: $dateEnd ($duration)
+      &aIP ban: $ipban, Silencioso: $silent, Permanente : $permanent
+  lastuuid:
+    usage: '&c/lastuuid <jugador|IP>'
+    message: '&fÚltima UUID para &a$name&f: &a$uuid'
+  geoip:
+    usage: '&c/geoip <jugador|IP>'
+    message: '&a$target&f es de: &a$result'
+    error_disabled: '&cEl soporte de &cGeoIP no está habilitado en la configuración!'
+    error_unavailable: '&cEl soporte GeoIP no está disponible actualmente, ¿se ha descargado ya?'
+    error_not_found: '&cInformación GeoIP para $target no encontrada.'
+  lockdown:
+    usage: '&c/lockdown <motivo> | /lockdown end'
+    message: '&cBloqueo del servidor activado (Motivo: "$reason&c")'
+    stopped: '&aEl bloqueo ha sido desactivado.'
+    kick_message: |-
+      Bloqueo del servidor activo, inténtelo más tarde.
+      Motivo: $reason
+    error_not_active: '&cEl bloqueo no está activo!'
+    kick_message_global: |-
+      Bloqueo de red activo, inténtelo más tarde.
+      Motivo: $reason
+  kick:
+    usage: |-
+      &8&m----------------[&c&l Expulsado &8&m]----------------
+      &8» &c&lUso: &f/kick &7[&bPlayer&7] [&fMotivo&7]
+      &8» &c&lEjemplo: &f/kick &bVexmi &f''Spamear''
+      &8&m----------------------------------------
+    no_match: |-
+      &8&m----------------[&c&l Expulsado &8&m]----------------
+      &8&l» &c&lError: &cEl jugado no se ha encontrado!
+      &8&m----------------------------------------
+    message: |-
+      &8&m----------------[&c&l Expulsado &8&m]----------------
+      &fHas sido expulsado de &e&lVexmi
+      &r
+      &8» &c&lMotivo: &f$reason
+      &8&m----------------------------------------
+    message_no_reason: |-
+      &8&m----------------[&c&l Expulsado &8&m]----------------
+      &fHas sido expulsado de &e&lVexmi
+      &r
+      &8» &c&lMotivo: &fMala conducta
+      &8&m----------------------------------------
+    response: ''
+    broadcast: |-
+      &8&m----------------[&c&l Expulsado &8&m]----------------
+      &8» &c&lMotivo: &f$reason
+      &8» &c&lJugador: &f$player
+      &8&m----------------------------------------
+    broadcast_no_reason: '&c$player fue expulsado por &9&lGUARDIAN'
+    exempt: '&cNo se puede no hacer esto a un miembro del personal'
+    kick_requested: '&cEl jugador $player no está en línea en este servidor. Se ha solicitado ha sido solicitada.'
+  togglechat:
+    toggle_off: '&aEl chat ha sido ocultado.'
+    toggle_on: '&aEl chat ha sido mostrado.'
+  clearchat:
+    broadcast: '&aEl chat ha sido limpiado por $executor.'
+  mutechat:
+    response: '&cEl chat esta desactivado!'
+    broadcast_disabled: '&cEl chat del servidor ha sido desactivado por $executor.'
+    broadcast_enabled: '&aEl chat del servidor se ha activado por $executor.'
+  litebans:
+    reload_success: '&aLiteBans se recargó con exito.'
+    reload_fail_connect: '&aLiteBans recargado. &cNo se pudo conectar a la base de datos.'
+    add_history_usage: '&c/litebans addhistory <jugador> <UUID> <IP>'
+    add_history: '&aHistoria añadida.'
+    fix_history: '&aFijación del historial para la tabla $table...'
+    fix_history_result: '&aAñadidas entradas $amount.'
+    import_usage: '&c/litebans import start'
+    import_start: '&aImportando desde $db, esto puede tardar un poco...'
+    import_finish: '&aLa importación ha finalizado correctamente. $bans prohibiciones importadas, $ipbans prohibiciones IP.'
+    import_finish_litebans: '&aLa importación ha finalizado correctamente. Añadidas entradas $amount a la base de datos.'
+    import_fail: '&cError de importación. Compruebe la consola.'
+    import_unsupported: '&cLa importación desde ''$name'' aún no está soportada!'
+    sqlexec_success: '&aLa consulta SQL se ha ejecutado correctamente.'
+    sqlexec_failure: '&cHubo un error de ejecución.'
+    reload_fail: '&cLa recarga ha fallado.'
+    reload_fail_config: |-
+      &c[LiteBans] &4config.yml no es válido y no se ha podido cargar, se utilizará la configuración por defecto.
+      &cPor favor, compruebe la consola del servidor para más información.
+    reload_fail_messages: |-
+      &c[LiteBans] &4messages.yml no es válido y no se ha podido cargar, se utilizarán los mensajes por defecto.
+      &cPor favor, compruebe la consola del servidor para más información.
+    fix_history_offline_uuids: '&c$amount UUIDs no se obtuvieron de Mojang ya que son UUID de modo offline.'
+  checkmute:
+    usage: '&c/checkmute <jugador>'
+    no_mute: '&cEl jugador no está silenciado!'
+    muted: |-
+      &aEl objetivo &f[&a$target&f]&a está silenciado:
+      &aMuteado por: $executor
+      &aMotivo: $reason&r
+      &aMuteado en: $dateStart
+      &aMuteado hasta: $dateEnd ($duration)
+      &aMuteado en el server &c$serverOrigin&a, server scope: &c$serverScope
+      &aIP mute: $ipban, Silencioso: $silent, Permanente: $permanent
+duration:
+  expired: expirado
+  forever: permanente
+  year: año
+  years: años
+  month: mes
+  months: meses
+  week: semana
+  weeks: semanas
+  day: día
+  days: dias
+  hour: hour
+  hours: hours
+  minute: minuto
+  minutes: minutos
+  second: segundo
+  seconds: segundos
+error_no_uuid_found: '&cEl jugador no existe.'
+strings:
+  global: global
+  'null': undefined
+  'true': 'yes'
+  'false': 'no'
