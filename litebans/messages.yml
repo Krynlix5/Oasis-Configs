@@ -199,7 +199,7 @@ command:
     unwarn_response: '&aÚltima advertencia eliminada por $player.'
     unwarn_fail: '&cEl jugador no tiene advertencias!'
     exempt: '&cNo se puede no hacer esto a un miembro del personal'
-    cooldown: '&cYou need to wait $seconds seconds before $player can be warned again.'
+    cooldown: '&cDebes esperar $seconds segundos antes de que $player pueda ser advertido nuevamente.'
     response: '&cEs necesario esperar $seconds segundos antes de que $player pueda ser avisado de nuevo'
   history:
     usage: |-
@@ -229,10 +229,10 @@ command:
     error_no_history: '&cNo se ha encontrado el historial.'
     unban_entry: |2-
 
-      &f$name fue &7desbaneado &fpor $executor.
+      &8(&e!&8) &f$name fue &7desbaneado &fpor $executor.
     unmute_entry: |2-
 
-      &f$name fue &7desmuteado &fpor $executor.
+      &8(&e!&8) &f$name fue &7desmuteado &fpor $executor.
     expired_suffix: '&f [&8Expirado&f]'
   warnings:
     usage: '&c/warnings <jugador>'
@@ -334,7 +334,7 @@ command:
       &8» &c&lMotivo: &f$reason
       &8» &c&lJugador: &f$player
       &8&m----------------------------------------
-    broadcast_no_reason: '&c$player fue expulsado por &9&lGUARDIAN'
+    broadcast_no_reason: '&8(&e!&8) &c$player fue expulsado por &9&lGUARDIAN'
     exempt: '&cNo se puede no hacer esto a un miembro del personal'
     kick_requested: '&cEl jugador $player no está en línea en este servidor. Se ha solicitado ha sido solicitada.'
   togglechat:
