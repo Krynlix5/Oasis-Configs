@@ -70,75 +70,75 @@ messages:
   description:
     auction:
       type: TCHAT
-      message: Opens the auction house
+      message: Abre la casa de subastas
     sub:
       items:
         type: TCHAT
-        message: Opens the items inventory
+        message: Abre el inventario de artículos.
       categories:
         type: TCHAT
-        message: Opens the categories inventory
+        message: Abre el inventario de categorías.
       buying:
         type: TCHAT
-        message: Opens the buying inventory
+        message: Abre el inventario de compras.
       expire:
         type: TCHAT
-        message: Opens the expire inventory
+        message: Abre el inventario caducado.
     blacklist:
       list:
         type: TCHAT
-        message: See the blacklist players.
+        message: Ver los jugadores de la lista negra.
       add:
         type: TCHAT
-        message: Add a player to the blacklist
+        message: Añadir un jugador a la lista negra
       remove:
         type: TCHAT
-        message: Remove a player from the blacklist
+        mensaje: Eliminar un jugador de la lista negra
     version:
       type: TCHAT
-      message: Show plugin version
+      message: Mostrar versión del complemento
     open:
       type: TCHAT
-      message: Open auction to a player
+      message: Subasta abierta a un jugador
     purge:
       type: TCHAT
-      message: Remove old transaction
+      message: Eliminar transacción anterior
     reload:
       type: TCHAT
-      message: Reload plugin
+      message: Recargar plugin
     sell:
       type: TCHAT
-      message: Sell an item
+      message: Vende un articulo
       inventory:
         type: TCHAT
-        message: Sell an inventory
+        message: Vender un inventario
     help:
       type: TCHAT
-      message: See the list of commands.
+      message: Ver la lista de comandos.
     config:
       type: TCHAT
-      message: Config plugin ingame
+      message: Complemento de configuración dentro del juego
     claim:
       type: TCHAT
-      message: Claim your money
+      message: Reclama tu dinero
     addon:
       type: TCHAT
-      message: Show addon list
+      message: Mostrar lista de complementos
     search:
       type: TCHAT
-      message: Search a item
+      message: Buscar un artículo
     lang:
       type: TCHAT
-      message: See the list of translations.
+      message: Ver la lista de traducciones.
     convert:
       type: TCHAT
-      message: Convert items form another plugin to zauctionhouse
+      message: Convierta artículos de otro complemento a zauctionhouse
     history:
-      type: TCHAT
-      message: View your history
+      type: TCHEN
+      mensaje: Ver tu historial
     transaction:
       type: TCHAT
-      message: View a player's transactions.
+      message: Ver las transacciones de un jugador.
   'no':
     holding:
       item:
@@ -171,8 +171,8 @@ messages:
         message: '&cEl complemento no ha terminado de inicializarse, tenga paciencia...'
         hdb:
           type: TCHAT
-          message: '&cThe &fHeadDataBase &cplugin is not yet active, the plugin inventories
-            have not yet loaded, please wait until HDB is working.'
+          message: '&cEl complemento &fHeadDataBase &c aún no está activo, los inventarios del complemento
+            aún no se han cargado, espere hasta que HDB esté funcionando.'
   sell:
     cooldown:
       type: TCHAT
@@ -256,7 +256,7 @@ messages:
         - ''
         - '  &f* &fVendedor&7: &b%seller%'
         - '  &f* &fPrecio&7: &b%price%'
-        - '  &f* &fExpira&7: &b%time%'
+        - '  &f* &fExpira en&7: &b%time%'
         - '&8&m-+------------------------------+-'
       expire:
         type: TCHAT
@@ -264,7 +264,7 @@ messages:
         - '&8&m-+------------------------------+-'
         - '&8[&a!&8] &7¡Haz click para recuperar el artículo!'
         - ''
-        - '  &f* &fExpira&7: &b%time%'
+        - '  &f* &fExpira en&7: &b%time%'
         - '&8&m-+------------------------------+-'
       buying:
         type: TCHAT
@@ -272,7 +272,7 @@ messages:
         - '&8&m-+------------------------------+-'
         - '&8[&a!&8] &7¡Haz click para recuperar el artículo!'
         - ''
-        - '  &f* &fExpira&7: &b%time%'
+        - '  &f* &fExpira en&7: &b%time%'
         - '&8&m-+------------------------------+-'
       items:
         type: TCHAT
@@ -280,7 +280,7 @@ messages:
         - '&8&m-+------------------------------+-'
         - '&8[&a!&8] &7¡Haz click para recuperar el artículo!'
         - ''
-        - '  &f* &fExpira&7: &b%time%'
+        - '  &f* &fExpira en&7: &b%time%'
         - '&8&m-+------------------------------+-'
       inventory:
         type: TCHAT
@@ -291,7 +291,7 @@ messages:
         - '  &7* &fTipo&7: &bInventory'
         - '  &7* &fVendedor&7: &b%seller%'
         - '  &7* &fPrecio&7: &b%price%'
-        - '  &7* &fExpira&7: &b%time%'
+        - '  &7* &fExpira en&7: &b%time%'
         - ''
         - '  &f* &7&o¡Click derecho para comprar!'
         - '  &f* &7&o¡Click izquierdo para ver el contenido!'
@@ -304,7 +304,7 @@ messages:
   buyer:
     purchased:
       type: TCHAT
-      message: '&a%buyer% &facabo de comprar &7%item% &fpor &b%price%%currency%&f.'
+      message: '&a%buyer% &facaba de comprar &7%item% &fpor &b%price%%currency%&f.'
   remove:
     message:
       type: TCHAT
@@ -341,21 +341,19 @@ messages:
       message: '&cNo puedes comprar este artículo.'
       error:
         type: TCHAT
-        message: '&cYou can''t buy this item.'
+        message: '&cNo puedes comprar este artículo..'
       money:
         type: TCHAT
-        message: '&cYou don’t have enough money to buy this.'
+        message: '&cNo tienes suficiente dinero para comprar esto.'
   broadcast:
     sell:
       annonce:
         type: TCHAT
-        message: '&fEl jugador &b%player% &fha añadido &7%item% &fpor &d%price%&o%currency%
-          &fa la subasta!'
+        message: '&fEl jugador &b%player% &fha añadido &7%item% &fpor &d%price%&o%currency% &fa la subasta!'
     buy:
       annonce:
         type: TCHAT
-        message: '&fPlayer &b%player% &fhas just bought &7%item% &ffor &d%price%&o%currency%
-          &fto the auction!'
+        message: '&fEl jugador &b%player% &facaba de comprar &7%item% &fpor &d%price%&o%currency% &fa la subasta!'
   world:
     is:
       banned:
@@ -473,23 +471,21 @@ messages:
     not:
       found:
         type: TCHAT
-        message: '&cImpossible de trouver l''économy avec le nom &f%name%&c.'
+        message: '&cNo se puede encontrar la economía de &f%name%&c.'
   player:
     lag:
       ping:
         type: TCHAT
-        message: '&cYou cannot sell items at this time. (its disableSaleIfPlayerIsLagging
-          in config.json)'
+        message: '&cYNo puedes vender artículos en este momento. (es deshabilitarSaleIfPlayerIsLagging
+          en config.json)'
       tps:
         type: TCHAT
-        message: '&cYou cannot sell items at this time. (its disableSaleIfServerIsLagging
-          in config.json)'
+        message: '&cNo puedes vender artículos en este momento. (es deshabilitarSaleIfServerIsLagging
+          en config.json)'
   dupe:
     info:
       type: TCHAT
-      message: '&aThe player &f%player% &ahas just put on sale and removed 3 items
-        in less than 60 seconds !'
+      message: '&aEl jugador &f%player% acaba de poner a la venta y retirar 3 artículos en menos de 60 segundos!'
     infodiscord:
       type: TCHAT
-      message: The player **%player%** has just put on sale and removed 3 items in
-        less than 60 seconds !
+      message: El jugador **%player%**acaba de poner a la venta y eliminar 3 artículos en menos de 60 segundos !
