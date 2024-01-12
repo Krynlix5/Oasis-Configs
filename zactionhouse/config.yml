@@ -25,90 +25,90 @@ language:
   purchaseItemMenuName: '&9&lAH ➤ &8Purchase Item'
   menuItemText:
     listedItem:
-      lore: ['&7Precio ➤ &2£&f%price%', '&7Subastador ➤ &3%seller%', '&7Expira en ➤ &3%time%', '&8', '&9&l* CLICK TO BUY *']
+      lore: ['&7Precio ➤ &2£&f%price%', '&7Subastador ➤ &3%seller%', '&7Expira en ➤ &3%time%', '&8', '&9&l* CLICK PARA COMPRAR *']
     yourListedItem:
-      lore: ['&7Price ➤ &2£&f%price%', '&7Expires ➤ &3%time%', '&8', '&9&l* CLICK TO CANCEL *']
+      lore: ['&7Precio ➤ &2£&f%price%', '&7Expira en ➤ &3%time%', '&8', '&9&l* CLICK PARA CANCELAR *']
     yourExpiredItem:
-      lore: ['&8', '&9&l* CLICK TO CLAIM ITEM BACK *']
+      lore: ['&8', '&9&l* CLICK PARA RECLAMAR ARTÍCULO DEVOLUCIÓN *']
     yourListedItems:
       id: '325'
-      name: '&b&lItems you''ve auctioned'
-      lore: ['&7Click here to recieve of a list of all', '&7the items you have put up for auction.', '&7You are currently selling &3%selling% &7items.']
+      name: '&b&lArtículos que has subastado'
+      lore: ['&7Haga clic aquí para recibir una lista de todos', '&7los artículos que has puesto a subasta.', '&7Actualmente estás vendiendo &3%selling% &7artículos.']
     yourExpiredItems:
       id: '54'
-      name: '&b&lCollected Expired or Cancelled Items'
-      lore: ['&7Click here to recieve a list and collect all of', '&7the items that have expired or you have cancelled.', '&7You have &3%expired% &7items to collect.']
+      name: '&b&lArtículos vencidos o cancelados recolectados'
+      lore: ['&7Haga clic aquí para recibir una lista y recopilar todos', '&7los artículos que han caducado o has cancelado.', '&7Tienes &3%expired%&7 artículos para recolectar.']
     returnAllItems:
       id: '342'
-      name: '&b&lReturn All'
-      lore: ['&7Click here to recieve all the cancelled', '&7and expired items that you auctioned.']
+      name: '&b&lDevolver todo'
+      lore: ['&7CHaz clic aquí para recibir todos los objetos cancelados.', '&7y artículos caducados que subastaste.']
     previousPage:
       id: '262'
-      name: '&b&lPrevious Page'
+      name: '&b&lPagina anterior'
     refreshPage:
       id: '345'
-      name: '&b&lRefresh Page'
+      name: '&b&lActualizar página'
     nextPage:
       id: '262'
-      name: '&b&lNext Page'
+      name: '&b&lSiguiente página'
     backButton:
       id: '330'
       name: '&b&lBack'
     howToSell:
       id: '340'
-      name: '&b&lHow to auction your items:'
-      lore: ['&7To auction, hold the item in hand you want', '&7to put for sale, then do the following', '&7command: &3/ah sell &7following a price.', '&7For example: &3/ah sell 1000&7 - this', '&7would sell the item in your hand for', '&2£&f1000&7.']
+      name: '&b&lCómo subastar tus artículos:'
+      lore: ['&7Para subastar, tenga en la mano el artículo que desee', '&7para poner a la venta, luego haga lo siguiente', '&7comando: &3/ah sell &7siguiendo un precio.', '&7Por ejemplo: &3/ah sell 1000&7- esto', '&7vendería el artículo en tu mano por', '&2£&f1000&7.']
     mainWhatIsThisPage:
       id: '340'
-      name: '&b&lAuction House explanation:'
-      lore: ['&7This is the auction house, here you can', '&7put items for auction, and purchase items', '&7that others have auctioned.', '&7The auction is also a great way to make', '&7money by selling items to other', '&7players may be interested in buying from you.']
+      name: '&b&lExplicación de la Casa de Subastas:'
+      lore: ['&7Esta es la casa de subastas, aquí puedes', '&7poner artículos a subasta y comprar artículos', '&7que otros han subastado.', '&7TLa subasta también es una excelente manera de hacer', '&7dinero vendiendo artículos a otros', '&7Los jugadores pueden estar interesados ​​en comprarte..']
     yourListedWhatIsThisPage:
       id: '339'
-      name: '&b&lThe Auction House:'
-      lore: ['&7You can auction items to other', '&7prisoners easily and safely.']
+      name: '&b&lLa casa de subastas:'
+      lore: ['&7Puedes subastar artículos a otros.', '&7prisioneros de manera fácil y segura.']
     expiredWhatIsThisPage:
       id: '340'
-      name: '&b&lCancellation and expiration page:'
-      lore: ['&7This page houses all of your cancelled and', '&7expired items. When an auction is cancelled', '&7or it expires you will be able to return that', '&7item back to your inventory from this page.', '&7Just click on the item you want to return to', '&7yourself and if you have enough avaliable', '&7inventory slots you will be refunded of your item.']
+      name: '&b&lPágina de cancelación y vencimiento:'
+      lore: ['&7Esta página alberga todos sus cancelados y', '&7artículos caducados. Cuando se cancela una subasta', '&7o caduca podrás devolverlo', '&7artículo de vuelta a su inventario desde esta página.', '&7Simplemente haga clic en el artículo al que desea regresar', '&7usted mismo y si tiene suficiente disponible', '&7espacios de inventario se le reembolsará su artículo.']
     purchaseConfirm:
-      name: '&b&lConfirm'
+      name: '&b&lConfirmar'
     purchaseCancel:
-      name: '&b&lCancel'
+      name: '&b&lCancelar'
     purchaseItem:
-      lore: ['&8', '&7Price: &2£&f%price%', '&7Auctioneer: &3%seller%']
+      lore: ['&8', '&7Precio: &2£&f%price%', '&7Subastador: &3%seller%']
     recentSalesLog:
       id: '266'
-      name: '&b&lLatest sold item'
-      logLineFormat: '&3%item% &7was sold to &3%buyer% &7for &2£&f%price%&7.'
-      noneSoldLore: '&7You haven''t sold anything recently.'
+      name: '&b&lÚltimo artículo vendido'
+      logLineFormat: '&3%item% &7lo vende &3%buyer% &7a &2£&f%price%&7.'
+      noneSoldLore: '&7No has vendido nada recientemente.'
   clickFails:
-    notEnoughInventory: '&cInsufficient inventory slots.'
-    cannotPurchaseSelf: '&cUnable to purchase self-auctioned item.'
-    notExists: '&cThis item has either expired, been cancelled, &cor has been bought by someone else.'
-    cannotAfford: '&cYou have insufficient funds to buy this item.'
-    noListingsToReturn: '&cYou have insufficient listing to refund.'
+    notEnoughInventory: '&cEspacios de inventario insuficientes.'
+    cannotPurchaseSelf: '&cNo se puede comprar el artículo autosubastado.'
+    notExists: '&cEste artículo ha caducado, ha sido cancelado o ha sido comprado por otra persona.'
+    cannotAfford: '&cNo tienes fondos suficientes para comprar este artículo.'
+    noListingsToReturn: '&cNo tienes suficiente listado para reembolsar.'
   chatMessages:
-    itemPurchased: '&9&l✰ United Designs ✰ &7Purchased item from the Auction House!'
-    buyerPurchased: '&9&l✰ United Designs ✰ &7Your auction was purchased by &3%buyer% &7and you have received &2£&f%taxedPrice%&7!'
-    listedItem: '&9&l✰ United Designs ✰ &7You have auctioned an item on the Auction House!'
-    listingCancel: '&9&l✰ United Designs ✰ &7Auction cancelled on the Auction House!'
-    adminRemoveListing: '&9&l✰ United Designs ✰ &7Auction has been removed from the list.'
-    expiredReturned: '&9&l✰ United Designs ✰ &7Refunded your item from the Auction House!'
-    notEnoughInventory: '&9&l✰ United Designs ✰ &7Insufficient inventory slots.'
-    returnedAll: '&9&l✰ United Designs ✰ &7Refunded all cancelled and expired auctions.'
-    unknownCommand: '&9&l✰ United Designs ✰ &7Unknown command.'
-    notHoldingItem: '&9&l✰ United Designs ✰ &7You must have an item in your hand to auction at the Auction House!'
-    inCreative: '&9&l✰ United Designs ✰ &7Creative selling is prohibited.'
-    noMore: '&9&l✰ United Designs ✰ &7Limit reached for max auction amount at one time.'
-    max: '&9&l✰ United Designs ✰ &7You are privileged to 45 auctions at one time.'
-    invalidPrice: '&9&l✰ United Designs ✰ &7Invalid price.'
-    maxMoney: '&9&l✰ United Designs ✰ &7Cannot auction your items with a higher price than &2£&f100&oQ&7!'
-    maxSetMoney: '&9&l✰ United Designs ✰ &7You cannot auction items above &2£&f100&oQ&7!'
-    notEnoughMoney: '&9&l✰ United Designs ✰ &7Insufficient funds.'
-    getHelp: '&9&l✰ United Designs ✰ &7Invalid syntax. Use &3/ah &7for help.'
-    isBlacklisted: '&9&l✰ United Designs ✰ &7You cannot auction blacklisted items.'
+    itemPurchased: '&9&l✰ Diseños Unidos ✰ &7Artículo comprado en la casa de subastas.!'
+    buyerPurchased: '&9&l✰ Diseños Unidos ✰ &7Su subasta fue comprada por &3%buyer% &7y has recibido &2£&f%taxedPrice%&7!'
+    listedItem: '&9&l✰ Diseños Unidos ✰ &7Has subastado un artículo en la Casa de Subastas.!'
+    listingCancel: '&9&l✰ Diseños Unidos ✰ &7Subasta cancelada en la Casa de Subastas!'
+    adminRemoveListing: '&9&l✰ Diseños Unidos ✰ &7La subasta ha sido eliminada de la lista..'
+    expiredReturned: '&9&l✰ Diseños Unidos ✰ &7Reembolsó su artículo de la Casa de Subastas!'
+    notEnoughInventory: '&9&l✰ Diseños Unidos ✰ &7Espacios de inventario insuficientes.'
+    returnedAll: '&9&l✰ Diseños Unidos ✰ &7Se reembolsaron todas las subastas canceladas y vencidas..'
+    unknownCommand: '&9&l✰ Diseños Unidos ✰ &7Comando desconocido.'
+    notHoldingItem: '&9&l✰ Diseños Unidos ✰ &7Debes tener un artículo en tu mano para subastar en la Casa de Subastas.!'
+    inCreative: '&9&l✰ Diseños Unidos ✰ &7Prohibida la venta de alimentos.'
+    noMore: '&9&l✰ Diseños Unidos ✰ &7Se alcanzó el límite para el monto máximo de subasta al mismo tiempo.'
+    max: '&9&l✰ Diseños Unidos ✰ &7Tiene el privilegio de participar en 45 subastas a la vez.'
+    invalidPrice: '&9&l✰ Diseños Unidos ✰ &7Precio no válido.'
+    maxMoney: '&9&l✰ Diseños Unidos ✰ &7No puedes subastar tus artículos con un precio superior al &2£&f100&oQ&7!'
+    maxSetMoney: '&9&l✰ Diseños Unidos ✰ &7No puedes subastar los artículos anteriores &2£&f100&oQ&7!'
+    notEnoughMoney: '&9&l✰ Diseños Unidos ✰ &7Fondos insuficientes.'
+    getHelp: '&9&l✰ Diseños Unidos ✰ &7Sintaxis inválida. Usa &3/ah &7para obtener ayuda.'
+    isBlacklisted: '&9&l✰ Diseños Unidos ✰ &7No puedes subastar artículos en la lista negra.'
     help:
-      - '&3/ah &8- &7Open the Auction house.'
-      - '&3/ah sell <amount> &8- &7Sell the item you are holding.'
-      - '&3/ah selling &8- &7View the items you are selling.'
-      - '&3/ah expired &8- &7View your expired items to return.'
+      - '&3/ah &8- &7Abrir la casa de subastas.'
+      - '&3/ah sell <cantidad> &8- &7Vender el artículo que tienes.'
+      - '&3/ah selling &8- &7Ver los artículos que estás vendiendo.'
+      - '&3/ah expired &8- &7Vver tus artículos caducados para devolver.'
