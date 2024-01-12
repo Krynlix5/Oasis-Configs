@@ -43,7 +43,7 @@ items:
     inventory: "buying"
     item:
       material: ENDER_CHEST
-      name: "&fBought items"
+      name: "&Artículos comprados"
       lore:
         - "&f» &7Hay &b%zauctionhouse_buying_item% &7artículos comprados."      
   next:
