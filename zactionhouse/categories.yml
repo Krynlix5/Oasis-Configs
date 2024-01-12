@@ -1,6 +1,6 @@
 categories:
   blocks:
-    name: Blocks
+    name: Bloques
     materials:
     - AIR
     - STONE
@@ -975,7 +975,7 @@ categories:
     - POTTED_AZALEA_BUSH
     - POTTED_FLOWERING_AZALEA_BUSH
   potions:
-    name: Potions
+    name: Pociones
     materials:
     - BLAZE_ROD
     - GHAST_TEAR
@@ -995,7 +995,7 @@ categories:
     - SPLASH_POTION
     - LINGERING_POTION
   tools:
-    name: Tools
+    name: Herramientas
     materials:
     - STONE_AXE
     - STONE_SHOVEL
@@ -1013,16 +1013,21 @@ categories:
     - DIAMOND_SHOVEL
     - DIAMOND_HOE
     - DIAMOND_PICKAXE
+    - NETHERITE_AXE
+    - NETHERITE_SHOVEL
+    - NETHERITE_HOE
+    - NETHERITE_PICKAXE
   weapons:
-    name: Weapons
+    name: Armas
     materials:
     - FLINT_AND_STEEL
     - BOW
     - ARROW
     - IRON_SWORD
+    - NETHERITE_SWORD
     - DIAMOND_SWORD
     - GOLDEN_SWORD
     - STONE_SWORD
     - WOODEN_SWORD
   misc:
-    name: Misc
+    name: Varios
