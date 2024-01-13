@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+░██████╗███████╗████████╗██╗░░░██╗██████╗░
+██╔════╝██╔════╝╚══██╔══╝██║░░░██║██╔══██╗
+╚█████╗░█████╗░░░░░██║░░░██║░░░██║██████╔╝
+░╚═══██╗██╔══╝░░░░░██║░░░██║░░░██║██╔═══╝░
+██████╔╝███████╗░░░██║░░░╚██████╔╝██║░░░░░
+╚═════╝░╚══════╝░░░╚═╝░░░░╚═════╝░╚═╝░░░░░
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+1.Open the .zip file,and paste the BetterHomes-Expansion-1.0.jar into "\plugins\PlaceholderAPI\Expansions".
+2.Open the folder "Deluxemenus" and paste both of the files in "\plugins\Deluxemenus\menus".
+3.Open the folder "Deluxemenus" "from \plugins\Deluxemenus" and change the config to :
+
+
+
+
+
+debug: false
+check_updates: false
+gui_menus:
+  homes:
+    file: homes.yml
+  confirmHomeDelete:
+    file: confirmHomeDelete.yml

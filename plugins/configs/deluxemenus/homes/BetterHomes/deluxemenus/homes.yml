@@ -1,0 +1,768 @@
+# You can change the materials, display names, and lore in
+# .../plugins/PlaceholderAPI/config.yml
+menu_title: "HOMES"
+open_command: homemenu
+size: 54
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: essentials.sethome
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
+items:
+  "1":
+    slot: 10
+    material: placeholder-%betterhomes_materialBed_h1%
+    display_name: "%betterhomes_displayName_h1%"
+    lore:
+    - "%betterhomes_lore_h1%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h1
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h1"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "1dye":
+    slot: 19
+    material: placeholder-%betterhomes_materialDye_h1%
+    display_name: "%betterhomes_displayName_h1%"
+    lore:
+    - "%betterhomes_loreDye_h1%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h1
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h1%"
+          - "[meta] set homePermission STRING betterhomes.set.h1"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h1"
+          - "[givepermission] betterhomes.set.h1"
+          - "[meta] set homePermission STRING betterhomes.set.h1"
+    click_commands:
+    - "[refresh]"
+  
+  "2":
+    slot: 11
+    material: placeholder-%betterhomes_materialBed_h2%
+    display_name: "%betterhomes_displayName_h2%"
+    lore:
+    - "%betterhomes_lore_h2%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h2
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h2"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "2dye":
+    slot: 20
+    material: placeholder-%betterhomes_materialDye_h2%
+    display_name: "%betterhomes_displayName_h2%"
+    lore:
+    - "%betterhomes_loreDye_h2%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h2
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h2%"
+          - "[meta] set homePermission STRING betterhomes.set.h2"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h2"
+          - "[givepermission] betterhomes.set.h2"
+          - "[meta] set homePermission STRING betterhomes.set.h2"
+    click_commands:
+    - "[refresh]"
+  
+  "3":
+    slot: 12
+    material: placeholder-%betterhomes_materialBed_h3%
+    display_name: "%betterhomes_displayName_h3%"
+    lore:
+    - "%betterhomes_lore_h3%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h3
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h3"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "3dye":
+    slot: 21
+    material: placeholder-%betterhomes_materialDye_h3%
+    display_name: "%betterhomes_displayName_h3%"
+    lore:
+    - "%betterhomes_loreDye_h3%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h3
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h3%"
+          - "[meta] set homePermission STRING betterhomes.set.h3"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h3"
+          - "[givepermission] betterhomes.set.h3"
+          - "[meta] set homePermission STRING betterhomes.set.h3"
+    click_commands:
+    - "[refresh]"
+  
+  "4":
+    slot: 13
+    material: placeholder-%betterhomes_materialBed_h4%
+    display_name: "%betterhomes_displayName_h4%"
+    lore:
+    - "%betterhomes_lore_h4%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h4
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h4"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "4dye":
+    slot: 22
+    material: placeholder-%betterhomes_materialDye_h4%
+    display_name: "%betterhomes_displayName_h4%"
+    lore:
+    - "%betterhomes_loreDye_h4%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h4
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h4%"
+          - "[meta] set homePermission STRING betterhomes.set.h4"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h4"
+          - "[givepermission] betterhomes.set.h4"
+          - "[meta] set homePermission STRING betterhomes.set.h4"
+    click_commands:
+    - "[refresh]"
+  
+  "5":
+    slot: 14
+    material: placeholder-%betterhomes_materialBed_h5%
+    display_name: "%betterhomes_displayName_h5%"
+    lore:
+    - "%betterhomes_lore_h5%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h5
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h5"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "5dye":
+    slot: 23
+    material: placeholder-%betterhomes_materialDye_h5%
+    display_name: "%betterhomes_displayName_h5%"
+    lore:
+    - "%betterhomes_loreDye_h5%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h5
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h5%"
+          - "[meta] set homePermission STRING betterhomes.set.h5"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h5"
+          - "[givepermission] betterhomes.set.h5"
+          - "[meta] set homePermission STRING betterhomes.set.h5"
+    click_commands:
+    - "[refresh]"
+  
+  "6":
+    slot: 15
+    material: placeholder-%betterhomes_materialBed_h6%
+    display_name: "%betterhomes_displayName_h6%"
+    lore:
+    - "%betterhomes_lore_h6%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h6
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h6"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "6dye":
+    slot: 24
+    material: placeholder-%betterhomes_materialDye_h6%
+    display_name: "%betterhomes_displayName_h6%"
+    lore:
+    - "%betterhomes_loreDye_h6%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h6
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h6%"
+          - "[meta] set homePermission STRING betterhomes.set.h6"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h6"
+          - "[givepermission] betterhomes.set.h6"
+          - "[meta] set homePermission STRING betterhomes.set.h6"
+    click_commands:
+    - "[refresh]"
+  
+  "7":
+    slot: 16
+    material: placeholder-%betterhomes_materialBed_h7%
+    display_name: "%betterhomes_displayName_h7%"
+    lore:
+    - "%betterhomes_lore_h7%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h7
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h7"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "7dye":
+    slot: 25
+    material: placeholder-%betterhomes_materialDye_h7%
+    display_name: "%betterhomes_displayName_h7%"
+    lore:
+    - "%betterhomes_loreDye_h7%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h7
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h7%"
+          - "[meta] set homePermission STRING betterhomes.set.h7"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h7"
+          - "[givepermission] betterhomes.set.h7"
+          - "[meta] set homePermission STRING betterhomes.set.h7"
+    click_commands:
+    - "[refresh]"
+  
+  "8":
+    slot: 28
+    material: placeholder-%betterhomes_materialBed_h8%
+    display_name: "%betterhomes_displayName_h8%"
+    lore:
+    - "%betterhomes_lore_h8%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h8
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h8"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "8dye":
+    slot: 37
+    material: placeholder-%betterhomes_materialDye_h8%
+    display_name: "%betterhomes_displayName_h8%"
+    lore:
+    - "%betterhomes_loreDye_h8%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h8
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h8%"
+          - "[meta] set homePermission STRING betterhomes.set.h8"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h8"
+          - "[givepermission] betterhomes.set.h8"
+          - "[meta] set homePermission STRING betterhomes.set.h8"
+    click_commands:
+    - "[refresh]"
+  
+  "9":
+    slot: 29
+    material: placeholder-%betterhomes_materialBed_h9%
+    display_name: "%betterhomes_displayName_h9%"
+    lore:
+    - "%betterhomes_lore_h9%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h9
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h9"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "9dye":
+    slot: 38
+    material: placeholder-%betterhomes_materialDye_h9%
+    display_name: "%betterhomes_displayName_h9%"
+    lore:
+    - "%betterhomes_loreDye_h9%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h9
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h9%"
+          - "[meta] set homePermission STRING betterhomes.set.h9"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h9"
+          - "[givepermission] betterhomes.set.h9"
+          - "[meta] set homePermission STRING betterhomes.set.h9"
+    click_commands:
+    - "[refresh]"
+  
+  "10":
+    slot: 30
+    material: placeholder-%betterhomes_materialBed_h10%
+    display_name: "%betterhomes_displayName_h10%"
+    lore:
+    - "%betterhomes_lore_h10%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h10
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h10"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "10dye":
+    slot: 39
+    material: placeholder-%betterhomes_materialDye_h10%
+    display_name: "%betterhomes_displayName_h10%"
+    lore:
+    - "%betterhomes_loreDye_h10%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h10
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h10%"
+          - "[meta] set homePermission STRING betterhomes.set.h10"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h10"
+          - "[givepermission] betterhomes.set.h10"
+          - "[meta] set homePermission STRING betterhomes.set.h10"
+    click_commands:
+    - "[refresh]"
+  
+  "11":
+    slot: 31
+    material: placeholder-%betterhomes_materialBed_h11%
+    display_name: "%betterhomes_displayName_h11%"
+    lore:
+    - "%betterhomes_lore_h11%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h11
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h11"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "11dye":
+    slot: 40
+    material: placeholder-%betterhomes_materialDye_h11%
+    display_name: "%betterhomes_displayName_h11%"
+    lore:
+    - "%betterhomes_loreDye_h11%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h11
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h11%"
+          - "[meta] set homePermission STRING betterhomes.set.h11"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h11"
+          - "[givepermission] betterhomes.set.h11"
+          - "[meta] set homePermission STRING betterhomes.set.h11"
+    click_commands:
+    - "[refresh]"
+  
+  "12":
+    slot: 32
+    material: placeholder-%betterhomes_materialBed_h12%
+    display_name: "%betterhomes_displayName_h12%"
+    lore:
+    - "%betterhomes_lore_h12%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h12
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h12"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "12dye":
+    slot: 41
+    material: placeholder-%betterhomes_materialDye_h12%
+    display_name: "%betterhomes_displayName_h12%"
+    lore:
+    - "%betterhomes_loreDye_h12%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h12
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h12%"
+          - "[meta] set homePermission STRING betterhomes.set.h12"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h12"
+          - "[givepermission] betterhomes.set.h12"
+          - "[meta] set homePermission STRING betterhomes.set.h12"
+    click_commands:
+    - "[refresh]"
+  
+  "13":
+    slot: 33
+    material: placeholder-%betterhomes_materialBed_h13%
+    display_name: "%betterhomes_displayName_h13%"
+    lore:
+    - "%betterhomes_lore_h13%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h13
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h13"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "13dye":
+    slot: 42
+    material: placeholder-%betterhomes_materialDye_h13%
+    display_name: "%betterhomes_displayName_h13%"
+    lore:
+    - "%betterhomes_loreDye_h13%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h13
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h13%"
+          - "[meta] set homePermission STRING betterhomes.set.h13"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h13"
+          - "[givepermission] betterhomes.set.h13"
+          - "[meta] set homePermission STRING betterhomes.set.h13"
+    click_commands:
+    - "[refresh]"
+  
+  "14":
+    slot: 34
+    material: placeholder-%betterhomes_materialBed_h14%
+    display_name: "%betterhomes_displayName_h14%"
+    lore:
+    - "%betterhomes_lore_h14%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h14
+          optional: true
+          success_commands:
+          - "[close]"
+          - "[player] ehome h14"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+    click_commands:
+    - "[refresh]"
+  "14dye":
+    slot: 43
+    material: placeholder-%betterhomes_materialDye_h14%
+    display_name: "%betterhomes_displayName_h14%"
+    lore:
+    - "%betterhomes_loreDye_h14%"
+    click_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        set:
+          type: has permission
+          permission: betterhomes.set.h14
+          optional: true
+          success_commands:
+          - "[meta] set homeToDelete STRING %betterhomes_homeName_h14%"
+          - "[meta] set homePermission STRING betterhomes.set.h14"
+          - "[openguimenu] confirmHomeDelete"
+        limitNotReached:
+          type: '<'
+          input: '%essentials_homes_set%'
+          output: '%essentials_homes_max%'
+          optional: true
+          success_commands:
+          - "[player] esethome h14"
+          - "[givepermission] betterhomes.set.h14"
+          - "[meta] set homePermission STRING betterhomes.set.h14"
+    click_commands:
+    - "[refresh]"

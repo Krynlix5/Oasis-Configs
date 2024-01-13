@@ -1,0 +1,179 @@
+menu_title: '&8&lYOUR SERVER: TOP BALANCES'
+open_command:
+  - baltop
+  - balancetop
+  - btop
+  - b
+size: 45
+items:
+  'balancetop1':
+    material: 'head-%essentials_baltop_player_0%'
+    slot: 10
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ ᴏɴᴇ [ʜɪɢʜᴇsᴛ]' 
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_0%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_0%'
+  'balancetop2':
+    material: 'head-%essentials_baltop_player_1%'
+    slot: 11
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ ᴛᴡᴏ'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_1%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_1%'
+  'balancetop3':
+    material: 'head-%essentials_baltop_player_2%'
+    slot: 12
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ ᴛʜʀᴇᴇ'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_2%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_2%'
+  'balancetop4':
+    material: 'head-%essentials_baltop_player_3%'
+    slot: 13
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ ғᴏᴜʀ'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_3%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_3%'
+  'balancetop5':
+    material: 'head-%essentials_baltop_player_4%'
+    slot: 14
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ ғɪᴠᴇ'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_4%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_4%'
+  'balancetop6':
+    material: 'head-%essentials_baltop_player_5%'
+    slot: 15
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ sɪx'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_5%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_5%'
+  'balancetop7':
+    material: 'head-%essentials_baltop_player_6%'
+    slot: 16
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ sᴇᴠᴇɴ'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_6%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_6%'
+  'balancetop8':
+    material: 'head-%essentials_baltop_player_7%'
+    slot: 21
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ ᴇɪɢʜᴛ'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_7%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_7%'
+  'balancetop9':
+    material: 'head-%essentials_baltop_player_8%'
+    slot: 22
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ ɴɪɴᴇ'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_8%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_8%'
+  'balancetop10':
+    material: 'head-%essentials_baltop_player_9%'
+    slot: 23
+    priority: 1
+    update: true
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ ᴛᴇɴ'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_9%'
+      - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ʙᴀʟᴀɴᴄᴇ: &c%essentials_baltop_balance_formatted_9%'
+  'mybalance':
+    material: 'head-%player_name%'
+    slot: 31
+    priority: 1
+    update: true
+    display_name: '&fᴘᴇʀsᴏɴᴀʟ ᴘʟᴀʏᴇʀ sᴛᴀᴛs'
+    lore:
+      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - ''
+      - '&b&lSERVER BALANCE'
+      - ' &#43A3FB▎ &fᴘᴏsɪᴛɪᴏɴ: &c%essentials_baltop_rank%'
+      - ' &#43A3FB▎ &fʙᴀʟᴀɴᴄᴇ: &c%vault_eco_balance_formatted%'
+
+  'filleritem':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 19
+      - 20
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 32
+      - 33
+      - 34
+      - 35
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+    

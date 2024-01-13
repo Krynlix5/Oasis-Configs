@@ -1,0 +1,26 @@
+menu_title: 'Confirm Delete'
+open_command: []
+size: 27
+items:
+  "confirm":
+    material: LIME_WOOL
+    slot: 11
+    display_name: "&#9ef647&lConfirm"
+    click_commands:
+    - "[console] delhome %player_name%:%deluxemenus_meta_homeToDelete_STRING%"
+    - "[takepermission] %deluxemenus_meta_homePermission_STRING%"
+    - "[openguimenu] Homes"
+  "cancel":
+    material: RED_WOOL
+    slot: 15
+    display_name: "&#de4022&lCancel"
+    click_commands:
+    - "[openguimenu] Homes"
+  "back":
+    material: BARRIER
+    slot: 22
+    display_name: "&#e44223&lBACK"
+    lore:
+    - "&fClick to return"
+    click_commands:
+    - "[openguimenu] Homes"

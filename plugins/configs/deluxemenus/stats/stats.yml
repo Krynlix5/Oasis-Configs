@@ -1,0 +1,101 @@
+menu_title: '&8Profile | statistics'
+open_command:
+  - profile
+  - stats
+register_command: true
+size: 45
+items:
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-44'
+    display_name: ' '
+  'date':
+    material: head-%player_name%
+    slot: 13
+    priority: 1
+    update: false 
+    hide_attributes: true
+    display_name: '&#5398ff&lDate Joined'
+    lore: 
+      - '&8Description'
+      - '&r'
+      - '&fDate joined &#5398ff&l| &#5398ff%joindate_join_date%'
+  'deaths':
+    material: WITHER_SKELETON_SKULL
+    slot: 20
+    priority: 1
+    update: true
+    hide_attributes: true
+    display_name: '&#ea8208&lDeaths'
+    lore:
+    - '&8Description'
+    - '&r'
+    - '&fDeaths: &#ea8208%statistic_deaths%'
+  'kills':
+    material: DIAMOND_SWORD
+    slot: 21
+    priority: 1
+    update: true
+    hide_attributes: true
+    display_name: '&#d50909&lKills'
+    lore:
+    - '&8Description'
+    - '&r'
+    - '&fPlayer Kills: &#d50909%statistic_player_kills%'
+  'experience':
+    material: EXPERIENCE_BOTTLE
+    slot: 22
+    priority: 1
+    update: true
+    hide_attributes: true
+    display_name: '&#a041ff&lE&#a545ff&lx&#aa49ff&lp&#af4eff&le&#b452ff&lr&#ba56ff&li&#bf5aff&le&#c45fff&ln&#c963ff&lc&#ce67ff&le'
+    lore:
+    - '&8Description'
+    - '&r'
+    - '&fExperience: &#a041ff%player_current_exp%'
+  'playtime':
+    material: CLOCK
+    slot: 23
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#ff62ef&lPlaytime Level'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fPlaytime: &#E371FF%statistic_time_played%'
+  'coins':
+    material: sunflower
+    slot: 24
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#FBE200&lCoins'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fCoins: &#FBE200%playerpoints_points_shorthand%'
+  'balance':
+    material: EMERALD
+    slot: 32
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#47d824&lM&#4ae226&lo&#4eec27&ln&#51f529&le&#54ff2a&ly'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fMoney: &#54FF2A$%vault_eco_balance_formatted%'
+  'rank':
+    material: BOOK
+    slot: 30
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#ff2222&lYour Rank'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fRank: &#FF4848%luckperms_prefix%'
