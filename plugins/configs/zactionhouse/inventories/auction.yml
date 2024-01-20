@@ -69,7 +69,7 @@ items:
     slot: 50
     item:
       material: ARROW
-      name: "&fPróximo"
+      name: "&fSiguiente"
   # Allows you to go to the previous page        
   previous:
     type: PREVIOUS
