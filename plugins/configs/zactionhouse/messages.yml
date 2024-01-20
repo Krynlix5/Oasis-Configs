@@ -188,10 +188,10 @@ messages:
     message:
       default:
         type: TCHAT
-        message: '&fAcabas de poner &fx&f%amount% &a%item% &fa la venta por &b%price%%currency%&7.'
+        message: '&fAcabas de poner &fx&f%amount% &a%item% &fa la venta por &b%vault_eco_balance_formatted% $&7.'
       inventory:
         type: TCHAT
-        message: '&fAcabas de poner &fx&f%amount% &a%item% &fa la venta por &b%price%%currency%&7.'
+        message: '&fAcabas de poner &fx&f%amount% &a%item% &fa la venta por &b%vault_eco_balance_formatted% $&7.'
     creative:
       error:
         type: TCHAT
@@ -241,12 +241,10 @@ messages:
       seller:
         get:
           type: TCHAT
-          message: '&fUn administrador acaba de eliminar &a%item%&f, puede recuperarlo
-            de la lista de elementos caducados.'
+          message: '&fUn administrador acaba de eliminar &a%item%&f, puede recuperarlo de la lista de elementos caducados.'
         delete:
           type: TCHAT
-          message: '&fUn administrador acaba de eliminar &a%item%&f, No puede recuperar
-            su artículo.'
+          message: '&fUn administrador acaba de eliminar &a%item%&f, No puede recuperar su artículo.'
     lore:
       default:
         type: TCHAT
@@ -437,8 +435,7 @@ messages:
           nuevamente.'
       crash:
         type: TCHAT
-        message: '&7No se pueden recuperar las transacciones en este momento, comuníquese
-          con un administrador.'
+        message: '&7No se pueden recuperar las transacciones en este momento, comuníquese con un administrador.'
       error:
         type: TCHAT
         message: '&cNo tienes transacciones pendientes.'
@@ -476,12 +473,10 @@ messages:
     lag:
       ping:
         type: TCHAT
-        message: '&cYNo puedes vender artículos en este momento. (es deshabilitarSaleIfPlayerIsLagging
-          en config.json)'
+        message: '&cYNo puedes vender artículos en este momento. (es deshabilitarSaleIfPlayerIsLagging en config.json)'
       tps:
         type: TCHAT
-        message: '&cNo puedes vender artículos en este momento. (es deshabilitarSaleIfServerIsLagging
-          en config.json)'
+        message: '&cNo puedes vender artículos en este momento. (es deshabilitarSaleIfServerIsLagging en config.json)'
   dupe:
     info:
       type: TCHAT

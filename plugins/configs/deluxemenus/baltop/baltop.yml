@@ -1,4 +1,4 @@
-menu_title: '&8&lYOUR SERVER: TOP BALANCES'
+menu_title: '&8&lVEXMI: TOP ECONOMIA'
 open_command:
   - baltop
   - balancetop
@@ -11,9 +11,9 @@ items:
     slot: 10
     priority: 1
     update: true
-    display_name: '&fᴘᴏsɪᴛɪᴏɴ ᴏɴᴇ [ʜɪɢʜᴇsᴛ]' 
+    display_name: '&fᴘᴏsɪᴛɪᴏɴ ᴜɴᴏ [ᴍᴀ́s ᴀʟᴛᴏ]' 
     lore:
-      - '&8ʙᴀʟᴀɴᴄᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ'
+      - '&8'
       - ''
       - '&b&lSERVER BALANCE'
       - ' &#43A3FB▎ &fᴘʟᴀʏᴇʀ ɴᴀᴍᴇ: &c%essentials_baltop_player_0%'

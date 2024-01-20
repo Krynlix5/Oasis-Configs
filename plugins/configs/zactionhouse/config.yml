@@ -21,8 +21,8 @@ blacklistLore:
 language:
   mainMenuName: '&9&lAH ➤ &8Subastas'
   currentListingsMenuName: '&9&lAH ➤ &8'
-  expiredMenuName: '&9&lAH ➤ &8Refundable Items'
-  purchaseItemMenuName: '&9&lAH ➤ &8Purchase Item'
+  expiredMenuName: '&9&lAH ➤ &8Artículos reembolsables'
+  purchaseItemMenuName: '&9&lAH ➤ &8Adquirir artículo'
   menuItemText:
     listedItem:
       lore: ['&7Precio ➤ &2£&f%price%', '&7Subastador ➤ &3%seller%', '&7Expira en ➤ &3%time%', '&8', '&9&l* CLICK PARA COMPRAR *']
@@ -41,7 +41,7 @@ language:
     returnAllItems:
       id: '342'
       name: '&b&lDevolver todo'
-      lore: ['&7CHaz clic aquí para recibir todos los objetos cancelados.', '&7y artículos caducados que subastaste.']
+      lore: ['&7Haz clic aquí para recibir todos los objetos cancelados.', '&7y artículos caducados que subastaste.']
     previousPage:
       id: '262'
       name: '&b&lPagina anterior'
@@ -53,7 +53,7 @@ language:
       name: '&b&lSiguiente página'
     backButton:
       id: '330'
-      name: '&b&lBack'
+      name: '&b&lAtrás'
     howToSell:
       id: '340'
       name: '&b&lCómo subastar tus artículos:'
