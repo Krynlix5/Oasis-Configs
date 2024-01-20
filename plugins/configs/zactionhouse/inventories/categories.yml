@@ -45,43 +45,70 @@ items:
     category: "blocks"
     item:
       material: GRASS_BLOCK
-      name: "&fCategoría: Bloque"
+      name: "&fCategoría: &2Bloques"
       lore:
         - "&f» &7Hay &b%zauctionhouse_category_item_blocks% &7artículos en la categoría de bloques."
-    slot: 20
+    slot: 19
   weapons:
     type: CATEGORIES
     category: "weapons"
     item:
       material: DIAMOND_SWORD
-      name: "&fCategoría: Armas"
+      name: "&fCategoría: &4Armas"
       lore:
         - "&f» &7Hay &b%zauctionhouse_category_item_weapons% &7artículos en la categoría de armas."
-    slot: 21         
+    slot: 20       
   tools:
     type: CATEGORIES
     category: "tools"
     item:
       material: IRON_AXE
-      name: "&fCategoría: Herramientas"
+      name: "&fCategoría: &9Herramientas"
       lore:
         - "&f» &7Hay &b%zauctionhouse_category_item_tools% &7artículos en la categoría de herramientas."
-    slot: 22
+    slot: 21
+  enchantments:
+    type: CATEGORIES
+    category: "enchantments"
+    item:
+      material: ENCHANTED_ BOOK
+      name: "&fCategoría: &dEncantamientos"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_category_item_potions% &7artículos en la categoría de encantamientos."
+    slot: 22  
   potions:
     type: CATEGORIES
     category: "potions"
     item:
       material: BLAZE_ROD
-      name: "&fCategoría: Pociones"
+      name: "&fCategoría: &ePociones"
       lore:
         - "&f» &7Hay &b%zauctionhouse_category_item_potions% &7artículos en la categoría de pociones."
-    slot: 23    
+    slot: 25
+  spawners:
+    type: CATEGORIES
+    category: "spawners"
+    item:
+      material: SPAWNER
+      name: "&fCategoría: &6Spawners"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_category_item_potions% &7artículos en la categoría de spawners."
+    slot: 24    
+  armors:
+    type: CATEGORIES
+    category: "armors"
+    item:
+      material: SPAWNER
+      name: "&fCategoría: &cArmaduras"
+      lore:
+        - "&f» &7Hay &b%zauctionhouse_category_item_potions% &7artículos en la categoría de armaduras."
+    slot: 23        
   misc:
     type: CATEGORIES
     category: "misc"
     item:
       material: EXPERIENCE_BOTTLE
-      name: "&fCategoría: Varios"
+      name: "&fCategoría: &2Varios"
       lore:
         - "&f» &7Hay &b%zauctionhouse_category_item_misc% &7artículos en la categoría de varios."
-    slot: 24    
+    slot: 28    

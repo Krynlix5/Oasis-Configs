@@ -1017,10 +1017,15 @@ categories:
     - NETHERITE_SHOVEL
     - NETHERITE_HOE
     - NETHERITE_PICKAXE
+    - SADDLE
+    - BUCKET 
+    - WATER_BUCKET
+    - LAVA_BUCKET
   weapons:
     name: Armas
     materials:
     - FLINT_AND_STEEL
+    - CROSSBOW
     - BOW
     - ARROW
     - IRON_SWORD
@@ -1029,5 +1034,25 @@ categories:
     - GOLDEN_SWORD
     - STONE_SWORD
     - WOODEN_SWORD
+  spawners:
+    name: Spawners
+    materials:
+    - SPAWNER
+  armors:
+    name: Armaduras
+    materials:
+    - IRON_HELMET
+    - IRON_LEGGINS
+    - IRON_BOOTS
+    - IRON_CHESTPLATE
+    - TURTLE_HELMET
+    - DIAMOND_HELMET
+    - DIAMOND_LEGGINS 
+    - DIAMOND_BOOTS
+    - DIAMOND_CHESTPLATE
+    - NETHERITE_HELMET
+    - NETHERITE_CHESTPLATE
+    - NETHERITE_LEGGINS
+    - NETHERITE_BOOTS
   misc:
     name: Varios
