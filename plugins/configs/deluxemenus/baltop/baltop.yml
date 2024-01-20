@@ -1,13 +1,7 @@
 menu_title: '&8&lVEXMI: TOP ECONOMIA'
 open_command:
   - baltop
-  - balancetop
-  - btop
-  - b
   - topdinero
-  - topd
-  - dinerotop
-  - topcash
 size: 45
 items:
   'balancetop1':
