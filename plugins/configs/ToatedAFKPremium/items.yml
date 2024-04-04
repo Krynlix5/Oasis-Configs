@@ -1,0 +1,11 @@
+items:
+  test3:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3218
+    type: STONE_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §dAFK Wand
+      lore:
+        - §cSet position 1 and 2 with this magic wand!

@@ -1,0 +1,6 @@
+messages:
+  open_usage: "&aUsage: /trewards <open> <type> <reward>"
+  invalid_reward_type: "&cThis reward type doesn't exist"
+  invalid_reward: "&cThis reward doesn't exist!"
+  expired_reward: "&cThe offer has expired!"
+  open_gui: "&aOpening + {section}"

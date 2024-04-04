@@ -1,0 +1,13 @@
+# DOCS BEGIN #
+# All files that are supposed to be rewards must have the following format: tier_(whatever here and must be <= rewards_amount)
+# If you still don't really know how to use this, make a ticket on discord (you have the invite link on site)
+# DOCS END #
+use_playtime: false # if you want to use the AFKPass with the player's playtime and not the afk time spent
+rewards_amount: 5 # how many rewards will there be for players to claim
+distance_between_rewards: 3 # the distance between all the rewards, if it doesn't fit the first page, there will be a second one
+items:
+  fill:
+    material: "WHITE_STAINED_GLASS_PANE"
+    title: " "
+    lore:
+      - ""

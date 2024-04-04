@@ -1,0 +1,11 @@
+functionality:
+  type: BLACK_STAINED_GLASS_PANE
+  time_req: 1200
+  commands_to_be_executed:
+    - "eco give {player} 100"
+    - "msg {player} You have claimed tier 1!"
+  localized_name_DONT_MODIFY: REWARD_tier_1
+  display_name: "&r&cTier: &f{index}"
+  lore:
+    - "&cTest 1"
+    - "&#084cfbT&#3176fce&#5ba0fcs&#84c9fdt &#adf3fd2"

@@ -1,0 +1,204 @@
+menu:
+  menuName: "&lSpawner Menu"
+  menuRows: 5 # How many rows should the main menu be?
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE # You could also set this to AIR if you don't want filler items.
+    name: "" # Name of filler items.
+  info:
+    gui: true
+    material: head-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFkYzA0OGE3Y2U3OGY3ZGFkNzJhMDdkYTI3ZDg1YzA5MTY4ODFlNTUyMmVlZWQxZTNkYWYyMTdhMzhjMWEifX19
+    name: "&6&lINFORMATION &8— &7Spawner"
+    lore:
+      - ""
+      - " &7Here you can see all the details "
+      - " &7of this spawner."
+      - ""
+      - " &8• &7Type: &6{type}"
+      - " &8• &7Level: &6{level}"
+      - " &8• &7Owner: &6{owner}"
+      - ""
+    slot: 10
+  storage:
+    gui: true
+    material: CHEST
+    name: "&c&lSTORAGE &8— &7Sell/Take Items"
+    lore:
+      - ""
+      - "&7 Click here to take or sell items "
+      - "&7 from the storage."
+      - ""
+      - " &8• &7Items stored: &c{amount}x"
+      - " &8• &7Sell multiplier: &cx{multiplier}"
+      - ""
+    slot: 23
+  hologram:
+    gui: true # Requires DecentHolograms plugin
+    material: OAK_SIGN
+    name: "&9&lHOLOGRAM &8— &7Toggle hologram"
+    lore:
+      - ""
+      - "&7 Click here to toggle "
+      - "&7 the spawner's hologram"
+      - ""
+    slot: 22
+  auto-kill:
+    gui: true
+    material: IRON_SWORD
+    name: "&c&lAUTOKILL &8— &7Toggle auto-kill"
+    lore:
+      - ""
+      - "&7 The &cauto-kill &7feature automagically "
+      - "&7 kills all the mobs spawned from the "
+      - "&7 spawner and teleports their drops "
+      - "&7 to the spawner's storage."
+      - ""
+      - "&7 Click here to toggle "
+      - "&7 the auto-kill feature. "
+      - ""
+    slot: 14
+  friends:
+    gui: true
+    material: PLAYER_HEAD
+    name: "&a&lFRIENDS &8— &7Manage friends"
+    lore:
+      - ""
+      - "&7 Add friends to your spawners "
+      - "&7 to give them all the permissions "
+      - "&7 they need to control your spawners "
+      - ""
+      - "&8 • &7Friends can't:"
+      - "&8  • &7break the spawner."
+      - "&8  • &7add other friends."
+      - ""
+    slot: 24
+  level-up:
+    gui: true
+    material: head-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzA0MGZlODM2YTZjMmZiZDJjN2E5YzhlYzZiZTUxNzRmZGRmMWFjMjBmNTVlMzY2MTU2ZmE1ZjcxMmUxMCJ9fX0=
+    name: "&5&lLEVEL UP &8— &7Enhance your spawner!"
+    lore:
+      - ""
+      - "&7 Instead of placing spawners side by side "
+      - "&7 and collecting loot from each of them one "
+      - "&7 by one, you can stack spawners together "
+      - "&7 and still get the same loot, and collecting "
+      - "&7 is way easier!"
+      - ""
+      - "&8 • &7Click here to &5level up &7your spawner!"
+      - ""
+    slot: 28
+  exp:
+    gui: true
+    material: EXPERIENCE_BOTTLE
+    name: "&d&lEXPERIENCE &8— &7Get experience"
+    lore:
+      - ""
+      - "&7 Get all the XP stored in the "
+      - "&7 spawner. "
+      - ""
+      - "&8 • &7You will get: "
+      - "&d {experience} XP "
+      - ""
+    slot: 32
+
+storageMenu:
+  menuRows: 3
+  menuName: "&lStorage Menu"
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE # Set to AIR if you don't want filler items.
+    name: ""
+  sellItem:
+    material: GOLD_INGOT
+    name: "&e&lSELL ITEMS &8— &7Sell everything"
+    lore:
+      - ""
+      - "&7 You can sell everything stored in "
+      - "&7 this spawner's storage simply by "
+      - "&7 clicking this button."
+      - ""
+      - "&8 • &7Active multiplier: &ex{multiplier} "
+      - "&8 • &7Selling all items will earn you: "
+      - "&e ${money} "
+      - ""
+      - "&7 Click &ehere &7to sell all items."
+      - ""
+    slot: 22
+  itemLores:
+    - ""
+    - "&7 You currently have &6{amount_type}x " # {amount_type} returns the amount of an item currently stored
+    - "&7 of this item stored."
+    - ""
+    - " &8• &7Storage limit: &6{storage_limit}"
+    - ""
+    - " &8• &7Left-click to take 64 "
+    - " &8• &7Right-click to fill inventory "
+    - ""
+
+friendsMenu:
+  menuName: "&lFriends Menu"
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE # Set to AIR if you don't want filler items.
+    name: ""
+  addItem:
+    material: DIAMOND
+    name: "&a&lADD FRIEND &8— &7Click here"
+    lore:
+      - ""
+      - "&7 If you want to add a friend "
+      - "&7 to your spawner, click here. "
+      - ""
+    slot: 49
+  friends:
+    lore:
+      - ""
+      - "&7 Click here to remove this "
+      - "&7 player from your friends list. "
+      - ""
+
+
+lang:
+  prefix: "&8[&6ancSpawners&8] "
+  tookXP: "&7You've taken &d{0} XP &7from the spawner."
+  noXP: "&7This spawner does not have any XP stored in it."
+  tookItems: "&7You've taken &6{0}x {1} &7from the spawner."
+  soldItems: "&7You've sold &6{0}x &7items and got &6${1} &7added to your account. &8(&7Multiplier: &6x{2}&8)"
+  noItems: "&7This spawner does not have any items stored in it."
+  givenSpawners: "&7You've given &6{0}x of {1} &7to &6{2}&7!"
+  receivedSpawners: "&7You've been given &6{0}x of {1}&7!"
+  playerNotFound: "&7I don't think that player is online."
+  reloadedConfig: "&7Config has been reloaded successfully."
+  noPermission: "&7You don't have the required permissions to use this feature."
+  enabledAutoKill: "&7You have successfully &aenabled &7the auto-kill module."
+  disabledAutoKill: "&7You have successfully &cdisabled &7the auto-kill module."
+  addFriendMessage: "&7Type the name of the friend you wish to add to this spawner. Type &c'cancel' &7to cancel this process."
+  removedFriendFromSpawner: "&7You've successfully removed a friend from this spawner."
+  cancelledProcess: "&7You've successfully cancelled the process."
+  successfullyAddedFriend: "&7You've successfully added a friend to your spawner."
+  placedSpawner: "&7You've successfully placed a {0}&7!"
+  brokeSpawner: "&7You've successfully broken a {0}&7!"
+  brokeWithLevels: "&7You've successfully broken a level of {0}&7!"
+  brokeAllLevels: "&7You've successfully broken all levels of {0}&7!"
+  errorWithSpawner: "&7This spawner does not seem to be configured, please contact the server owners."
+  spawnerMaxLevel: "&7This spawner is already at the maximum level possible and cannot be upgraded anymore."
+  offHandSpawner: "&7You cannot level up a spawner with a spawner on your off hand."
+  notTheOwner: "&7You are not the owner of this spawner."
+  noAccess: "&7You don't have access to this spawner."
+  levelUpSuccessful: "&7You have successfully added &d{0} levels &7to your spawner."
+  noSpawnersFound: "&7I couldn't find any spawners matching this one in your inventory."
+  commandUsage: "&7Correct usage: &6/ancspawners <give/reload> <player> <spawner> <amount>"
+  spawnerNotFound: "&7This spawner could not be found in the config."
+  onlyOwnerTakeXP: "&7Only the owner of this spawner can withdraw the XP stored in it."
+  hologram:
+    - "{spawner}"
+    - ""
+    - "&8 • &7Level: &6{level}"
+    - "&8 • &7Owner: &6{owner}"
+    - ""
+    - "&7&oRight-click to access menu."
+  enabledHologram: "&7You have &aenabled &7the spawner hologram."
+  disabledHologram: "&7You have &cdisabled &7the spawner hologram."
+  vanillaSpawnerBroken: "&7You have successfully broken a vanilla spawner."
+  vanillaSpawnerNotConfigured: "&7This vanilla spawner has not been configured yet, please contact server developers."
+  vanillaSpawnerEntityNotFound: "&7The entity type of this spawner couldn't be found, please contact plugin author."
+  bypassBrokeSpawner: "&c&lADMIN BYPASS &8- &7You just broke &c{0}x {1}&7, belonging to: &c{2}"
+  silkTouchRequired: "&7Silk touch is required to break this spawner."
+  noSilkTouchSpawnerLost: "&7This spawner has been lost because you broke it with no silk touch."

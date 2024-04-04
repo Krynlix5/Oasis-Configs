@@ -1,0 +1,419 @@
+#
+#  ███╗░░██╗███████╗██╗░░██╗████████╗░██████╗░███████╗███╗░░██╗░██████╗
+#  ████╗░██║██╔════╝╚██╗██╔╝╚══██╔══╝██╔════╝░██╔════╝████╗░██║██╔════╝
+#  ██╔██╗██║█████╗░░░╚███╔╝░░░░██║░░░██║░░██╗░█████╗░░██╔██╗██║╚█████╗░
+#  ██║╚████║██╔══╝░░░██╔██╗░░░░██║░░░██║░░╚██╗██╔══╝░░██║╚████║░╚═══██╗
+#  ██║░╚███║███████╗██╔╝╚██╗░░░██║░░░╚██████╔╝███████╗██║░╚███║██████╔╝
+#  ╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚══════╝╚═╝░░╚══╝╚═════╝░
+#                           NextGens by aglerr
+#                    The future of gens tycoon plugin
+##############################################################################
+# We are aiming to be the #1 gens tycoon plugin on the market
+# We want to provide simple and rich configuration, so you can customize it the way you like
+# Don't hesitate to give suggestions or report bug reports on our discord server (link below)
+#
+# If you have any questions feel free to contact me on discord 'mdaffa' or
+# join our discord support server at https://discord.io/md-temple
+##############################################################################
+
+# Should we auto update your config?
+# Only turn this off if you know what you are doing.
+auto-config-update: true
+
+# MySQL feature to save/load generators
+# If disabled, we will use SQLite
+mysql:
+  enabled: false
+  host: localhost
+  port: 3306
+  database: db_nextgens
+  user: root
+  password: ''
+  useSSL: false
+
+# Should we save generators and users data on server stop?
+# Generally, this plugin will save generators and users' data every time the generator
+# or user data is being modified (e.g: modifying user's multiplier with command, upgrading generator)
+# This option has been added because there are some cases where the server is frozen
+# because of trying to save tons of generator and user data, it should be safe to have this option
+# set to false, but if you want to be safer, then you should turn on this option
+save-on-stop: false
+
+# Auto Save Option
+auto-save:
+  # Should we enable auto save?
+  enabled: true
+  # How often should we save the data (in seconds)
+  # It will be executed in async task
+  interval: 1800
+
+# Corruption System, check resource description on the market for details
+# tldr; if this option is enabled, generators will be broken occasionally
+#       and player need to fix the broken generator with money by
+#       shift + right-clicking the generator
+corruption:
+  enabled: true
+  # How often should corruption happen (in minutes)
+  interval: 180
+  # How many generators can possibly corrupt
+  # Default: 10 (If there are 100 generators, 10 of them will be randomly chosen and tested for corruption)
+  percentage: 10
+  # Should we use gui to fix the corrupted generator?
+  gui-fix: true
+  # Broadcast when the corruption wave happen, leave empty to disable it
+  broadcast:
+  - '&7'
+  - '  &c&lCortes de energía'
+  - '  &fDebido a los recientes cortes de energía, &c&n{amount}&f Generadores'
+  - '  &fse han roto, por favor arréglelos inmediatamente!'
+  - '  &7&o(( Se le notificará si se vio afectado ))'
+  - '&7'
+  notify:
+    interval: 5
+    messages:
+    - '&7'
+    - '  &e&lNotificación del generador'
+    - '  &fHay &e&n{amount}&f generador/es que están rotos'
+    - '  &fEncuéntrelos y arréglelos presionando Shift + haciendo clic derecho..'
+    - '&7'
+  # Should we spawn hologram to indicate the generator is broken?
+  # Require: HolographicDisplays or DecentHolograms
+  hologram:
+    enabled: true
+    height: 1.85
+    lines:
+    - '&c&lDESTRUIDO'
+    - '&7(Shift + Click Derecho)'
+  # List of generators that cannot be corrupted
+  blacklisted-generators:
+  - disabled_generator
+  - unbreakable_generator
+
+# Configuration for commands name and aliases (required restart to take effect)
+commands:
+  # This is the main command
+  nextgens:
+    command: nextgens
+    aliases:
+    - nextgen
+    - ngens
+    - ngen
+    - gens
+    - gen
+    - generator
+    - generators
+  pickup:
+    enabled: true
+    command: pickupgens
+    aliases:
+    - pickupgen
+    - pickgens
+    - pickgen
+  sell:
+    command: sell
+    aliases: []
+  shop:
+    enabled: true
+    command: genshop
+    aliases:
+    - gensshop
+  worth:
+    enabled: true
+    command: worth
+    aliases:
+    - genworth
+    - gensworth
+    - itemworth
+    - itemsworth
+  player_settings:
+    enabled: true
+    command: genssettings
+    aliases:
+    - setting
+    - settings
+    - gensetting
+    - gensettings
+    - options
+    - option
+
+# What is the default max generator for every player
+default-max-generator:
+  enabled: true
+  amount: 10
+# Should we use and override /sell command?
+sell-command: true
+# Should we use permission to place specific generator?
+# The permission will be 'nextgens.generator.<id>'
+place-permission: false
+# Should generator can only work if the owner is online?
+online-only: true
+# Should we prevent generator from breaking because of explosion?
+anti-explosion: true
+# Should we prevent placing item dropped by generator?
+disable-drop-place: true
+# List of interaction needed to do certain things such as picking up, upgrading, fix generator
+# Interaction Type: LEFT, SHIFT_LEFT, RIGHT, SHIFT_RIGHT
+interaction:
+  gens-pickup: LEFT
+  gens-upgrade: SHIFT_RIGHT
+  gens-fix: SHIFT_RIGHT
+# Should we give back generators to the owner if the owner
+# disbanded, kicked, leave their island?
+# If this option is disabled, the generator will disappear instead.
+# Supported Plugins: SuperiorSkyblock2, BentoBox (see resource description for full info)
+island-pickup: true
+# Should we open up the upgrade gui if player tries to upgrade their gen?
+# Take a look at "gui/upgrade_gui.yml" to configure the upgrade gui
+upgrade-gui: true
+# Should we close shop gui after purchasing gen?
+close-on-purchase: false
+# Should we close shop gui if player doesn't have money to buy the gen?
+close-on-no-money: false
+# Should we drop the generator item on the ground upon breaking?
+drop-on-break: false
+# Should /pickupgens pickup broken generator?
+broken-pickup: true
+# Should a broken generator can only be repaired by the owner of the generator?
+repair-owner-only: true
+# Should we set the block if the block type isn't matching with the generator?
+force-update-blocks: true
+# Should we disallow player from crafting with item generated by generators and the generator item itself?
+disable-crafting:
+  enabled: true
+  message: '#fffa00&lGensOP #00ffeb● &cNo se puede fabricar con generadores de objetos!'
+# Should generator require to have some distance from each other?
+# Note: this feature is not recommended especially if there are a lot of generators in your server!
+generator-place-distance:
+  enabled: false
+  distance: 3
+# Player will not be able to place generators on this world
+# and generators that are already on this world will not work
+blacklisted-worlds:
+- disablegen
+- notagenworld
+# Generator Limit
+# Define the maximum generator player can have, this value cannot be added
+player-generator-limit:
+  enabled: false
+  limit: 50
+# Multiplier Limit
+# Define the maximum multiplier that player can have on sell
+player-multiplier-limit:
+  enabled: false
+  limit: 5.0
+
+# Configuration options for sellwand
+sellwand:
+  hooks:
+    # Should we hook with wild tools?
+    wildtools: true
+  # The text that will be used for unlimited uses
+  unlimited-placeholder: Unlimited
+  # The sellwand item configuration
+  item:
+    material: STICK
+    display-name: '&c&lVarita de venta &f({uses})'
+    custom-model-data: 0
+    flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ENCHANTS
+    enchantments:
+    - DURABILITY;1
+    lore:
+    - '&7'
+    - '&b・&7Click Derecho &f→ &cVender contenedor'
+    - '&7'
+    - '&c&nUtilizable en:'
+    - '&b・&fTodos los cofres'
+    - '&b・&fBarriles'
+    - '&b・&fTolvas'
+    - '&b・&fShulkers'
+    - '&7'
+    - '&c&nInformacion:'
+    - '&b・&cMultiplicador: &f{multiplier}x'
+    - '&b・&cUsos: &f{uses} usos'
+    - '&7'
+    - '&c&nEstadisticas:'
+    - '&b・&cTotal obtenido: &f${total_sold}'
+    - '&b・&cItems totales: &f{total_items} items'
+    - '&7'
+
+# Should we give generator to player who just joined the server?
+first-join-generator:
+  enabled: true
+  # The generator id that will be given
+  generator: wheat_generator
+  # The amount of generator
+  amount: 3
+  # List of commands that will be executed
+  commands:
+  - eco give {player} 500
+
+# List of options available for /sell commands
+sell-options:
+  # Should we hook into shopgui+?
+  # Meaning it will detect items that are sellable from shopgui+
+  hook_shopguiplus: true
+  # The title bar that will be sent upon selling
+  titles:
+    enabled: true
+    title: '&cHas vendido {amount_formatted} Items'
+    sub-title: '&a${value_formatted} &7(&e{multiplier}x&7)'
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+    - '#fffa00&lGensOP #00ffeb● &fHas vendido &e{amount_formatted} &fitems y recibiste &a${value_formatted}
+      &7(&e{multiplier}x&7)'
+  # Action bar
+  action-bar:
+    enabled: true
+    message: '#fffa00&lGensOP #00ffeb● &aHas vendido {amount_formatted} items por ${value_formatted} &7(&e{multiplier}x&7)'
+  # Sound
+  sound:
+    enabled: true
+    name: ITEM_ARMOR_EQUIP_LEATHER
+    volume: 1.0
+    pitch: 1.0
+
+# List of options on generator place
+generator-place-options:
+  # Should we display particles upon placing generator?
+  particles: true
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+    - '#fffa00&lGensOP #00ffeb● &aHas colocado {gen} &7({current}/{max})'
+  # Sound
+  sound:
+    enabled: true
+    name: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 2.0
+
+# List of options on generator break
+generator-break-options:
+  # Should we display particles upon breaking generator?
+  particles: true
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+    - '#fffa00&lGensOP #00ffeb● &cHas recogido {gen} &7({current}/{max})'
+  # Sound
+  sound:
+    enabled: true
+    name: ENTITY_ITEM_PICKUP
+    volume: 1.0
+    pitch: 1.0
+
+# List of options on generator upgrade
+generator-upgrade-options:
+  # Should we display particles upon upgrading generator?
+  particles: true
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+    - '#fffa00&lGensOP #00ffeb● &aHas mejorado el generador {previous} a {current}'
+  # Sound
+  sound:
+    enabled: true
+    name: ENTITY_FIREWORK_ROCKET_BLAST
+    volume: 1.0
+    pitch: 1.0
+
+# List of options on corrupt fix
+corrupt-fix-options:
+  # Should we display particles upon fixing generator?
+  particles: true
+  # Chat messages
+  messages:
+    enabled: true
+    message:
+    - '#fffa00&lGensOP #00ffeb● &aHas arreglado el generador {gen} &apor ${cost}'
+  # Sound
+  sound:
+    enabled: true
+    name: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 2.0
+
+messages:
+  no-permission: '#fffa00&lGensOP #00ffeb● &cNo tienes permiso'
+  reload: '#fffa00&lGensOP #00ffeb● &a¡Has recargado la configuración!'
+  not-owner: '#fffa00&lGensOP #00ffeb● &cNo eres propietario de este generador!'
+  no-upgrade: '#fffa00&lGensOP #00ffeb● &cEste generador ya no se puede actualizar!'
+  not-enough-money: '#fffa00&lGensOP #00ffeb● &cNo tienes suficiente dinero! (${money}/${upgradecost})'
+  max-gen: '#fffa00&lGensOP #00ffeb● &cNo puedes colocar más generadores!'
+  target-not-found: '#fffa00&lGensOP #00ffeb● &cEse jugador no está en línea!'
+  not-int: '#fffa00&lGensOP #00ffeb● &cEl argumento no es un número!'
+  invalid-gen: '#fffa00&lGensOP #00ffeb● &cNo hay ningún generador con ese id!'
+  give-gen: '#fffa00&lGensOP #00ffeb● &aHas dado &e{amount}x {gen} &aa &e{player}'
+  receive-gen: '#fffa00&lGensOP #00ffeb● &aHas recibido &e{amount}x {gen}&a!'
+  add-max: '#fffa00&lGensOP #00ffeb● &aHas añadido &e{amount} lugares totales de generadores a &e{jugador}' 
+  max-added: '#fffa00&lGensOP #00ffeb● &aAhora puedes colocar &e{amount} &ageneradores mas &7({current}/{max})'
+  remove-max: '#fffa00&lGensOP #00ffeb● &aHas eliminado &e{amount} &ageneradores totales de &e{player}'
+  max-removed: '#fffa00&lGensOP #00ffeb● &cTus gens máximos colocados han sido eliminados por &e{amount} &7({current}/{max})'
+  global-reset: '#fffa00&lGensOP #00ffeb● &aHas reiniciado los la bonificación de generadores para todos los jugadores.!'
+  reset-max: '#fffa00&lGensOP #00ffeb● &aHas reiniciado el bono máximo del generador de &e{player}'
+  max-resetted: '#fffa00&lGensOP #00ffeb● &cEl bono máximo de tus generadores se ha restablecido &7({current}/{max})'
+  no-sell: '#fffa00&lGensOP #00ffeb● &cNo hay artículos para vender.!'
+  no-permission-gen: '#fffa00&lGensOP #00ffeb● &cNo tienes permiso para colocar este {gen}!'
+  invalid-world: '#fffa00&lGensOP #00ffeb● &cNo está permitido colocar el generador aquí!'
+  gen-purchase: '#fffa00&lGensOP #00ffeb● &aHas comprado {gen}'
+  pickup-broken: '#fffa00&lGensOP #00ffeb● &cNo puedes recoger un generador roto!'
+  global-repair: '#fffa00&lGensOP #00ffeb● &aHas reparado todos los generadores rotos!'
+  player-repair: '#fffa00&lGensOP #00ffeb● &aHas reparado todos los generadores rotos de &e{player}'
+  gens-repaired: '#fffa00&lGensOP #00ffeb● &aTodos sus generadores rotos han sido reparados!'
+  pickup-gens: '#fffa00&lGensOP #00ffeb● &aHas recogido &e{amount} &ageneradores!'
+  force-pickup: '#fffa00&lGensOP #00ffeb● &aHas forzado la recogida de &e{amount} &ageneradores para &e{player}'
+  give-all: '#fffa00&lGensOP #00ffeb● &aLe has dado a todos los usuarios online &e{amount}x {gen}'
+  too-close: '#fffa00&lGensOP #00ffeb● &cEstás colocando demasiado cerca de otro generador.'
+  sellwand-broke: '#fffa00&lGensOP #00ffeb● &c¡Se te ha roto la varita de venta!'
+  sellwand-give: '#fffa00&lGensOP #00ffeb● &aLe has dado la varita de vender &7({multiplier}x con {uses}
+    usos) &aa &e{player}'
+  sellwand-receive: '#fffa00&lGensOP #00ffeb● &aHas recibido varita de venta con &e{multiplier}x
+    &ay &e{uses} usos'
+  sellwand-failed: '#fffa00&lGensOP #00ffeb● &cNo puedes usar tu varita de venta aquí!'
+  invalid-event: '#fffa00&lGensOP #00ffeb● &cNo hay ningún evento con ese nombre!'
+  no-event: '#fffa00&lGensOP #00ffeb● &cNo hay ningún evento activo.'
+  event-is-running: '#fffa00&lGensOP #00ffeb● &cHay un evento actualmente en ejecución, deténgalo primero
+    con /gens stopevent'
+  event-start: '#fffa00&lGensOP #00ffeb● &aHas iniciado el evento &e{evento}!'
+  event-stop: '#fffa00&lGensOP #00ffeb● &aHas obligado a detener el evento'
+  multiplier-increase: '#fffa00&lGensOP #00ffeb● &aHas aumentado el multiplicador de &e{player} en
+    &e{multiplier}x &7(total: {total}x)'
+  increased-multiplier: '#fffa00&lGensOP #00ffeb● &aTu multiplicador ha aumentado en &e{multiplier}x
+    &7(total: {total}x)'
+  multiplier-decrase: '#fffa00&lGensOP #00ffeb● &aHas disminuido el multiplicador de &e{player} en
+    &e{multiplier}x &7(total: {total}x)'
+  decreased-multiplier: '#fffa00&lGensOP #00ffeb● &cTu multiplicador se ha reducido en &e{multiplier}x
+    &7(total: {total}x)'
+  set-multiplier: '#fffa00&lGensOP #00ffeb● &aHas configurado el multiplicador de {player} en &e{multiplier}x'
+  multiplier-set: '#fffa00&lGensOP #00ffeb● &aSu multiplicador se ha establecido en &e{multiplier}x'
+  item-worthless: '#fffa00&lGensOP #00ffeb● &cEste artículo no tiene valor!'
+  item-worth: '#fffa00&lGensOP #00ffeb● &aEste artículo vale ${worth}'
+  cashback: '#fffa00&lGensOP #00ffeb● &aHas recibido ${amount} en {percentage}% reembolso de
+    tu última transacción.'
+  corrupt-gens: '#fffa00&lGensOP #00ffeb● &aHas ejecutado el evento de corrupción!'
+  invalid-user: '#fffa00&lGensOP #00ffeb● &cNo hay ningún usuario con ese nombre!'
+  help:
+  - '&6&lNextGens &7- by aglerr'
+  - '&6/genshop [jugador] &7- Abre la interfaz de la tienda de generadores'
+  - '&6/pickupgens [jugador] &7- Recoge todos los generadores específicos del jugador'
+  - '&6/sell [jugador] &7- Vende el contenido del inventario del jugador'
+  - '&6/itemworth &7- Obtén el valor del objeto que estás sosteniendo'
+  - '&7'
+  - '&6/gens give <jugador> <generador> <cantidad> &7- Da un generador al jugador'
+  - '&6/gens addmax/removemax <jugador> <cantidad> &7- Añade/elimina el bono máximo de generadores'
+  - '&6/gens resetmax <jugador|todos> &7- Limpia el bono máximo de generadores'
+  - '&6/gens repair <jugador|todos> &7- Repara generadores rotos para jugadores específicos o globalmente'
+  - '&6/gens startevent <evento> &7- Fuerza a iniciar un evento'
+  - '&6/gens stopevent &7- Fuerza a detener el evento en ejecución'
+  - '&6/gens sellwand <jugador> <multiplicador> <usos> &7- Da al jugador una varita de venta'
+  - '&6/gens addmultiplier <jugador> <cantidad> &7- Añade una cantidad de multiplicador'
+  - '&6/gens removemultiplier <jugador> <cantidad> &7- Disminuye una cantidad de multiplicador'
+  - '&6/gens setmultiplier <jugador> <cantidad> &7- Establece una cantidad de multiplicador'
+  - '&6/gens reload &7- Recarga la configuración'

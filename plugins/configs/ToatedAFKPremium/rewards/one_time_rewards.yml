@@ -1,0 +1,39 @@
+before_collect_item: CHEST_MINECART
+after_collect_item: MINECART
+fill_item: BLACK_STAINED_GLASS_PANE
+collected_item:
+  title: "&cAlready collected!"
+  lore:
+    - "&cYou've already collected this!"
+rewards:
+  welcome:
+    # TIME UK
+    startDate: 2023-08-14 # if you're looking to start from 2023-08-13 put +1 at the finale, aka 2023-08-14
+    endDate: 2025-12-28 # same here ^^^
+    # TIME UK
+    showPremium: true
+    slots: 27 # MUST BE DIVIDEABLE WITH 9
+    item_slot: 13 # The main item's slot
+    free:
+      title: "&b&lFree reward"
+      lore:
+        - "&cYou will get &f10$&c "
+        - " "
+        - "&c&lTHIS IS A FREE REWARD"
+        - "&7Start date: {startDate}"
+        - "&7End date: {endDate}"
+      commands:
+        - "msg {player} here 10 coins"
+        # - "silentgive {player} {test3}"
+    premium:
+      title: "&6&lPremium reward"
+      lore:
+        - "&cYou will get &f100&c coins"
+        - " "
+        - "&c&lTHIS IS A &6&lPREMIUM REWARD"
+        - "&7Start date: {startDate}"
+        - "&7End date: {endDate}"
+      commands:
+        - "msg {player} here 100 coins"
+        # - "silentgive {player} {test3}"
+      permission: trewards.premium # if the player has this permission, then he'll be able to collect the premium reward (only if showPremium = true)

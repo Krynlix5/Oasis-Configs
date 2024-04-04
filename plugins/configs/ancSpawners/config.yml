@@ -1,0 +1,177 @@
+config:
+  version: 2.0.2
+  lang: en # Only 'en' (English) and 'tr' (Turkish) are supported right now.
+  modules:
+    break-spawners:
+      # Players who have this permission will be able to break
+      # spawners even if the spawner was not placed by them.
+      permission: ancspawners.breakallspawners
+    spawner-drop-chance:
+      # Would you like to change spawner drop chances?
+      # For example, if you set this to 50, players will have a 50% chance
+      # of getting the spawner when breaking it, and 50% chance that it will
+      # just get deleted.
+      # Default means, if a player has none of the permissions below.
+      default: 100
+      # Add custom permissions for custom drop chances, using this format:
+      # 'permission': chance
+      # IMPORTANT: Do NOT use dot (.) in permissions.
+      # IMPORTANT: Keep these in ascending order, or it might not work well for
+      # players who have more than one of these permissions.
+      permissions:
+        ancspawners-drop1: 50
+        ancspawners-drop2: 75
+    auto-kill:
+      # Auto-kill is a togglable feature, you can enable/disable it through
+      # the main menu of the spawners. Auto-kill is basically when a spawner
+      # spawns a mob, the mob dies instantly and it's drops are added to the
+      # spawner's storage, for a player to be able to enable this feature they
+      # need the permission written below.
+      # ** ONLY THE SPAWNER'S OWNER CAN TOGGLE THIS FEATURE.
+      enabled: true
+      # Forcing auto-kill means that all spawners will have auto-kill enabled and
+      # players will not be able to turn auto-kill off. Forcing auto-kill does NOT check
+      # for permissions, so auto-kill will be enabled for everyone.
+      # Default: false
+      force: false
+      permission: ancspawners.autokill
+    friends:
+      # Friends module allows players to add 'friends' to their spawners, who
+      # are then allowed to access storage of the spawner, sell items from the
+      # storage, take items from the storage, etc. (basically have access to
+      # all features of the spawner) friends can't: break the spawner, add other friends.
+      # For a player to add friends to their spawners, they need the permission
+      # written below.
+      enabled: true
+      permission: ancspawners.friends
+    hologram:
+      # This module requires DecentHolograms plugin, if you don't have this plugin
+      # please disable the module, or it will cause problems.
+      enabled: true
+      hologram-height: 2.85
+      positive-hologram-x: -0.5
+      negative-hologram-x: 0.5
+      positive-hologram-z: 0.5
+      negative-hologram-z: -0.5
+    multipliers:
+      # Sell multipliers are also permission based, please note that you MUST keep
+      # these values in ascending order, or it might not work as intended for players
+      # which have more than one of these permissions.
+      enabled: true
+      permissions:
+        # Format: 'permission': 'multiplier'
+        ancspawners-1-25x: 1.25
+        ancspawners-1-50x: 1.50
+    storage-limit:
+      # This module will allow you to set storage limits for your players
+      # based on permissions, some examples are given below:
+      #
+      # ** NOTE: Keep these values in ascending order, or it might not work as intended
+      # for players who have more than one of these permissions.
+      enabled: true
+      default: 2000
+      xpLimit: 10000 # This does NOT change based on permissions.
+      permissions:
+        # Format: 'permission': 'storage'
+        ancspawners-storage1: 5000 # Meaning: maximum 5000 can be stored per item.
+        ancspawners-storage2: 10000
+        ancspawners-storage3: 20000
+    spawner-level-limit:
+      # This determines the maximum level a spawner could be
+      # levelled up to. Default is 256
+      level-limit: 256
+    permission-based-xp:
+      # This module basically blocks players without the permission given below
+      # to store XP on the spawner (the xp does not get dropped, but gets deleted.)
+      # NOTE: This is quite experimental, please use at your own risk.
+      # NOTE: Enabling this disables FRIENDS getting XP from spawners.
+      enabled: false
+      permission: ancspawners.getxp
+    vanilla-spawner-support:
+      # This module basically adds support for vanilla spawners.
+      # For examaple, if a player tries to break a vanilla spawner
+      # The plugin will try to match the entity type of that spawner
+      # With the spawners set below, if a match is found, the player
+      # will then get the actual ancSpawners spawner.
+      enabled: true
+    auto-pickup:
+      # This module allows dropped spawners to go right into
+      # the player's inventory, can also be used with permission.
+      # Default: false
+      enabled: false
+      permission: ancspawners.autopickup
+    silk-touch:
+      # Set this to true to require silk touch for players
+      enabled: false
+      # Players who have the exempt permission will be able to get the spawner even if
+      # they don't have silktouch.
+      exempt: ancspawners.nosilktouch
+      # If silk touch is enabled and block is set to true:
+      # The spawner will not be broken
+      # If silk touch is enabled and block is set to false:
+      # The spawner will be broken AND LOST (will not be dropped).
+      block: true
+
+
+# DO NOT CHANGE ANYTHING IN DATABASE, THIS IS VERY EXPERIMENTAL RIGHT NOW.
+database:
+  type: SQLITE
+
+
+spawners:
+  zombie:
+    name: "&c&lZOMBIE &8-- &7Spawner"
+    lore:
+      - ""
+      - "&7 When placed, starts spawning "
+      - "&7 zombies every now and then."
+      - ""
+    spawnerInfo:
+      mode: ENTITY
+      material: ZOMBIE
+      range: 16
+      delay: 8
+  skeleton:
+    name: "&c&lSKELETON &8-- &7Spawner"
+    lore:
+      - ""
+      - "&7 When placed, starts spawning "
+      - "&7 skeletons every now and then."
+      - ""
+    spawnerInfo:
+      mode: ENTITY
+      material: SKELETON
+      range: 16
+      delay: 8
+  diamond:
+    name: "&b&lDIAMOND &8-- &7Spawner"
+    lore:
+      - ""
+      - "&7 When placed, starts spawning "
+      - "&7 diamonds every now and then."
+      - ""
+    spawnerInfo:
+      mode: ITEM
+      material: DIAMOND
+      range: 16
+      delay: 8
+      # NOTE: Details are only applicable to mode: ITEM spawners.
+      # and the storage function must be turned off to actually see the result.
+      # to turn off storage, go into your lang file, find storage, and set gui to false.
+      details:
+        name: "&bA cool diamond!"
+        lore:
+          - ""
+          - "&7This is a very cool diamond!"
+          - ""
+
+itemPrices:
+  # Price provider is where the plugin gets prices of materials
+  # from, this currently only supports 'CUSTOM' and 'SHOPGUIPLUS'.
+  priceProvider: CUSTOM
+  # These work only if the price provider is 'CUSTOM'.
+  ROTTEN_FLESH: 0.4
+  BONE: 0.2
+  STRING: 1.2
+  ARROW: 0.3
+  DIAMOND: 2

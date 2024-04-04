@@ -1,0 +1,105 @@
+#------------------------------------------------------------------------------------------------------#
+#--------------------------------------      TOASTED AFK PREMIUM         ------------------------------#
+#--------------------------------------       Made by SerbanHero         ------------------------------#
+#------------------------------------------------------------------------------------------------------#
+
+license-key: "none"
+check_for_update: false # if a new update on builtbybit is released, you'll get a message in console and ingame (beta, not working atm)
+use_probability_feature: false # enables the probability feature from each region
+use_random_feature: false # the 50/50 feature
+use_commands: true # classic feature
+ip_limit: 1 # how many players on the same ip can receive rewards
+enable_xp_bar: false # when player is inside region it will show them (BETA)
+keep_xp: false # when the player dies inside the region, it will keep their real XP (even if enable_xp_bar is enabled) DO NOT USE WORLDGUARD
+block_xp_usage_when_in_region: false # If true, players won't be able to use their xp in for example XP Shops, slimefun, etc. (enable_xp_bar must be true)
+enable_actionbar: false # Might affect performance for the version 1.8.x
+enable_bossbar: false
+enable_title_screen: false # Might affect performance for versions below 1.12.2 (included)
+afkpass_on: true # Toggle afkpass feature, only for 1.13 and above at the moment
+player_invis: true # Every player inside the region will have a 5 second invisiblity effect
+player_check_method: "optimized" # Options: "optimized" or "check" | this checks the player's movement for when he enters a region, however sometimes he can't enter a region. "check" checks for all the players ASYNC
+use_subregions: false
+  # or use 'check' to automatically check all players every second (not as optimized as the first one)
+
+#------------------------------------------------------------------------------------------------------#
+#------------------------------------            PERFORMANCE              -----------------------------#
+#------------------------------------------------------------------------------------------------------#
+
+# The number of threads to use for the executor service.
+# Increase this number to improve performance, but be careful not to exceed your system's capabilities.
+use_command_execution_pool_size: false # (if true it will call threads for the executor service)
+command_execution_pool_size: 5 # (when executing commands and random commands to all players whose timer is 0, might not work in some occasions)
+how_often_all_players_and_region_checked: 1 # by default is 1, if you want to increase performance you can up it, however, the timers will go N seconds later, instead of 1 second
+debug: false # (when using the afk wand, you'll be able to see the region you've selected, might cause lag)
+logs: true # (might affect server memory in extreme cases of abundant .txt files)
+
+#------------------------------------------------------------------------------------------------------#
+#--------------------------------------             MESSAGES              -----------------------------#
+#------------------------------------------------------------------------------------------------------#
+
+not_in_region: "You are not in an AFK zone" # Placeholder when the player is not in region the placeholder is %afktimer%
+inventory_full: "&cYour inventory is full, therefore you will not receive anything!" # Silentgive when the command is used and inventory is full
+on_command_deny: "&cYou cannot use this command here!"
+no_permission: "&cYou don't have permission to use this command!"
+usage: "&cUsage: /tafk <follow the tab completer>"
+region_doesnt_exist: "&cThe region you've entered doesn't exist!"
+region_already_exists: "&cThe region already exists, you cannot override that!"
+config_reloaded: "&aThe config has been reloaded!"
+item_already_exists: "&cThe item name you've entered already exists!"
+item_doesnt_exist: "&cThe item name you've entered doesn't exist!"
+item_added: "&aItem added!"
+item_removed: "&aItem removed!"
+invalid_bar_color: "&cInvalid bar color!"
+invalid_bar_style: "&cInvalid bar style!"
+afkpass_disabled: "&cThe AFKPass is disabled at the moment."
+afkpass_reward_claimed: "&aYou have claimed the rewards!"
+afkpass_not_enough_time: "&cYou don't have enough time!"
+afkpass_title: "AFKPass Page: {page}"
+regions:
+  type: "titlescreen" # you can also put chat or actionbar, this also goes for subregions, aka regions type = subregions type
+  entered: "&cYou &fentered &can afk region!"
+  left: "&cYou just &fleft &cthe afk region!"
+subregions:
+  entered: "&cYou entered {&f{owner}&c'&fs&c} subregion!"
+  left: "&cYou left {&f{owner}&c'&fs&c} subregion!"
+  already_placed: "&cA block with this id has already been placed!"
+  succesfully_placed: "&aSuccesfully placed a subregion!"
+  succesfully_removed: "&aSuccesfully removed a subregion!"
+
+actionbar:
+  actionbar_message: "You must wait {time} before receiving another reward" # You can now also use {loadingScreenBar} and {loadingScreenPercentage}
+  day: " day, "
+  days: " days, "
+  hour: " hour, "
+  hours: " hours, "
+  minute: " minute, "
+  minutes: " minutes, "
+  second: " second"
+  seconds: " seconds"
+  reset: "0 seconds"
+
+bossbar: # The bossbar will automatically update if you use the command /afk bossbar ...
+  color: "RED"
+  style: "SOLID"
+  text: "Idk" # put {timer} if you'd like the exact same text from actionbar
+
+loading_screen: # to use this just put {loadingScreenBar} or {loadingScreenPercentage}
+  totalTiles: 10
+  symbol: "|"
+  loading_color: "&7"
+  loading_complete: "&a"
+
+title_screen:
+  title: "&8[{loadingScreenBar}&8]"
+  subtitle: "&c{loadingScreenPercentage}%"
+
+dev_mode: false
+
+# DOCS BEGIN #
+# Commands:
+#  - /tafk <wand/save/reload/item> (aliases: /afk)
+#  - /silentgive {player} <item> <amount>(optional, by default it's 1)
+#    -> (if you use this inside commands to give to afk players, you can even give NBT items too!)
+#    -> (if you want to give custom items from the items(configuration section) you will need to put the name inside { }
+#    -> e.g.: /sgive {player} {test3} 2
+# DOCS END #

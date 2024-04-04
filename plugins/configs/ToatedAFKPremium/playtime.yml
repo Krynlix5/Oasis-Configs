@@ -1,0 +1,80 @@
+messages:
+  check_time: "You have played for: {time}" # you can also user {player}
+  player_head:
+    position: 13
+    name: "&e{player}&f's Playtime"
+    info:
+      - "&cPlaytime: &f{playtime}"
+      - "&cPlaytime Points: &f{playtimePoints}"
+  book:
+    position: 11
+    show: true
+    title: "&c&lWhat is Playtime?"
+    lore:
+      - "&fI dunno u type what it is"
+      - "&fTest line 3"
+      - " "
+      - "&c&lWhat are Playtime Points?"
+      - "&fIdk"
+      - " "
+      - "&c&lHow do you earn Playtime Points?"
+      - "&fOne point is earned every hour you play!" # or whatever u have inside currency_ratio
+      - " "
+      - "&7( Playtime counts even when you are AFK )"
+  shop:
+    position: 15
+    show: true
+    title: "&c&lPlaytime Point Shop"
+    lore:
+      - "&fOpen the playtime point shop"
+      - "&fto buy thigns with your points!"
+  bank: "&cPlaytime points: &f{playtimePoints}"
+  points_claim: "&cYou have claimed &f{claimedPlaytimePoints} playtime points!"
+  points_claim_not_enough: "&cYou don't have any playtime points ready to claim!"
+
+gui:
+  fillItem:
+    material: "BLACK_STAINED_GLASS_PANE"
+    title: " "
+    lore:
+      - ""
+    id: 15 # For minecraft versions below 1.12
+
+time_format:
+  week: " week, "
+  weeks: " weeks, "
+  day: " day, "
+  days: " days, "
+  hour: " hour, "
+  hours: " hours, "
+  minute: " minute, "
+  minutes: " minutes, "
+  second: " second"
+  seconds: " seconds"
+  reset: "0 seconds"
+
+currency_icon: "P"
+currency_ratio: 3600 # how much is 1 playtime reward currency (IN SECONDS)
+remove_playtime_inside_afk_region: false # after a player leaves a region, it will calculate the total time spent in there and remove the playtime he spent there
+
+shop:
+  sale1:
+    item: GOLD_BLOCK
+    title: "&b&lGolden block"
+    lore:
+      - "&cThis is a gold block"
+      - "&cPrice: &f{price}"
+    price: 15 # in playtime points
+    commands:
+      - "msg {player} you purchased a gold block"
+      # - "silentgive {player} {test3}"
+  sale2:
+    item: DIAMOND_BLOCK
+    title: "&b&lGolden block"
+    lore:
+      - "&cThis is a gold block"
+      - "&cPrice: &f{price}"
+    price: 25 # in playtime points
+    commands:
+      - "msg {player} you purchased a gold block"
+      # - "silentgive {player} {test3}"
