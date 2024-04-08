@@ -207,22 +207,26 @@ command:
       &8» &c&lUso: &f/history &7[&bJugador&7] [&bcantidad&7]
       &8» &c&lEjemplo: &f/history &bVexmi &f4
       &8&m-----------------------------------------
-    start: '&8&m----------------[&c&l History &8&m]----------------'
+    start: '&8&m----------------[&c&l Historial &8&m]----------------'
     ban_entry: |-
       &8» &c$name &ffue baneado por &b'$reason'
-      &8» &cHace $timeSince 
+      &8» &cHace &f$timeSince 
+      &8» &cExpira en &f$duration
       &8&m-----------------------------------------
     mute_entry: |-
       &8» &c$name &ffue muteado por &b'$reason'
-      &8» &cHace $timeSince 
+      &8» &cHace &f$timeSince 
+      &8» &cExpira en &f$duration
       &8&m-----------------------------------------
     warn_entry: |-
       &8» &c$name &ffue expulsado por&b'$reason'
-      &8» &c$timeSince &cago
+      &8» &cHace &f$timeSince 
+      &8» &cExpira en &f$duration
       &8&m-----------------------------------------
     kick_entry: |-
       &8» &c$name &ffue expulsado por &b'$reason'
-      &8» &cHace $timeSince 
+      &8» &cHace &f$timeSince 
+      &8» &cExpira en &f$duration 
       &8&m-----------------------------------------
     active_suffix: ''
     active_suffix_temp: ''
@@ -247,7 +251,7 @@ command:
     usage: '&c/staffrollback <jugador> [duración]'
     message: '&aRollback completado, entradas totales eliminadas: $amount'
   banlist:
-    start: '&8&m----------------&r&8[&c&lBanList &7Page &b$page&8/&7$total&8]&m----------------'
+    start: '&8&m----------------&r&8[&c&lBanList &7Pag &b$page&8/&7$total&8]&m----------------'
   iphistory:
     usage: '&c/iphistory <jugador> [entries=10]'
     start: '&aHistorial de login para $target (Limite: $limit):'
