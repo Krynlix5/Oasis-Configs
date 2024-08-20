@@ -1,0 +1,34 @@
+hologram:
+- '&#FF0000☠ &#FF0000&l%player% &#FF0000☠'
+- '&#00CC00⌛ &#00FF00%despawn-time% &#00CC00⌛'
+- '&#00AAFF%item% &fɪᴛᴇᴍ &8| &#00AAFF%xp% &fxᴘ'
+
+help:
+- ' '
+- '&#FF00FF&lGraves &7» '
+- ' &7- &f/axgraves reload &7| &#FF00FFRecargar plugin'
+- ' &7- &f/axgraves list &7| &#FF00FFListar tumbas generadas'
+- ' '
+
+gui-name: '&0Cofre de muerte de %player%'
+
+reload:
+  success: '&#33FF33¡Plugin recargado con éxito!'
+  failed: '&#FF3333¡Error al recargar el plugin! Hay un problema en el archivo &f%file%&#FF3333, consulta la consola o utiliza un validador de YAML para corregir los errores.'
+
+interact:
+  not-your-grave: '&#FFAAFF¡Solo puedes abrir tu propia tumba!'
+
+death-message:
+  enabled: false
+  message: '&#FFAAAA¡Has muerto en &f%world% %x%, %y%, %z%&#FFAAAA!'
+
+grave-list:
+  header: '&#FF00FF&l=== TUMBAS ==='
+  grave: '&#FF00FF[TP] &#FFAAFF%player% &7- &#FFAAFF%world% %x%, %y%, %z% &7(%time%)'
+  no-graves: '&#FFAAFF¡No hay tumbas!'
+
+update-notifier: '&#FF88FF¡Hay una nueva versión de AxGraves disponible! &#DDDDDD(&#FFFFFFactual: &#FF0000%current% &#DDDDDD| &#FFFFFFúltima: &#00FF00%latest%&#DDDDDD)'
+
+# no editar
+version: 4
