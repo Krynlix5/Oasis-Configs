@@ -1,0 +1,108 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axtrade.html
+
+player-help:
+- ' '
+- '&#00FFDD&lTradeos &7»'
+- ' &7- &f/axtrade <player> &7| &#00FFDDSolicitar intercambio'
+- ' &7- &f/axtrade accept <player> &7| &#00FFDDAceptar solicitud de intercambio'
+- ' &7- &f/axtrade deny <player> &7| &#00FFDDRechazar solicitud de intercambio'
+- ' '
+
+admin-help:
+- ' '
+- '&#00FFDD&lAxTrade &7»'
+- ' &7- &f/axtrade <player> &7| &#00FFDDSolicitar intercambio'
+- ' &7- &f/axtrade accept <player> &7| &#00FFDDAceptar solicitud de intercambio'
+- ' &7- &f/axtrade deny <player> &7| &#00FFDDRechazar solicitud de intercambio'
+- ' &7- &f/axtrade reload &7| &#00FFDDRecargar plugin'
+- ' &7- &f/axtrade force <player> &7| &#00FFDDForzar inicio de intercambio'
+- ' '
+
+reload:
+  success: '&#33FF33¡Plugin recargado exitosamente!'
+  failed: '&#FF3333¡Fallo al recargar el plugin! Algo está mal en el archivo &f%file%&#FF3333, revisa la consola o usa un validador de yaml para corregir los errores.'
+
+trade:
+  started: '&#CCFFEE¡Has comenzado un intercambio con &#00FFDD%player%&#CCFFEE!'
+  completed: '&#CCFFEE¡Tu intercambio con &#00FFDD%player% &#CCFFEEha sido completado!'
+  aborted: '&#CCFFEE¡Tu intercambio con &#00FFDD%player% &#CCFFEEha sido cancelado!'
+  blacklisted-item: '&#CCFFEE¡Este artículo está en la lista negra!'
+
+# summary after a successful trade
+summary:
+  get:
+    item: '&#00FF00&l+ &#00FF00%amount%x %item%'
+    currency: '&#00FF00&l+ &#00FF00%amount% %currency%'
+  give:
+    item: '&#FF0000&l- &#FF0000%amount%x %item%'
+    currency: '&#FF0000&l- &#FF0000%amount% %currency%'
+
+currency-editor:
+  success: '&#CCFFEE¡Valor cambiado exitosamente!'
+  failed: '&#CCFFEE¡Valor incorrecto!'
+  not-enough: '&#CCFFEE¡No tienes suficiente de esta moneda!'
+
+
+request:
+  sent-sender: '&#CCFFEE¡Has enviado exitosamente una solicitud de intercambio a &#00FFDD%player%&#CCFFEE!'
+  sent-receiver:
+    info: '&#CCFFEE¡Has recibido una solicitud de intercambio de &#00FFDD%player%&#CCFFEE!'
+    accept:
+      message: '&#00FF00/intercambio aceptar %player%'
+      hover: '&#00FF00¡Haz clic aquí para &naceptar&#00FF00 la solicitud de intercambio!'
+    deny:
+      message: '&#FF0000/intercambio denegar %player%'
+      hover: '&#FF0000¡Haz clic aquí para &nrechazar&#FF0000 la solicitud de intercambio!'
+  no-request: '&#CCFFEE¡No tienes una solicitud de intercambio activa de &#00FFDD%player%&#CCFFEE!'
+  deny-sender: '&#CCFFEE¡Tu solicitud de intercambio fue rechazada por &#00FFDD%player%&#CCFFEE!'
+  deny-receiver: '&#CCFFEE¡Has rechazado exitosamente la solicitud de intercambio de &#00FFDD%player%&#CCFFEE!'
+  cant-trade-self: '&#CCFFEE¡No puedes enviarte una solicitud de intercambio a ti mismo!'
+  already-in-trade: '&#CCFFEE¡El jugador ya está intercambiando con alguien más!'
+  already-sent: '&#CCFFEE¡Ya has enviado una solicitud de intercambio a &#00FFDD%player%&#CCFFEE!'
+  too-far: '&#CCFFEE¡Estás demasiado lejos de &#00FFDD%player% &#CCFFEEpara enviar una solicitud de intercambio!'
+  not-accepting: '&#CCFFEE¡Este jugador no está aceptando intercambios en este momento!'
+  disallowed-gamemode: '&#CCFFEE¡Tú o el otro jugador están en un modo de juego no permitido!'
+  blacklisted-world: '&#CCFFEE¡Los intercambios están deshabilitados en este mundo!'
+  expired: '&#CCFFEE¡Tu solicitud de intercambio a &#00FFDD%player% &#CCFFEEha expirado!'
+
+# this must be 4 lines
+# note: currently the first line must be left empty
+currency-editor-sign:
+- ''
+- '-----------'
+- Escribe el nuevo valor
+- en la primera línea
+
+# list of sounds: https://www.digminecraft.com/lists/sound_list_pc.php
+# set to "" to disable
+sounds:
+  # trade sounds
+  started: entity.player.levelup
+  completed: entity.player.levelup
+  aborted: block.anvil.destroy
+  # trade requests
+  deny: block.anvil.land
+  requested: entity.experience_bottle.throw
+  # gui sounds
+  accept: ui.button.click
+  countdown: ui.button.click
+  cancel: ui.button.click
+
+# can be used in the gui title as %own-status% and %partner-status%
+placeholders:
+  ready: Listo
+  waiting: Esperando
+
+commands:
+  invalid-value: '&#FF0000Valor inválido: &#BB0000%valor%'
+  invalid-command: '&#FF0000¡Comando o subcomando inválido!'
+  missing-argument: '&#FF0000¡Falta un argumento! Debes especificar un valor para &#BB0000%valor%&#FF0000.'
+  no-permission: '&#FF0000¡No tienes permiso para acceder a este comando!'
+  out-of-range: '&#FF0000El &#BB0000%número% &#FF0000debe estar entre &#BB0000%mín% &#FF0000y &#BB0000%máx%&#FF0000!'
+  player-only: '&#FF0000¡Debes ser un jugador para usar este comando!'
+  invalid-player: '&#FF0000¡El jugador &#BB0000%player% &#FF0000no se puede encontrar!'
+  invalid-selector: '&#FF0000¡No puedes usar este selector en este comando!'
+
+update-notifier: '&#AAFFCC¡Hay una nueva versión del plugin disponible! &#DDDDDD(&#FFFFFFactual: &#FF0000%actual% &#DDDDDD| &#FFFFFFúltima: &#00FF00%última%&#DDDDDD)'
+# do not change this
+version: 5
