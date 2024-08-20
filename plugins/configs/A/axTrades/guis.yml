@@ -1,0 +1,134 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axtrade.html
+# ITEM BUILDER: https://docs.artillex-studios.com/item-builder.html
+
+# ----- CONFIGURACIONES -----
+
+title: '&0Intercambiando con: %player%'
+# una GUI puede tener de 1 a 6 filas
+rows: 6
+
+# ----- RANURAS -----
+
+# las ranuras donde se pueden colocar los artículos
+# asegúrate de no colocar elementos decorativos o de moneda en estas ranuras
+# las ranuras propias y las del socio deben tener la misma cantidad de ranuras
+own-slots:
+- 9-12
+- 18-21
+- 27-30
+- 36-39
+- 45-48
+
+partner-slots:
+- 14-17
+- 23-26
+- 32-35
+- 41-44
+- 50-53
+
+# ----- ARTÍCULOS -----
+
+# artículos en tu lado
+own:
+  confirm-item:
+    slot: 0
+    accept:
+      material: RED_CONCRETE
+      # si lo deseas, puedes agregar texturas de cabeza, como esto:
+      #material: "PLAYER_HEAD"
+      #texture: "%own-head%"
+      name: '&#00ffdd&lᴀᴄᴇᴘᴛᴀʀ ᴇʟ ɪɴᴛᴇʀᴄᴀᴍʙɪᴏ'
+      lore:
+      - ''
+      - ' &7- &f¿Estás satisfecho con el intercambio?'
+      - ''
+      - '&#00ffdd&l> &#00ffddHaz clic &8- &#00ffddConfirmar intercambio'
+    cancel:
+      material: LIME_CONCRETE
+      name: '&#00ffdd&lᴄᴀɴᴄᴇʟᴀʀ ᴄᴏɴғɪʀᴍᴀᴄɪóɴ'
+      lore:
+      - ''
+      - ' &7- &f¿Quieres cambiar algo?'
+      - ''
+      - '&#00ffdd&l> &#00ffddHaz clic &8- &#00ffddCancelar confirmación'
+  # puedes definir tantas monedas como quieras, ¡pero asegúrate de copiarlas en la sección 'partner' también!
+  currency1:
+    slot: 2
+    # necesitas tener Vault instalado para esto
+    currency: Vault
+    material: GOLD_NUGGET
+    name: '&#00ffdd&lᴅɪɴᴇʀᴏ'
+    lore:
+    - '&7Tu oferta'
+    - ''
+    - ' &7- &fCantidad: &#00ffdd%amount% $'
+    - ''
+    - '&#00ffdd&l> &#00ffddHaz clic &8- &#00ffddCambiar cantidad'
+  currency2:
+    slot: 3
+    currency: Experiencia
+    material: EXPERIENCE_BOTTLE
+    name: '&#00ffdd&lᴇxᴘᴇʀɪᴇɴᴄɪᴀ'
+    lore:
+    - '&7Tu oferta'
+    - ''
+    - ' &7- &fCantidad: &#00ffdd%amount% EXP'
+    - ''
+    - '&#00ffdd&l> &#00ffddHaz clic &8- &#00ffddCambiar cantidad'
+
+# artículos en el lado de tu socio comercial
+partner:
+  confirm-item:
+    slot: 8
+    accept:
+      material: RED_CONCRETE
+      # si lo deseas, puedes agregar texturas de cabeza, como esto:
+      #material: "PLAYER_HEAD"
+      #texture: "%partner-head%"
+      name: '&#00ffdd&lᴇsᴘᴇʀᴀɴᴅᴏ ᴀʟ ᴏᴛʀᴏ ᴊᴜɢᴀᴅᴏʀ'
+      lore:
+      - ''
+      - ' &7- &f¡El otro jugador aún no ha confirmado el intercambio!'
+      - ''
+    cancel:
+      material: LIME_CONCRETE
+      name: '&#00ffdd&lᴇsᴘᴇʀᴀɴᴅᴏ'
+      lore:
+      - ''
+      - ' &7- &f¡El otro jugador ha confirmado el intercambio!'
+  currency1:
+    slot: 6
+    currency: Vault
+    material: GOLD_NUGGET
+    name: '&#00ffdd&lᴅɪɴᴇʀᴏ'
+    lore:
+    - '&7Oferta de %player%'
+    - ''
+    - ' &7- &fCantidad: &#00ffdd%amount% $'
+    - ''
+    - '&#00ffdd&l> &#00ffddHaz clic &8- &#00ffddCambiar cantidad'
+  currency2:
+    slot: 5
+    currency: Experiencia
+    material: EXPERIENCE_BOTTLE
+    name: '&#00ffdd&lᴇxᴘᴇʀɪᴇɴᴄɪᴀ'
+    lore:
+    - '&7Oferta de %player%'
+    - ''
+    - ' &7- &fCantidad: &#00ffdd%amount% EXP'
+    - ''
+    - '&#00ffdd&l> &#00ffddHaz clic &8- &#00ffddCambiar cantidad'
+
+ejemplo-decoración:
+  slot:
+  - 4
+  - 13
+  - 22
+  - 31
+  - 40
+  - 49
+  material: LIGHT_BLUE_STAINED_GLASS_PANE
+  name: ' '
+
+# no cambies esto
+version: 1
