@@ -1,0 +1,131 @@
+pages:
+  page1:
+    items:
+      "1112":
+        material: GRAY_STAINED_GLASS_PANE
+      "1113":
+        material: GRAY_STAINED_GLASS_PANE
+      "1114":
+        material: GRAY_STAINED_GLASS_PANE
+      "1115":
+        material: GRAY_STAINED_GLASS_PANE
+      "1116":
+        material: GRAY_STAINED_GLASS_PANE
+      "1117":
+        material: GRAY_STAINED_GLASS_PANE
+      "1118":
+        material: GRAY_STAINED_GLASS_PANE
+      "1119":
+        material: GRAY_STAINED_GLASS_PANE
+      "1120":
+        material: GRAY_STAINED_GLASS_PANE
+      "1121":
+        material: GRAY_STAINED_GLASS_PANE
+      '1':
+        material: REDSTONE_TORCH
+        buy: 47.72
+        sell: 11.93
+      '3':
+        material: REDSTONE
+        buy: 47.72
+        sell: 11.93
+      '2':
+        material: DAYLIGHT_DETECTOR
+        buy: 47.72
+        sell: 11.93
+      '11':
+        material: TNT
+        buy: 106.58
+        sell: 26.65
+      '5':
+        material: HOPPER
+        buy: 38.67
+        sell: 9.67
+      '8':
+        material: LEVER
+        buy: 1.33
+        sell: 0.34
+      '17':
+        material: COMPARATOR
+        buy: 24.43
+        sell: 6.11
+      "211":
+        material: GRAY_STAINED_GLASS_PANE
+      "212":
+        material: GRAY_STAINED_GLASS_PANE
+      '18':
+        material: REPEATER
+        buy: 14.92
+        sell: 3.73
+      '16':
+        material: TRIPWIRE_HOOK
+        buy: 3.78
+        sell: 0.95
+      '24':
+        material: CHERRY_PRESSURE_PLATE
+        buy: 1.66
+        sell: 0.42
+      '25':
+        material: OAK_PRESSURE_PLATE
+        buy: 2.32
+        sell: 0.58
+      '26':
+        material: STONE_PRESSURE_PLATE
+        buy: 1.5
+        sell: 0.38
+      '27':
+        material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        buy: 17.37
+        sell: 4.35
+      '28':
+        material: HEAVY_WEIGHTED_PRESSURE_PLATE
+        buy: 11.58
+        sell: 2.9
+      "116":
+        material: GRAY_STAINED_GLASS_PANE
+      "117":
+        material: GRAY_STAINED_GLASS_PANE
+      '29':
+        material: CALIBRATED_SCULK_SENSOR
+        buy: 16.74
+        sell: 4.19
+      '30':
+        material: SCULK_SENSOR
+        buy: 125
+        sell: 31.25
+      '31':
+        material: CHERRY_TRAPDOOR
+        buy: 2.49
+        sell: 0.63
+      '32':
+        material: OAK_TRAPDOOR
+        buy: 3.48
+        sell: 0.87
+      '33':
+        material: IRON_TRAPDOOR
+        buy: 23.16
+        sell: 5.79
+      "1221":
+        material: AIR
+      "1222":
+        material: AIR
+      "2120":
+        material: GRAY_STAINED_GLASS_PANE
+      "2121":
+        material: GRAY_STAINED_GLASS_PANE
+      "2122":
+        material: AIR
+      "1317":
+        material: AIR
+      "1138":
+        material: AIR
+      "1139":
+        material: AIR
+      "1320":
+        material: AIR
+      "12321":
+        material: AIR
+      "12232":
+        material: AIR
+      "21320":
+        material: GRAY_STAINED_GLASS_PANE

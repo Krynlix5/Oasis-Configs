@@ -1,0 +1,23 @@
+enable: true
+slot: 14
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: iron_sword
+  displayname: '&cCombat'
+  name: '&8Shop » Combat'
+  lore:
+  - '&8Marketplace'
+  - '&7'
+  - '&7Adjust the economic interactions with '
+  - '&7different mobs. Set values for mob drops,'
+  - '&7trading options, and other mob-related'
+  - '&7transactions.'
+  - '&7'
+  - '&eClick to view!'

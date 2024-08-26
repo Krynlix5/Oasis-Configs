@@ -1,0 +1,23 @@
+enable: true
+slot: 12
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: Diamond_pickaxe
+  displayname: '&bOres'
+  name: '&8Shop » Ores'
+  lore:
+  - '&8Marketplace'
+  - '&7'
+  - "&7Establish the economic guidelines for"
+  - "&7minerals and ores. Control the market's"
+  - '&7behavior, pricing, and trade terms inside'
+  - '&7the economic system.'
+  - '&7'
+  - '&eClick to view!'

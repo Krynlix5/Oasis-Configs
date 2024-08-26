@@ -1,0 +1,111 @@
+pages:
+  page1:
+    items:
+      "1112":
+        material: GRAY_STAINED_GLASS_PANE
+      "1113":
+        material: GRAY_STAINED_GLASS_PANE
+      "1114":
+        material: GRAY_STAINED_GLASS_PANE
+      "1115":
+        material: GRAY_STAINED_GLASS_PANE
+      "1116":
+        material: GRAY_STAINED_GLASS_PANE
+      "1117":
+        material: GRAY_STAINED_GLASS_PANE
+      "1118":
+        material: GRAY_STAINED_GLASS_PANE
+      "1119":
+        material: GRAY_STAINED_GLASS_PANE
+      "1120":
+        material: GRAY_STAINED_GLASS_PANE
+      "1121":
+        material: GRAY_STAINED_GLASS_PANE
+      '1':
+        material: ARROW
+        buy: 2.26
+        sell: 0.57
+      '3':
+        material: BLAZE_ROD
+        buy: 5
+        sell: 1.25
+      '5':
+        material: ENDER_PEARL
+        buy: 7
+        sell: 1.75
+      '7':
+        material: FERMENTED_SPIDER_EYE
+        buy: 9.57
+        sell: 2.4
+      '8':
+        material: GHAST_TEAR
+        buy: 40
+        sell: 10
+      '9':
+        material: GUNPOWDER
+        buy: 15.5
+        sell: 3.88
+      '10':
+        material: MAGMA_CREAM
+        buy: 8.01
+        sell: 2.01
+      "211":
+        material: GRAY_STAINED_GLASS_PANE
+      "212":
+        material: GRAY_STAINED_GLASS_PANE
+      '11':
+        material: end_crystal
+        buy: 8.01
+        sell: 2.01
+      "1124":
+        material: respawn_anchor
+        buy: 8.01
+        sell: 2.01
+      "113":
+        material: AIR
+      "11224":
+        material: AIR
+      "1213":
+        material: AIR
+      "114":
+        material: AIR
+      "115":
+        material: AIR
+      "116":
+        material: GRAY_STAINED_GLASS_PANE
+      "117":
+        material: GRAY_STAINED_GLASS_PANE
+      "118":
+        material: AIR
+      "119":
+        material: AIR
+      "120":
+        material: AIR
+      "1221":
+        material: AIR
+      "1222":
+        material: AIR
+      "2120":
+        material: AIR
+      "2121":
+        material: AIR
+      "2122":
+        material: GRAY_STAINED_GLASS_PANE
+      "1317":
+        material: GRAY_STAINED_GLASS_PANE
+      "1138":
+        material: AIR
+      "1139":
+        material: AIR
+      "1320":
+        material: AIR
+      "12321":
+        material: AIR
+      "12232":
+        material: AIR
+      "21320":
+        material: AIR
+      "21231":
+        material: AIR
+      "21232":
+        material: GRAY_STAINED_GLASS_PANE

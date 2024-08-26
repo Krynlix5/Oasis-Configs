@@ -1,0 +1,134 @@
+pages:
+  page1:
+    items:
+      "1112":
+        material: GRAY_STAINED_GLASS_PANE
+      "1113":
+        material: GRAY_STAINED_GLASS_PANE
+      "1114":
+        material: GRAY_STAINED_GLASS_PANE
+      "1115":
+        material: GRAY_STAINED_GLASS_PANE
+      "1116":
+        material: GRAY_STAINED_GLASS_PANE
+      "1117":
+        material: GRAY_STAINED_GLASS_PANE
+      "1118":
+        material: GRAY_STAINED_GLASS_PANE
+      "1119":
+        material: GRAY_STAINED_GLASS_PANE
+      "1120":
+        material: GRAY_STAINED_GLASS_PANE
+      "1121":
+        material: GRAY_STAINED_GLASS_PANE
+      "7":
+        material: CACTUS
+        buy: 5
+        sell: 3
+      "8":
+        material: CARROT
+        buy: 8
+        sell: 4      
+      '95':
+        material: COOKIE
+        buy: 2.1
+        sell: 0.53
+      '98':
+        material: GOLDEN_CARROT
+        buy: 12.2
+        sell: 3.05
+      '911':
+        material: COOKED_BEEF
+        buy: 6.3
+        sell: 1.58
+      '912':
+        material: COOKED_CHICKEN
+        buy: 6.3
+        sell: 1.58
+      '913':
+        material: COOKED_MUTTON
+        buy: 6.3
+        sell: 1.58
+      "121":
+        material: GRAY_STAINED_GLASS_PANE
+      "122":
+        material: GRAY_STAINED_GLASS_PANE
+      '914':
+        material: COOKED_PORKCHOP
+        buy: 6.3
+        sell: 1.58
+      '915':
+        material: COOKED_RABBIT
+        buy: 6.3
+        sell: 1.58
+      "10":
+        material: CHORUS_FRUIT
+        buy: 10
+        sell: 2
+      "11":
+        material: COCOA_BEANS
+        buy: 6
+      "12":
+        material: CRIMSON_FUNGUS
+        buy: 6
+        sell: 2
+      "15":
+        material: LEATHER
+        buy: 20
+        sell: 8
+      "16":
+        material: MELON
+        buy: 10
+        sell: 3
+      "12121":
+        material: GRAY_STAINED_GLASS_PANE
+      "12122":
+        material: GRAY_STAINED_GLASS_PANE
+      "21":
+        material: POTATO
+        buy: 7
+        sell: 3
+      "22":
+        material: PUMPKIN
+        buy: 7
+        sell: 3
+      "23":
+        material: PUMPKIN_SEEDS
+        buy: 5
+        sell: 3
+      "24":
+        material: RED_MUSHROOM
+        buy: 4
+        sell: 2
+      "25":
+        material: SUGAR_CANE
+        buy: 5
+        sell: 2
+      "27":
+        material: WARPED_FUNGUS
+        buy: 6
+        sell: 3
+      "28":
+        material: WHEAT
+        buy: 7
+        sell: 4
+      "2120":
+        material: GRAY_STAINED_GLASS_PANE
+      "2121":
+        material: GRAY_STAINED_GLASS_PANE
+      "2122":
+        material: AIR
+      "1317":
+        material: AIR
+      "1138":
+        material: AIR
+      "1139":
+        material: AIR
+      "1320":
+        material: AIR
+      "12321":
+        material: AIR
+      "12232":
+        material: AIR
+      "21320":
+        material: GRAY_STAINED_GLASS_PANE

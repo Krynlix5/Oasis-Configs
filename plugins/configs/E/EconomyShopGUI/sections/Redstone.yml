@@ -1,0 +1,25 @@
+enable: true
+slot: 15
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: REDSTONE
+  lore:
+  - '&4&lFor all redstone geeks!'
+  displayname: '&cRedstone'
+  name: '&8Shop » Redstone'
+  lore:
+  - '&8Marketplace'
+  - '&7'
+  - '&7Manage the redstone-related items'
+  - '&7economic settings. Establish prices'
+  - '&7for mechanisms, redstone parts, and'
+  - '&7other related goods.'
+  - '&7'
+  - '&eClick to view!'

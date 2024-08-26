@@ -1,0 +1,23 @@
+enable: true
+slot: 13
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: golden_hoe
+  displayname: '&eFarming'
+  name: '&8Shop » Farming'
+  lore:
+  - '&8Marketplace'
+  - '&7'
+  - '&7Define the economic aspects of farming.'
+  - '&7Set prices for crops, seeds, and other'
+  - '&7farming-related items and manage their'
+  - '&7market behavior.'
+  - '&7'
+  - '&eClick to view!'

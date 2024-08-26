@@ -1,0 +1,163 @@
+pages:
+  page1:
+    items:
+      '1112':
+        material: GRAY_STAINED_GLASS_PANE
+      '1113':
+        material: GRAY_STAINED_GLASS_PANE
+      '1114':
+        material: GRAY_STAINED_GLASS_PANE
+      '1115':
+        material: GRAY_STAINED_GLASS_PANE
+      '1116':
+        material: GRAY_STAINED_GLASS_PANE
+      '1117':
+        material: GRAY_STAINED_GLASS_PANE
+      '1118':
+        material: GRAY_STAINED_GLASS_PANE
+      '1119': 
+        material: GRAY_STAINED_GLASS_PANE
+      '1120': 
+        material: GRAY_STAINED_GLASS_PANE
+      '1121': 
+        material: GRAY_STAINED_GLASS_PANE
+      # '1':
+      #   material: AMETHYST_BLOCK
+      #   buy: 5.52
+      #   sell: 1.38
+      # '2':
+      #   material: AMETHYST_SHARD
+      #   buy: 1.32
+      #   sell: 0.33
+      # '3':
+      #   material: ANCIENT_DEBRIS
+      #   buy: 529
+      #   sell: 132.25
+      # '4':
+      #   material: COAL
+      #   buy: 5.25
+      #   sell: 1.32
+      # '5':
+      #   material: COAL_BLOCK
+      #   buy: 49.62
+      #   sell: 12.41
+      '21':
+        material: QUARTZ
+        buy: 10
+        sell: 4
+      '22':
+        material: QUARTZ_BLOCK
+        buy: 35
+        sell: 10
+      '1122': 
+        material: GRAY_STAINED_GLASS_PANE
+      '16':
+        material: IRON_INGOT
+        buy: 8
+        sell: 3
+      '15':
+        material: IRON_BLOCK
+        buy: 95
+        sell: 10
+      '9':
+        material: DIAMOND
+        buy: 50
+        sell: 15
+      '10':
+        material: DIAMOND_BLOCK
+        buy: 416
+        sell: 100
+      '1123': 
+        material: GRAY_STAINED_GLASS_PANE
+      '1124': 
+        material: GRAY_STAINED_GLASS_PANE
+      '17':
+        material: LAPIS_BLOCK
+        buy: 120
+        sell: 20
+      '18':
+        material: LAPIS_LAZULI
+        buy: 15
+        sell: 5
+      '1131': 
+        material: GRAY_STAINED_GLASS_PANE
+      '11':
+        material: EMERALD
+        buy: 45
+        sell: 9.85
+      '12':
+        material: EMERALD_BLOCK
+        buy: 456
+        sell: 80
+      '20':
+        material: NETHERITE_INGOT
+        buy: 2345
+        sell: 591.91
+      '19':
+        material: NETHERITE_BLOCK
+        buy: 22374
+        sell: 5593
+      '1133': 
+        material: GRAY_STAINED_GLASS_PANE
+      '1134': 
+        material: GRAY_STAINED_GLASS_PANE
+      '7':
+        material: COPPER_INGOT
+        buy: 10
+        sell: 6
+      '6':
+        material: COPPER_BLOCK
+        buy: 100
+        sell: 20
+      '1142': 
+        material: GRAY_STAINED_GLASS_PANE
+      # '8':
+      #   material: COPPER_ORE
+      #   buy: 15
+      #   sell: -1
+      '23':
+        material: REDSTONE
+        buy: 15
+        sell: 5
+      '24':
+        material: REDSTONE_BLOCK
+        buy: 150
+        sell: 30
+      '14':
+        material: GOLD_INGOT
+        buy: 25
+        sell: 10
+      '13':
+        material: GOLD_BLOCK
+        buy: 250
+        sell: 25
+      '111':
+        material: GRAY_STAINED_GLASS_PANE
+      '112':
+        material: GRAY_STAINED_GLASS_PANE
+      '113':
+        material: GRAY_STAINED_GLASS_PANE
+      '114':
+        material: GRAY_STAINED_GLASS_PANE
+      '115':
+        material: GRAY_STAINED_GLASS_PANE
+      '116':
+        material: GRAY_STAINED_GLASS_PANE
+      '117':
+        material: GRAY_STAINED_GLASS_PANE
+      '118':
+        material: GRAY_STAINED_GLASS_PANE
+      '119': 
+        material: GRAY_STAINED_GLASS_PANE
+      '120':
+        material: GRAY_STAINED_GLASS_PANE
+      '1221': 
+        material: GRAY_STAINED_GLASS_PANE
+      '1222':
+        material: GRAY_STAINED_GLASS_PANE 
+      '2120':
+        material: GRAY_STAINED_GLASS_PANE
+      '2121': 
+        material: GRAY_STAINED_GLASS_PANE
+      '2122':
+        material: GRAY_STAINED_GLASS_PANE 

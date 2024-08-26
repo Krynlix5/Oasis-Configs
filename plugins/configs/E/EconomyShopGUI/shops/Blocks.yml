@@ -1,0 +1,290 @@
+pages:
+  page1:
+    items:
+      "1112":
+        material: GRAY_STAINED_GLASS_PANE
+      "1113":
+        material: GRAY_STAINED_GLASS_PANE
+      "1114":
+        material: GRAY_STAINED_GLASS_PANE
+      "1115":
+        material: GRAY_STAINED_GLASS_PANE
+      "1116":
+        material: GRAY_STAINED_GLASS_PANE
+      "1117":
+        material: GRAY_STAINED_GLASS_PANE
+      "1118":
+        material: GRAY_STAINED_GLASS_PANE
+      "1119":
+        material: GRAY_STAINED_GLASS_PANE
+      "1120":
+        material: GRAY_STAINED_GLASS_PANE
+      "1121":
+        material: GRAY_STAINED_GLASS_PANE
+      "4":
+        material: HONEY_BLOCK
+        buy: 33
+        sell: 8
+      "5":
+        material: MAGMA_BLOCK
+        buy: 20
+        sell: 6
+      "8":
+        material: SLIME_BLOCK
+        buy: 47
+        sell: 11
+      "9":
+        material: SNOW_BLOCK
+        buy: 12
+        sell: 3
+      "10":
+        material: SOUL_SAND
+        buy: 10
+        sell: 5
+      "18":
+        material: BAMBOO_BLOCK
+        buy: 11
+        sell: 5
+      "53":
+        material: OAK_LOG
+        buy: 25
+        sell: 10
+      "121":
+        material: GRAY_STAINED_GLASS_PANE
+      "122":
+        material: GRAY_STAINED_GLASS_PANE
+      "26":
+        material: BLACKSTONE
+        buy: 15
+        sell: 6
+      "35":
+        material: BOOKSHELF
+        buy: 120
+        sell: 35
+      "36":
+        material: CHISELED_BOOKSHELF
+        buy: 15
+        sell: 5
+      "39":
+        material: BRICKS
+        buy: 86
+        sell: 20
+      "50":
+        material: BASALT
+        buy: 25
+        sell: 10
+      "54":
+        material: OBSIDIAN
+        buy: 10
+        sell: 4
+      "71":
+        material: WHITE_CONCRETE
+        buy: 35
+        sell: 10
+      "1211":
+        material: GRAY_STAINED_GLASS_PANE
+      "1222":
+        material: GRAY_STAINED_GLASS_PANE
+      "90":
+        material: COBBLED_DEEPSLATE
+        buy: 20
+        sell: 4
+      "93":
+        material: DEEPSLATE
+        buy: 10
+        sell: 3
+      "97":
+        material: DIORITE
+        buy: 7
+        sell: 6
+      "103":
+        material: CLAY
+        buy: 21
+        sell: 7
+      "104":
+        material: CRIMSON_NYLIUM
+        buy: 6
+        sell: 3
+      "109":
+        material: PODZOL
+        buy: 8
+        sell: 2
+
+      "108":
+        material: MYCELIUM
+        buy: 8
+        sell: 2
+      "111":
+        material: GRAY_STAINED_GLASS_PANE
+      "112":
+        material: GRAY_STAINED_GLASS_PANE
+      "113":
+        material: GRAY_STAINED_GLASS_PANE
+      "114":
+        material: GRAY_STAINED_GLASS_PANE
+      "115":
+        material: GRAY_STAINED_GLASS_PANE
+      "116":
+        material: GRAY_STAINED_GLASS_PANE
+      "117":
+        material: GRAY_STAINED_GLASS_PANE
+      "118":
+        material: GRAY_STAINED_GLASS_PANE
+      "119":
+        material: GRAY_STAINED_GLASS_PANE
+      "120":
+        material: GRAY_STAINED_GLASS_PANE
+      "1221":
+        material: GRAY_STAINED_GLASS_PANE
+      "12322":
+        material: GRAY_STAINED_GLASS_PANE
+      "2120":
+        material: GRAY_STAINED_GLASS_PANE
+      "2121":
+        material: GRAY_STAINED_GLASS_PANE
+      "2122":
+        material: GRAY_STAINED_GLASS_PANE
+  page2:
+    items:
+      "1112":
+        material: GRAY_STAINED_GLASS_PANE
+      "1113":
+        material: GRAY_STAINED_GLASS_PANE
+      "1114":
+        material: GRAY_STAINED_GLASS_PANE
+      "1115":
+        material: GRAY_STAINED_GLASS_PANE
+      "1116":
+        material: GRAY_STAINED_GLASS_PANE
+      "1117":
+        material: GRAY_STAINED_GLASS_PANE
+      "1118":
+        material: GRAY_STAINED_GLASS_PANE
+      "1119":
+        material: GRAY_STAINED_GLASS_PANE
+      "1120":
+        material: GRAY_STAINED_GLASS_PANE
+      "1121":
+        material: GRAY_STAINED_GLASS_PANE
+      "110":
+        material: WARPED_NYLIUM
+        buy: 6
+        sell: 2
+      "115":
+        material: GLASS
+        buy: 7
+        sell: 3
+      "117":
+        material: TINTED_GLASS
+        buy: 12
+        sell: 4
+      "118":
+        material: GRANITE
+        buy: 5
+        sell: 2
+      "124":
+        material: GLOWSTONE
+        buy: 35
+        sell: 5
+      "134":
+        material: NETHER_BRICKS
+        buy: 12
+        sell: 5
+      "137":
+        material: RED_NETHER_BRICKS
+        buy: 10
+        sell: 5
+      "121":
+        material: GRAY_STAINED_GLASS_PANE
+      "122":
+        material: GRAY_STAINED_GLASS_PANE
+      "138":
+        material: CRYING_OBSIDIAN
+        buy: 60
+        sell: 12
+      "140":
+        material: PRISMARINE
+        buy: 30
+        sell: 5
+      "146":
+        material: DARK_PRISMARINE
+        buy: 64
+        sell: 16
+      "152":
+        material: QUARTZ_BRICKS
+        buy: 36
+        sell: 9
+      "155":
+        material: RED_SAND
+        buy: 8
+        sell: 2
+      "169":
+        material: STONE
+        buy: 10
+        sell: 3
+      "157":
+        material: SANDSTONE
+        buy: 12
+        sell: 3
+      "1213":
+        material: GRAY_STAINED_GLASS_PANE
+      "1223":
+        material: GRAY_STAINED_GLASS_PANE
+      "178":
+        material: TERRACOTTA
+        buy: 22
+        sell: 5
+      "179":
+        material: TUFF
+        buy: 2
+        sell: 1
+      "190":
+        material: CRIMSON_HYPHAE
+        buy: 5
+        sell: 2
+      "194":
+        material: CRIMSON_STEM
+        buy: 3
+        sell: 2
+      "228":
+        material: WARPED_HYPHAE
+        buy: 8
+        sell: 2
+      "232":
+        material: WARPED_STEM
+        buy: 5
+        sell: 2
+      "247":
+        material: WHITE_WOOL
+        buy: 30
+        sell: 7
+      "111":
+        material: GRAY_STAINED_GLASS_PANE
+      "112":
+        material: GRAY_STAINED_GLASS_PANE
+      "113":
+        material: GRAY_STAINED_GLASS_PANE
+      "114":
+        material: GRAY_STAINED_GLASS_PANE
+      "1135":
+        material: GRAY_STAINED_GLASS_PANE
+      "116":
+        material: GRAY_STAINED_GLASS_PANE
+      "1317":
+        material: GRAY_STAINED_GLASS_PANE
+      "1318":
+        material: GRAY_STAINED_GLASS_PANE
+      "119":
+        material: GRAY_STAINED_GLASS_PANE
+      "120":
+        material: GRAY_STAINED_GLASS_PANE
+      "1221":
+        material: GRAY_STAINED_GLASS_PANE
+      "1222":
+        material: GRAY_STAINED_GLASS_PANE
+      "2120":
+        material: GRAY_STAINED_GLASS_PANE
+      "2121":
+        material: GRAY_STAINED_GLASS_PANE
+      "2122":
+        material: GRAY_STAINED_GLASS_PANE

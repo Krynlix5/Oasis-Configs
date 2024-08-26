@@ -1,0 +1,23 @@
+enable: true
+slot: 11
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: Grass_block
+  displayname: '&aBlocks'
+  name: '&8Shop » Blocks'  
+  lore:
+  - '&8Marketplace'
+  - '&7'
+  - '&7Manage the economic value and'
+  - '&7transactions for various blocks.'
+  - '&7Configure how blocks are bought,'
+  - '&7sold, and their market prices.'
+  - '&7'
+  - '&eClick to view!'
