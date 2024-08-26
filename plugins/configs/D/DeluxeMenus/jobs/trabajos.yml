@@ -1,0 +1,278 @@
+menu_title: 'Trabajos | Elige tu &2especialidad'
+size: 52
+open_command:
+- jobs
+- jobs browse
+- jobs join
+- jobs leave
+- trabajos
+- trabajo
+items:
+  decoraciones:
+    # Elimina la linea 13 (la de abajo) para eliminar la marca de agua.
+    display_name: '&7Coding Community'
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slots:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 28
+    - 29
+    - 33
+    - 34
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+  decoraciones_2:
+    display_name: '&7'
+    material: BLUE_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 35
+    - 44
+    - 53
+    - 52
+    - 51
+    - 50
+    - 49
+    - 48
+    - 47
+    - 46
+    - 45
+    - 36
+    - 27
+    - 18
+  constructor:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU1NGFiYmM2NWIxM2E0MmMyOTU5MGEwY2Y5ZDNlMDA3MDJkMWU2MGQ5NzRmOTI4NmE3YzE3MjY3ZjIyODJjOSJ9fX0=
+    slots:
+    - 19
+    display_name: '&#B8FB15Constructor &7|&f Empleados:&7 %jobsr_totalplayers_builder% '
+    lore:
+    - '&7¡Recomendado!'
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2construir &fy &2destruir&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join builder'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave builder'
+    - '[sound] BLOCK_ANVIL_BREAK'
+  explorador:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQ5YzQzMDgwYTgxMWYxOWQ1YmI3Yzc5OTk5NTk1ZmZiNmNhYTBhNTAyMGVmZmJlOGFlNjYwMmQwNzNlNGIxMiJ9fX0=
+    slots:
+    - 20
+    display_name: '&#0CBDE4Explorador &7|&f Empleados:&7 %jobsr_totalplayers_explorer% '
+    lore:
+    - '&7¡Recomendado!'
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2descubrir zonas&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join explorer'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave explorer'
+    - '[sound] BLOCK_ANVIL_BREAK'
+  hechicero:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjI2NzJjODdlZWY2ODE4ODI4OTE4ZGQzY2EwMzg1NmNjYjQzNjZlN2M5YWMyNjI0YTk0MmYwZGI3ZTk2YSJ9fX0=
+    slots:
+    - 21
+    display_name: '&#AC33FFHechicero &7|&f Empleados:&7 %jobsr_totalplayers_enchanter%'
+    lore:
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2encantar libros&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join enchanter'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave enchanter'
+    - '[sound] BLOCK_ANVIL_BREAK'
+  cazador:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY1NTE4NDA5NTVmNTI0MzY3NTgwZjExYjM1MjI4OTM4YjY3ODYzOTdhOGYyZThjOGNjNmIwZWIwMWI1ZGIzZCJ9fX0=
+    slots:
+    - 22
+    display_name: '&#FF2525Cazador &7|&f Empleados:&7 %jobsr_totalplayers_hunter%'
+    lore:
+    - '&7¡Recomendado!'
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2matar animales&f/&2enemigos&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join hunter'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave hunter'
+    - '[sound] BLOCK_ANVIL_BREAK'    
+  granjero:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWVhYjQ4MDdiYTI5MjgwMDhmOTVjNjMxMjI1MjMzN2NlMTVhOGVkOTI1ZmFhYjA0MWQ3MTI3ZjAxZTJkNjNjZSJ9fX0=
+    slots:
+    - 23
+    display_name: '&#2BC82BGranjero &7|&f Empleados:&7 %jobsr_totalplayers_farmer%'
+    lore:
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2sembrar &fy&2 cosechar&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join farmer'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave farmer'
+    - '[sound] BLOCK_ANVIL_BREAK'
+  minero:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjY0NGM4ZjM2ZTIxZDVlYTk1NjI0OTI4ZTNmMzVhMmI0OTQ5Y2U3NWIyZmE2OGNjZDJiYzg0ZDlhZGEwY2I3In19fQ=
+    slots:
+    - 24
+    display_name: '&#00E8FFMinero &7|&f Empleados:&7 %jobsr_totalplayers_miner%'
+    lore:
+    - '&7¡Recomendado!'
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2destruir minerales&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join miner'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave miner'
+    - '[sound] BLOCK_ANVIL_BREAK'
+  pescador:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE4NjM2OGFjOTI2MTA4YjQyMDFjZTE4NTZiYjIwNjU1YTRhMjlmOTFlYzkyYmE3ODViNmUzNWVmODJiZTU5NCJ9fX0=
+    slots:
+    - 25
+    display_name: '&#1586F1Pescador &7|&f Empleados:&7 %jobsr_totalplayers_fisherman%'
+    lore:
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2pescar&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join fisherman'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave fisherman'
+    - '[sound] BLOCK_ANVIL_BREAK'
+  crafter:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGMzNjA0NTIwOGY5YjVkZGNmOGM0NDMzZTQyNGIxY2ExN2I5NGY2Yjk2MjAyZmIxZTUyNzBlZThkNTM4ODFiMSJ9fX0=
+    slots:
+    - 30
+    display_name: '&#1586F1Artesano &7|&f Empleados:&7 %jobsr_totalplayers_crafter%'
+    lore:
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2craftear objetos&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join crafter'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave crafter'
+    - '[sound] BLOCK_ANVIL_BREAK'
+  leñador:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIzNTE2OWI3NjU5ZGM3MGYzZDc5MzQzYjM5YTA5Yjk1ZjQ0MzBhZTAxMWRlY2E2Y2FmMzU4YzIwZTkyZGM0YSJ9fX0=
+    slots:
+    - 31
+    display_name: '&#1586F1Leñador &7|&f Empleados:&7 %jobsr_totalplayers_woodcutter%'
+    lore:
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2tala arboles&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join woodcutter'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave woodcutter'
+    - '[sound] BLOCK_ANVIL_BREAK'
+  cavador:
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZiYjlmYjk3YmE4N2NiNzI3Y2QwZmY0NzdmNzY5MzcwYmVhMTljY2JmYWZiNTgxNjI5Y2Q1NjM5ZjJmZWMyYiJ9fX0=
+    slots:
+    - 32
+    display_name: '&#1586F1Excavador &7|&f Empleados:&7 %jobsr_totalplayers_digger%'
+    lore:
+    - ''
+    - '&#B8FB15Descripción'
+    - ' &#DFDFDFEn este trabajo tendras que &2cavar agujeros&f,'
+    - ' &#DFDFDFentra a este trabajo para empezar a ganar dinero'
+    - ''
+    - '&c&l● &#23FB09Clic-Izq para trabajar'
+    - '&c&l● &#FB2600Clic-Der para renunciar'
+    left_click_commands:
+    - '[refresh]'
+    - '[player] jobs join digger'
+    - '[sound] BLOCK_ANVIL_USE'
+    right_click_commands:
+    - '[refresh]'
+    - '[player] jobs leave digger'
+    - '[sound] BLOCK_ANVIL_BREAK'
