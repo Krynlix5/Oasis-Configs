@@ -1,0 +1,133 @@
+menu_title: 'Random Teleport'
+size: 27
+open_command: rtp
+items:
+  'fill1':
+    material: GRAY_STAINED_GLASS_PANE
+    slots: 
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 12
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 24
+    - 25
+    - 26
+  'fill2':
+    material: LIME_STAINED_GLASS_PANE
+    slots: 
+    - 11
+  'back':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+    slots: 
+    - 10
+    display_name: ' &8● &a&lBACK'
+    lore:
+    - '&8Back to the main menu'
+    - ''
+    - '&7If you want to come back'
+    - '&7use this item to return'
+    - ''
+    - '&a▸ Left-Click to return'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] menu'
+  'overworld':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjliMjg4OTAyMDU4MzU2NWY4OGQ1MDUzNzg3MGM1OWFhZDgwMjU5NGZhYmQ4MzdlMWQxNGY1YTA2YWUzNDUwOSJ9fX0=
+    slots: 
+    - 13
+    display_name: ' &8● &aTeleport to Overworld'
+    lore:
+    - '&8Teleport to the main world'
+    - ''
+    - '&7Start your adventure and'
+    - '&7teleport to the overworld.'
+    - ''
+    - '&e▸ Left-Click to teleport'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] rtp world world'
+    - '[close]'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] rtp world world'
+    - '[close]'
+  'nether':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDgzNTcxZmY1ODlmMWE1OWJiMDJiODA4MDBmYzczNjExNmUyN2MzZGNmOWVmZWJlZGU4Y2YxZmRkZSJ9fX0=
+    slots: 
+    - 14
+    display_name: ' &8● &aTeleport to the Nether'
+    lore:
+    - '&8Teleport to the nether'
+    - ''
+    - '&7Continue your adventure and'
+    - '&7teleport to the nether.'
+    - ''
+    - '&e▸ Left-Click to teleport'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] rtp world world_nether'
+    - '[close]'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] rtp world world_nether'
+    - '[close]'
+  'the_end':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmZkN2MwZjFmNGZmNDllNGMyZDRiNjAyNTdjYjEwOGFiZTkyZjg3NDljYjE1YjU2MWUwYTYwM2FjNjA4NjU0ZiJ9fX0=
+    slots: 
+    - 15
+    display_name: ' &8● &aTeleport to the End'
+    lore:
+    - '&8Teleport to the end'
+    - ''
+    - '&7Finish your adventure and'
+    - '&7teleport to the end.'
+    - ''
+    - '&e▸ Left-Click to teleport'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] rtp world world_the_end'
+    - '[close]'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] rtp world world_the_end'
+    - '[close]'
+  'close':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slots:
+    - 23
+    display_name: ' &8● &c&lCLOSE'
+    lore:
+    - '&8Close the menu'
+    - ''
+    - '&7If you want to close the menu'
+    - '&7Use this item to fast close.'
+    - ''
+    - '&c▸ Left-Click to close this menu'
+    - ''    
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'    
+    right_click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'

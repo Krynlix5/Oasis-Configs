@@ -1,0 +1,350 @@
+menu_title: 'Main Menu'
+size: 45
+open_command: menu
+items:
+  'fill1':
+    material: GRAY_STAINED_GLASS_PANE
+    slots: 
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 12
+    - 17
+    - 18
+    - 21
+    - 26
+    - 27
+    - 30
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+  'fill2':
+    material: LIME_STAINED_GLASS_PANE
+    slots: 
+    - 11
+    - 20
+    - 29
+  'settings':
+    material: BREWING_STAND
+    slots: 
+    - 10
+    display_name: ' &8● &aProfile Settings'
+    lore:
+    - '&8Customize your preferences'
+    - ''
+    - '&7Customize some server options'
+    - '&7for a better gameplay experience'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open profile_menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open profile_menu'
+  'shop':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RhZWEzZTEzYTUxM2RhMTA1MWVhNTlkMTdlZGZiMDNlOGQ4Mzg4ZWRlODg4ODg0NzZkZmI2OTNmMmM4Mzk4In19fQ==
+    slots: 
+    - 13
+    display_name: ' &8● &aGame Store'
+    lore:
+    - '&8Open the general shop'
+    - ''
+    - '&7Buy and sell stuff on this shop'
+    - '&7get money by doing jobs, quests.'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] shop'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] shop'
+  'random_teleport':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY4MjY3NDRlZDM5YTJiZTg3ODcwZjNmMTM5OTAwZWRhYzA5MTgwZmYwM2I0YWFlYjk4N2Q4NWU0Y2ViYTZlZSJ9fX0=
+    slots:
+    - 14
+    display_name: ' &8● &aRandom Teleport'
+    lore:
+    - '&8Random teleport to one world'
+    - ''
+    - '&7Teleport to a random coord'
+    - '&7in all the current worlds.'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open rtp_menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open rtp_menu'
+  'jobs':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQwMmM2MjVkYzA0MWExYTQxOGFhNmU1MTQ3MGMyMDNmMDMwZmZkNjMxYTQ3YWFlNDAxNTliMDg5YzkyNmQ1NSJ9fX0=
+    slots:
+    - 15
+    display_name: ' &8● &aJobs Menu'
+    lore:
+    - '&8Get or leave your current job'
+    - ''
+    - '&7Choose your favorite job'
+    - '&7and join to start working'
+    - ''
+    - '&a◇ &7Currents jobs: &a%jobsr_user_joinedjobcount%&8/&a%jobsr_maxjobs% &7jobs'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open jobs_menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open jobs_menu'
+  'quests':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGEwMGM1M2NmNTdjYWNjN2Y1ZThlM2ZlODRiMmY1ZGIxMjJjZDc2ZmNlZDc4MGE5NTNiOTk2MzlmYjMxOTg4MiJ9fX0=
+    slots:
+    - 16
+    display_name: ' &8● &aQuests Menu'
+    lore:
+    - '&8Start your quests here'
+    - ''
+    - '&7Complete custom quests'
+    - '&7to get awesome rewards'
+    - ''
+    - '&a◇ &7Current Quest: &a%quests_started_list%'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] quests'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] quests'
+  'statistics':
+    material: head-%player_name%
+    slots:
+    - 19
+    display_name: ' &8● &aStatistics'
+    lore:
+    - '&8Player information'
+    - ''
+    - '&7Here you can check all your'
+    - '&7player information'
+    - ''
+    - '&a◇ &7Kills: &a%statistic_player_kills%'
+    - '&a◇ &7Mob Kills: &a%statistic_mob_kills%'
+    - '&a◇ &7Deaths: &a%statistic_deaths%'
+    - '&a◇ &7Time Played: &a%statistic_time_played% ⌚'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+  'protections':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFkMmIwMzZkZDY2NGJiOTBjOWQ0NDNjMTk5OGZiNTI2Mzk4YWI0ZGRkZWI3OWI4NDAxYjE2YjlhNGQxMGJhMyJ9fX0=
+    slots:
+    - 22
+    display_name: ' &8● &aProtections Store'
+    lore:
+    - '&8Blocks protections'
+    - ''
+    - '&7In this store you can buy'
+    - '&7protections for your land'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open protections_menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open protections_menu'
+  'kits':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmE1ZWNjNTc1ZWI5MWRlZWVkMmJjOGY4NGM1ZjMyZmJhNDM5N2IyNWQwOWE2ZWYwNTAxZjQwYzRmZmExOTg1NSJ9fX0=
+    slots:
+    - 23
+    display_name: ' &8● &aKits Menu'
+    lore:
+    - '&8Receive your kits here'
+    - ''
+    - '&7Select your kits to'
+    - '&7start your adventure'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] kits'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] kits'
+  'trash':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUwM2JmNTEzM2JkZTBlNmI4YzYyOTk3NTIxNWMyOGIwMDQ4MTIwYzQwZTNkNzM5MTIyYmEwOWNkMTc3OGNlYSJ9fX0=
+    slots:
+    - 24
+    display_name: ' &8● &aTrash Menu'
+    lore:
+    - '&8Delete your items'
+    - ''
+    - '&7Here you can drop'
+    - '&7your unused items'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] trash menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] trash menu'
+  'rewards':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY1ZjA4OGFiYmVmYzI0NGUzNTkyNGM4MDAyM2MyNTA1NWFmMTAyNTc2NTZiYWM0ZTg0ZTc0ODU1ZWMxMmYyYiJ9fX0=
+    slots:
+    - 25
+    display_name: ' &8● &aRewards Menu'
+    lore:
+    - '&8Get your rewards'
+    - ''
+    - '&7Here you can get your'
+    - '&7daily/weekly/monthly rewards'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open rewards_menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open rewards_menu'
+  'guide_menu':
+    material: WRITABLE_BOOK
+    slots:
+    - 28
+    display_name: ' &8● &aGuide Menu'
+    lore:
+    - '&8Check the server information'
+    - ''
+    - '&7Here you can watch the'
+    - '&7general information'
+    - '&7of how to play.'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open guide_menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open guide_menu'
+  'warps':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWVjZWIyMmI2Yzk4Y2FjNDIxZjAzOTBhNjJlNGI5YzQ4Y2ZhYTI3YzZlMGUzMDQ1NTkxMmE1Njc1ODljNDRkMCJ9fX0=
+    slots:
+    - 31
+    display_name: ' &8● &aWarps Menu'
+    lore:
+    - '&8Fast teleport'
+    - ''
+    - '&7Here you can teleport to'
+    - '&7the server warps.'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''    
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open warps_menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open warps_menu'
+  'bounties':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQ0N2RmMjQ4MWNjMGM1MWNlZDQ0OTZmYjVmY2UyNmZiOTE2OTE4MWFiYjU2YjczZjcyMDAwZDBiYjIzYjc0YyJ9fX0=
+    slots:
+    - 32
+    display_name: ' &8● &aBounties Menu'
+    lore:
+    - '&8Set player bounties'
+    - ''
+    - '&7Here you can set bounties'
+    - '&7to the server players.'
+    - ''
+    - '&e▸ Left-Click to close this menu'
+    - ''    
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] bounty list'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] bounty list'
+  'close':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ==
+    slots:
+    - 41
+    display_name: ' &8● &c&lCLOSE'
+    lore:
+    - '&8Close the menu'
+    - ''
+    - '&7If you want to close the menu'
+    - '&7Use this item to fast close.'
+    - ''
+    - '&c▸ Left-Click to close this menu'
+    - ''    
+    left_click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'
+    right_click_commands:
+    - '[close]'
+    - '[sound] UI_BUTTON_CLICK'
+  'tags':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmE4N2NkNzUyM2RjYzRjYmVhZWFlYzljOGJlYjg5MmExMDNiOTUzOTVlMDY1ZjI1YmI0ZmM3YTZiZDRiOTAyYyJ9fX0=
+    slots:
+    - 33
+    display_name: ' &8● &aTags Menu'
+    lore:
+    - '&8Setup your chat tag'
+    - ''
+    - '&7Here you can buy and select'
+    - '&7one tag to display in the chat'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open tags_menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open tags_menu'
+  'ranks':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY0MDgwYTcyOWQyZWJhYzgwOGNkNGE4ZjkzNzFkMmZmZWY4MGM3MTIwODNhMzUyZGY4NjU3ZmM1OTU4MGUxMCJ9fX0=
+    slots:
+    - 34
+    display_name: ' &8● &aRanks Menu'
+    lore:
+    - '&8Check the ranks benefits'
+    - ''
+    - '&7Here you can watch the benefits'
+    - '&7of every rank that you can buy.'
+    - ''
+    - '&e▸ Left-Click to open the menu'
+    - ''
+    left_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open ranks_menu'
+    right_click_commands:
+    - '[sound] UI_BUTTON_CLICK'
+    - '[player] dm open ranks_menu'
