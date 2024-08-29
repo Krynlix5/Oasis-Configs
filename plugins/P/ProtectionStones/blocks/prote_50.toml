@@ -5,16 +5,16 @@
 # To use custom player heads, you need the base64 value of the head. On minecraft-heads.com, you will find this value in the Other section under "Value:".
 # To use UUIDs for player heads, go to https://sessionserver.mojang.com/session/minecraft/profile/PUT-UUID-HERE and copy the value from the "value" field not including quotes.
 # When you have the value, you can set the type to "PLAYER_HEAD:value"
-type = "DEEPSLATE_EMERALD_ORE"
+type = "DEEPSLATE_DIAMOND_ORE"
 
 # Another way to refer to the protection stone
 # Can be used for /ps give and /ps get
 # Must be one word (no spaces)
-alias = "100"
+alias = "50"
 
 # Description of the protection block type
 # Shows up in /ps get menu
-description = "Protect a radius of 100x100 blocks"
+description = "Protect a radius of 50x50 blocks"
 
 # Whether or not to restrict obtaining of the protection stone to only /ps get and /ps give and custom crafting recipes.
 # Other ways to obtain this block (ex. mining) will not work as a protection stone.
@@ -53,9 +53,9 @@ placing_bypasses_wg_passthrough = true
     # Protection radius of block (radius of 64 -> 129 x 129 region)
     # Set y_radius to -1 if you want it to protect for all y levels.
     # y_radius must be -1 if you are allowing the region to be merged ("allow_merging" option)
-    x_radius = 100
+    x_radius = 50
     y_radius = -1
-    z_radius = 100
+    z_radius = 50
 
     # Enables "chunk snapping mode", where the region boundaries will be determined by the chunk the block is in, and the
     # chunk_radius (how many chunks away from the center chunk).
@@ -149,14 +149,20 @@ placing_bypasses_wg_passthrough = true
     # Name given to protection block when obtained with /ps give or /ps get
     # Also affects custom crafted items (see custom_recipe)
     # Leave as '' for no name
-    display_name = "&aProtection &8&l▪ &e100x100"
+    display_name = "&bProtection &8&l▪ &e50x50"
 
     # Lore given to protection block when obtained with /ps give or /ps get
     # Also affects custom crafted items (see custom_recipe)
     # Leave as [] for no lore
     lore = [
     	"",
-        " &8▎ &7Protect your things with this block.",
+        " &8● &fTamaño: &b50x∞x50",
+        " &8● &fAdquirible en: &a/protecciones",
+        " &8● &fMundos: &aSurvival",
+        ""
+        "&c[⚠] &nTen cuidado, no pierdas la protección &c[⚠]"
+        ""
+        " &8● &fPrecio: &b75k &E⛁",
         "",
     ]
 
@@ -166,7 +172,7 @@ placing_bypasses_wg_passthrough = true
     # Add price when using /ps get
     # Must have compatible economy plugin (requires Vault, ie. Essentials)
     # Must be a decimal (ex. not 10, but 10.0)
-    price = 143000.0
+    price = 75000.0
 
     # Whether or not to allow crafting this item using a custom recipe
     # Useful to allow crafting the item when restrict_obtaining is set to true

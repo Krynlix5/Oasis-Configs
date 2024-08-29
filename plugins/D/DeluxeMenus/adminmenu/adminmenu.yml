@@ -1,0 +1,100 @@
+menu_title: '&#1F83E2S&#1E8DE0e&#1D96DEr&#1CA0DCv&#1AAADAe&#19B3D8r&#18BDD6N&#17C7D4a&#16D0D2m&#15DAD0e &#14D4D0| &#15BED2A&#16A9D3d&#1793D5m&#177DD7i&#1867D9n &#1951DBM&#1A3CDCe&#1A26DEn&#1B10E0u'
+open_command:
+- adminmenu
+size: 27
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: servername.adminmenu
+      deny_commands:
+        - '[message] &cYou dont have enough permissions to do this'
+items:
+  'glass1':
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 19
+    - 25
+    - 26
+    display_name: ' '
+  'glass2':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 2
+    - 3
+    - 5
+    - 6
+    - 10
+    - 12
+    - 14
+    - 16
+    - 20
+    - 21
+    - 23
+    - 24
+    display_name: ' ' 
+  'exit':
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+    slot: 22
+    display_name: '&4↓ &cEXIT &4↓'
+    lore:
+    - ''
+    - '&8➠ &cClick to exit menu'
+    left_click_commands:
+    - '[close]'
+    - '[sound] block_anvil_land'
+    right_click_commands:
+    - '[close]'
+    - '[sound] block_anvil_land'
+  'profile':
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0='
+    slot: 4
+    display_name: '&8↓ &fProfile &8↓'
+    lore:
+    - ''
+    - '&fRank &8➠ &a%vault_group%'
+  'server':
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJiMTcxMmI5MDdjZTZiMTQwMmVhYWMyOGVjMjRhNGQ5NTU2OGY0YWI4N2U1OTc5ODBjMTViMjJiYmJkN2E1In19fQ=='
+    slot: 11
+    display_name: '&8↓ &fServer Info &8↓'
+    lore:
+    - '&8&m--[-----------------]--'
+    - ''
+    - '&fOnline &8➠ &3%server_online%&7/&9%server_max_players%'
+    - '&fRAM &8➠ &3%server_ram_used%&7/&9%server_ram_max%'
+    - '&fTPS &8➠ &3%server_tps%'
+    - '&fVersion &8➠ &3%server_version%'
+    - ''
+    - '&8&m--[-----------------]--'
+  'personal':
+    material: 'head-%player_name%'
+    slot: 13
+    display_name: '&8↓ &fPersonal Info &8↓'
+    lore:
+    - '&8&m--[-----------------]--'
+    - ''
+    - '&fPing &8➠ &3%player_ping%'
+    - '&fIP &8➠ &3%player_ip%'
+    - '&fUUID &8➠ &3%player_uuid%'
+    - ''
+    - '&8&m--[-----------------]--'
+  'settings':
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFkNjk2MDgwNmZhZjc0M2NmYjkwNzYzODQwZjAxZWRkOTg5YzZhNDFiZDQzZGJjYzUxZjNiMWIwOTQ4YTUyZCJ9fX0='
+    slot: 15
+    display_name: '&8↓ &fChange Settings &8↓'
+    lore:
+    - ''
+    - '&8➠ &aClick to open menu'
+    left_click_commands:
+    - '[openguimenu] adminmenu-settings'
+    - '[sound] entity_experience_orb_pickup'
+    right_click_commands:
+    - '[openguimenu] adminmenu-settings'
+    - '[sound] entity_experience_orb_pickup'

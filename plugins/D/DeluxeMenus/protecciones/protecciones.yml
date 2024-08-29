@@ -1,0 +1,92 @@
+menu_title: '&B&L&nProtecciones'
+size: 54
+open_command:
+- protecciones
+items:
+
+  '5':
+    material: "DEEPSLATE"
+    amount: 1
+    slot: 19
+    display_name: "&fProtección &a&n5x5"
+    lore:
+    - ' &8| Tienda de protecciones '
+    - "&7"
+    - ' &7Precio: &f5k &E⛁'
+    - '&7'
+    - '&e➥ Click izquierdo para comprar    '
+    left_click_commands:
+    - '[player] ps get 5'
+    - '[sound] BLOCK_NOTE_BLOCK_PLING 1 2'  
+  '10':
+    material: "DEEPSLATE_LAPIS_ORE"
+    amount: 1
+    slot: 20
+    display_name: "&fProtección &a&N10x10"
+    lore:
+    - ' &8| Tienda de protecciones '
+    - "&7"
+    - ' &7Precio: &f10k &E⛁'
+    - '&7'
+    - '&e➥ Click izquierdo para comprar    '
+    left_click_commands:
+    - '[player] ps get 10'
+    - '[sound] BLOCK_NOTE_BLOCK_PLING 1 2' 
+    
+  '15':
+    material: "DEEPSLATE_REDSTONE_ORE"
+    amount: 1
+    slot: 21
+    display_name: "&fProtección &a&N15x15"
+    lore:
+    - ' &8| Tienda de protecciones '
+    - "&7"
+    - ' &7Precio: &f20k &E⛁'
+    - '&7'
+    - '&e➥ Click izquierdo para comprar    '
+    left_click_commands:
+    - '[player] ps get 15'
+    - '[sound] BLOCK_NOTE_BLOCK_PLING 1 2' 
+    
+  '30':
+    material: "DEEPSLATE_GOLD_ORE"
+    amount: 1
+    slot: 23
+    display_name: "&fProtección &6&N30x30"
+    lore:
+    - ' &8| Tienda de protecciones '
+    - "&7"
+    - ' &7Precio: &f40k &E⛁'
+    - '&7'
+    - '&e➥ Click izquierdo para comprar    '
+    left_click_commands:
+    - '[player] ps get 30'
+    - '[sound] BLOCK_NOTE_BLOCK_PLING 1 2'      
+  '50':
+    material: "DEEPSLATE_DIAMOND_ORE"
+    amount: 1
+    slot: 24
+    display_name: "&fProtección &6&N50x50"
+    lore:
+    - ' &8| Tienda de protecciones '
+    - "&7"
+    - ' &7Precio: &f75k &E⛁'
+    - '&7'
+    - '&e➥ Click izquierdo para comprar    '
+    left_click_commands:
+    - '[player] ps get 50'
+    - '[sound] BLOCK_NOTE_BLOCK_PLING 1 2'     
+  '100':
+    material: "DEEPSLATE_EMERALD_ORE"
+    amount: 1
+    slot: 25
+    display_name: "&fProtección &6&N100x100"
+    lore:
+    - ' &8| Tienda de protecciones '
+    - "&7"
+    - ' &7Precio: &f150k &E⛁'
+    - '&7'
+    - '&e➥ Click izquierdo para comprar    '
+    left_click_commands:
+    - '[player] ps get 100'
+    - '[sound] BLOCK_NOTE_BLOCK_PLING 1 2'

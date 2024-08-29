@@ -1,0 +1,113 @@
+menu_title: '&#1F83E2S&#1E8DE0e&#1D96DEr&#1CA0DCv&#1AAADAe&#19B3D8r&#18BDD6N&#17C7D4a&#16D0D2m&#15DAD0e &#14D4D0| &#15BED2A&#16A9D3d&#1793D5m&#177DD7i&#1867D9n &#1951DBM&#1A3CDCe&#1A26DEn&#1B10E0u'
+open_command:
+- adminmenusettings
+size: 27
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: servername.adminmenu
+      deny_commands:
+        - '[message] &cYou dont have enough permissions to do this'
+items:
+  'glass1':
+    material: CYAN_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 19
+    - 25
+    - 26
+    display_name: ' '
+  'glass2':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 2
+    - 3
+    - 5
+    - 6
+    - 10
+    - 12
+    - 14
+    - 16
+    - 20
+    - 21
+    - 23
+    - 24
+    display_name: ' ' 
+  'exit':
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+    slot: 22
+    display_name: '&4↓ &cLEAVE &4↓'
+    lore:
+    - ''
+    - '&8➠ &cClick to leave the menu'
+    left_click_commands:
+    - '[openguimenu] adminmenu'
+    - '[sound] entity_experience_orb_pickup'
+    right_click_commands:
+    - '[openguimenu] adminmenu'
+    - '[sound] entity_experience_orb_pickup'
+  'profile':
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0='
+    slot: 4
+    display_name: '&8↓ &fProfile &8↓'
+    lore:
+    - ''
+    - '&fRank &8➠ &a%vault_group%'
+  'gamemode':
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDk4ZTlmYTQ4Y2M5OWYzYjEyNGNlZjRlNThlMzM3ZTU1YWVmOTRhYmFiYWNhMWEzNDE1MjE5YTgxMGJhZTQifX19'
+    slot: 11
+    display_name: '&8↓ &fGameMode Settings &8↓'
+    lore:
+    - '&8&m--[-----------------]--'
+    - ''
+    - '&fStatus &8➠ &3%player_gamemode%'
+    - '&8➠ &aClick to change gamemode option'
+    - ''
+    - '&8&m--[-----------------]--'
+    left_click_commands:
+    - '[openguimenu] adminmenu-settings-gamemode'
+    - '[sound] entity_experience_orb_pickup'
+    right_click_commands:
+    - '[openguimenu] adminmenu-settings-gamemode'
+    - '[sound] entity_experience_orb_pickup'
+  'fly':
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWVlMGY2OWZiYmNhN2ZiYmYyYTFjOTczY2Y3NjQxNWQ2NTY4MjZhZTdmODNhYmQ0NzM4ZmU3MmRjNDgzOTUxIn19fQ=='
+    slot: 13
+    display_name: '&8↓ &fFly Settings &8↓'
+    lore:
+    - '&8&m--[-----------------]--'
+    - ''
+    - '&fStatus &8➠ &fFlying &3%player_is_flying%'
+    - '&8➠ &aClick to change fly option'
+    - ''
+    - '&8&m--[-----------------]--'
+    left_click_commands:
+    - '[openguimenu] adminmenu-settings-fly'
+    - '[sound] entity_experience_orb_pickup'
+    right_click_commands:
+    - '[openguimenu] adminmenu-settings-fly'
+    - '[sound] entity_experience_orb_pickup'
+  'vanish':
+    material: 'basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjNhZTkzMDJkZThmNzhjMWVmZTYyN2ZkZGUzMzcyNDY5ZWFiOTFjOGVjZjRhMmYzMDMyYzgzZDg2MTk0NGYyIn19fQ=='
+    slot: 15
+    display_name: '&8↓ &fVanish Settings &8↓'
+    lore:
+    - '&8&m--[-----------------]--'
+    - ''
+    - '&fStatus &8➠ &fVanished &3%supervanish_isvanished%'
+    - '&8➠ &aClick to change vanish option'
+    - ''
+    - '&8&m--[-----------------]--'
+    left_click_commands:
+    - '[openguimenu] adminmenu-settings-vanish'
+    - '[sound] entity_experience_orb_pickup'
+    right_click_commands:
+    - '[openguimenu] adminmenu-settings-vanish'
+    - '[sound] entity_experience_orb_pickup'
