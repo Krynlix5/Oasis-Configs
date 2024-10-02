@@ -1,0 +1,127 @@
+# To simplify the customisation and translation process please check out the editor: https://ptp.pcgamingfreaks.at
+
+Language:
+  NotFromConsole: "&cComando no utilizable desde la consola."
+  Ingame:
+    NoPermission: "&cNo tienes permiso para hacer eso.."
+    WorldDisabled: "&cEl uso de la mochila no está permitido en este mundo.."
+    NaN: "[\"\",{\"text\":\"¡El valor ingresado no es un número!\",\"color\":\"red\"}]"
+    OwnBackpackClose: "¡Mochila cerrada!"
+    OwnBackpackClose_SendMethod: "action_bar"
+    #Parameter: {OwnerName}, {OwnerDisplayName}
+    PlayerBackpackClose: "Mochila de {OwnerName} cerrada!"
+    PlayerBackpackClose_SendMethod: "action_bar"
+    InvalidBackpack: "Mochila no válida."
+    NotAllowedInBackpack: "&c{ItemName} no está permitido en la mochila."
+    NotAllowedInBackpack_SendMethod: "action_bar"
+    DontRemoveShortcut: "&c¡No debes eliminar el acceso directo a la mochila de tu inventario!"
+    DontRemoveShortcut_SendMethod: "action_bar"
+    BackpackShrunk: "&c¡Tu mochila se encogió! ¡Algunos objetos cayeron al suelo!"
+    Open:
+      #Parameter: {TimeLeft} time in seconds till the backpack can be reopened, {TimeSpanLeft} time formatted as string till the backpack can be reopened
+      Cooldown: "[{\"text\":\"Espere por favor \",\"color\":\"dark_green\"},{\"text\":\"{TimeSpanLeft}\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"{TimeLeft} segundos\"}},{\"text\":\" hasta que vuelvas a abrir tu mochila.\"}]"
+      #Parameter: {CurrentGameMode}, {AllowedGameModes}
+      WrongGameMode: "No puedes abrir tu mochila en tu modo de juego actual."
+    Clean:
+      BackpackCleaned: "Mochila despejada."
+      BackpackCleanedBy: "{DisplayName}&r ha retirado tu mochila."
+      BackpackCleanedOther: "La mochila de {DisplayName}&r ha sido limpiada."
+    Sort:
+      Sorted: "Mochila ordenada."
+    Help:
+      Header: "&6### Comandos de Mochilas ###"
+      Footer: "&6#############################"
+    Reload:
+      Reloading: "&1Recargar Mochilas ..."
+      Reloaded: "&1¡Mochilas recargados!"
+    Update:
+      CheckingForUpdates: "&1Buscando actualizaciones ..."
+      Updated: "[\"\",{\"text\":\"El complemento actualizado se cargará en el próximo reinicio/recarga.\",\"color\":\"yellow\"}]"
+      NoUpdate: "[\"\",{\"text\":\"No hay ninguna actualización de complemento disponible.\",\"color\":\"gold\"}]"
+      UpdateFail: "[\"\",{\"text\":\"¡Hubo un problema al buscar actualizaciones! ¡Por favor revisa la consola!\",\"color\":\"red\"}]"
+      # You can change this message if you like to, but don't cry if the link isn't linking to the plugin anymore!
+      UpdateAvailable: "[{\"text\":\"¡Hay una actualización disponible! Por favor ve a \\\"\",\"color\":\"green\"},{\"text\":\"https://www.spigotmc.org/resources/19286/\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.spigotmc.org/resources/19286/\"}},{\"text\":\"\\\" para descargarlo!\"}]"
+    Backup:
+      Created: "La mochila ha sido respaldada exitosamente."
+      NoBackpack: "El jugador no tiene mochila o su mochila está vacía."
+    Restore:
+      BackupsPerPage: 10
+      Headline: "[\"\",{\"text\":\"Copias de seguridad\",\"color\":\"yellow\"},{\"text\":\" - \",\"color\":\"white\"},{\"text\":\"mostrando la página{CurrentPage}/{MaxPage}\",\"color\":\"gold\"}]"
+      Footer: "[{\"text\":\"<<< Anterior <<<\",\"color\":\"gray\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/{MainCommand} {SubCommand} {CurrentPage}--\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"/{MainCommand} {SubCommand} {CurrentPage}--\"}},{\"text\":\" Showing page {CurrentPage}/{MaxPage} \",\"color\":\"gold\"},{\"text\":\">>> Próximo >>>\",\"color\":\"gray\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/{MainCommand} {SubCommand} {CurrentPage}++\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"/{MainCommand} {SubCommand} {CurrentPage}++\"}}]"
+      BackupEntry: "[\"\",{\"text\":\"{BackupIdentifier}\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/{MainCommand} {SubCommand} {BackupIdentifier}\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Usuario: {BackupPlayerName} ({BackupPlayerUUID})\\nCreado: {BackupDate}\"}}]"
+      NoValidBackup: "No se encontró ninguna copia de seguridad que coincida con {BackupIdentifier}"
+      NoUserToRestoreToFound: "No valid user to restore backup to found"
+      # No Json!!!
+      ParameterBackupName: "backup_name"
+      # No Json!!!
+      DateFormat: "yyyy.MM.dd HH:mm:ss"
+      Restored: "La copia de seguridad se ha restaurado exitosamente."
+    InventoryClear:
+      UnknownPlayer: "&c¡No se pudo encontrar el jugador {Name}!"
+      Cleared: "Inventario limpiado."
+      ClearedOther: "Se ha borrado el inventario de {DisplayName}."
+      ClearedOtherTarget: "Su inventario ha sido borrado por {DisplayName}&r."
+    Pickup:
+      ToggleOn: "&7La recogida automática de elementos se ha activado &aON&7."
+      ToggleOff: "&7La recogida automática de elementos se ha desactivado &cOFF&7."
+  Commands:
+    HelpFormat: "[\"\",{\"text\":\"/{MainCommand} {SubCommand} {Parameters}\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/{MainCommand} {SubCommand}\"}},{\"text\":\" - \",\"color\":\"white\"},{\"text\":\"{Description}\",\"color\":\"aqua\"}]"
+    PlayerNameVariable: "player_name"
+    Description:
+      Backpack: "Abre tu mochila."
+      Sort: "Ordena tu mochila."
+      Clean: "Limpia tu mochila."
+      CleanOthers: "Limpia la mochila de otros jugadores."
+      OpenOthers: "Muestra la mochila de otro jugador."
+      Reload: "Vuelve a cargar la configuración del complemento."
+      Update: "Comprueba si hay nuevas actualizaciones de complementos."
+      Version: "Imprime los detalles de la versión del complemento y sus dependencias"
+      Backup: "Crea una copia de seguridad de la mochila de un jugador."
+      BackupEveryone: "Crea una copia de seguridad de todos los que están actualmente en línea."
+      Restore: "Restaura una copia de seguridad."
+      RestoreList: "Enumera todas las copias de seguridad disponibles."
+      Help: "Muestra todos los comandos disponibles y su descripción."
+      Migrate: "Migra la base de datos utilizada de un tipo a otro."
+      Pickup: "Cambia el estado de la recogida automática cuando el inventario está lleno."
+
+Command:
+  Backpack:
+    - backpack
+    - mochila
+    - bp
+  Open:
+    - open
+  Sort:
+    - sort
+  Clean:
+    - clean
+    - clear
+    - empty
+  Reload:
+    - reload
+    - restart
+  Update:
+    - update
+  Backup:
+    - backup
+  Restore:
+    - restore
+  ListBackups:
+    - listbackups
+  Version:
+    - version
+  Help:
+    - help
+  InventoryClear:
+    - clear
+    - inventoryclear
+    - clean
+  Pickup:
+    - pickup
+
+# Will be shown in the console during startup
+LanguageName: "english"
+Author: "Krynlix"
+
+# Language file version. Don't touch it!
+Version: 21
