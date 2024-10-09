@@ -1,0 +1,295 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                       Tags                           | #
+# +------------------------------------------------------+ #
+############################################################
+
+tags:
+  Sun:
+    tag: '&#ffa812☀'
+    permission: 'supremetags.tag.sun'
+    description: 'Sun'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Cloud:
+    tag: '&#dcdcdc&l☁&r'
+    permission: 'supremetags.tag.cloud'
+    description: 'Cloud'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Umbrella:
+    tag: '&#ccccff☂'
+    permission: 'supremetags.tag.umbrella'
+    description: 'Umbrella'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Comet:
+    tag: '&#ff9933☄'
+    permission: 'supremetags.tag.comet'
+    description: 'Comet'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Star:
+    tag: '&#ffbf00★'
+    permission: 'supremetags.tag.star'
+    description: 'Star'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Moon:
+    tag: '&#f0dc82☽'
+    permission: 'supremetags.tag.moon'
+    description: 'Moon'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Lightning:
+    tag: '&#e7feff&l⚡&r'
+    permission: 'supremetags.tag.lightning'
+    description: 'Lightning'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Magic:
+    tag: '&#d053ba🔥'
+    permission: 'supremetags.tag.magic'
+    description: 'Magic'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Wave:
+    tag: '&#1ca9c9&l🌊&r'
+    permission: 'supremetags.tag.wave'
+    description: 'Wave'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Star2:
+    tag: '&#c54b8c✦'
+    permission: 'supremetags.tag.star2'
+    description: 'Star'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Skull:
+    tag: '&#faebd7☠'
+    permission: 'supremetags.tag.skull'
+    description: 'Skull'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Sword:
+    tag: '&#48d1cc🗡'
+    permission: 'supremetags.tag.sword'
+    description: 'Sword'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Plane:
+    tag: '&#f8f4ff✈'
+    permission: 'supremetags.tag.plane'
+    description: 'Plane'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Bell:
+    tag: '&#ffc40c🔔'
+    permission: 'supremetags.tag.bell'
+    description: 'Bell'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Potion:
+    tag: '&#9aceeb🧪'
+    permission: 'supremetags.tag.potion'
+    description: 'Potion'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Music:
+    tag: '&#fc8eac♫'
+    permission: 'supremetags.tag.music'
+    description: 'Music Note'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Anchor:
+    tag: '&#ffd700⚓'
+    permission: 'supremetags.tag.anchor'
+    description: 'Anchor'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Flag:
+    tag: '&#aaf0d1⚑'
+    permission: 'supremetags.tag.flag'
+    description: 'Flag'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Coins:
+    tag: '&#c0c0c0⛃'
+    permission: 'supremetags.tag.coins'
+    description: 'Coins'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Smile:
+    tag: '&#fada5e☻'
+    permission: 'supremetags.tag.smile'
+    description: 'Smile'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Duel:
+    tag: '&#0abab5⚔'
+    permission: 'supremetags.tag.duel'
+    description: 'Duel'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Clock:
+    tag: '&#afeeee⌚'
+    permission: 'supremetags.tag.clock'
+    description: 'Clock'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  HourGlass:
+    tag: '&#ffe5b4⏳'
+    permission: 'supremetags.tag.hourglass'
+    description: 'Hour Glass'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Shield:
+    tag: '&#e25822⛨'
+    permission: 'supremetags.tag.shield'
+    description: 'Shield'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Yang:
+    tag: '&#f8f8ff☯'
+    permission: 'supremetags.tag.yang'
+    description: 'Yin and yang'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Heart:
+    tag: '&#ff003f♥'
+    permission: 'supremetags.tag.heart'
+    description: 'Heart'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Pencil:
+    tag: '&#f0ead6✎'
+    permission: 'supremetags.tag.pencil'
+    description: 'Pencil'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Tick:
+    tag: '&#50c878✔'
+    permission: 'supremetags.tag.tick'
+    description: 'Tick'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Cross:
+    tag: '&#ff2800✘'
+    permission: 'supremetags.tag.cross'
+    description: 'Cross'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Peace:
+    tag: '&#ff91a4☮'
+    permission: 'supremetags.tag.peace'
+    description: 'Peace'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Axe:
+    tag: '&#e32636🪓'
+    permission: 'supremetags.tag.axe'
+    description: 'Axe'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Pickaxe:
+    tag: '&#0d98ba⛏'
+    permission: 'supremetags.tag.pickaxe'
+    description: 'Pickaxe'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Trident:
+    tag: '&#e6e6fa🔱'
+    permission: 'supremetags.tag.trident'
+    description: 'Trident'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Potion2:
+    tag: '&#e0b0ff⚗'
+    permission: 'supremetags.tag.potion2'
+    description: 'Splash Potion'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Bow:
+    tag: '&#987654🏹'
+    permission: 'supremetags.tag.bow'
+    description: 'Bow'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200
+  Steak:
+    tag: '&#9e6969🍖'
+    permission: 'supremetags.tag.steak'
+    description: 'Steak'
+    category: 'default'
+    displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+    display-item: 'NAME_TAG'
+    cost: 200

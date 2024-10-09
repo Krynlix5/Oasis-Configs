@@ -1,0 +1,123 @@
+settings:
+  default-tag: none # set 'none' players start with no tag.
+  forced-tag: false # this will make it force players to have a tag, they won't beable to take the tag off.
+  categories: false # should supremetags use the category system?
+  default-category: default # used to set the tags category value when creating a new tag with the '/tag create' command
+  update-check: true # the plugin will check if there is an update available.
+  legacy-hex-format: true # should the plugin use the legacy hex colors? (&#d5b47 instead of #d5b47)
+  auto-merge: false # auto merges all tags from deluxetags into supremetags (DeluxeTags is required on the server)
+  active-tag-glow: true # adds a hidden enchantment to the tag item that is active for the player.
+  cost-system: false # should your players be able to buy tags?
+  cmi-color-support: false # allow the plugin to change color format to legacy '&x', to support CMI Chat, This will override 'legacy-hex-format'
+  tag-command-in-disabled-worlds: false # should /tags command be disabled in 'disabled-worlds'.
+  disabled-worlds: []
+  gui-messages: false # setting this to true, will enable 'tag-select-message' & 'reset-message'
+  locked-view: true # this setting allows players to view locked/unlocked tags.
+  none-output: '&#fada5eꜱᴇʟᴇᴄᴛ ᴀ ᴛᴀɢ!' # this string will be displayed when a player has no tag selected.
+messages:
+  tag-select-message: '&#00a8a8&lTAGS &#555555⏩&r &#fada5e%identifier% &#fbfbfcᴛᴀɢ
+    ꜱᴇʟᴇᴄᴛᴇᴅ&#555555.'
+  reset-message: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcʀᴇꜱᴇᴛ ᴛᴀɢ&#555555.'
+  insufficient-funds: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcɪɴꜱᴜꜰꜰɪᴄɪᴇɴᴛ ꜰᴜɴᴅꜱ&#555555.
+    &#fbfbfcʏᴏᴜ ɴᴇᴇᴅ &#fada5e$%cost% &#fbfbfcᴛᴏ ɢᴇᴛ ᴛʜɪꜱ ᴛᴀɢ&#555555.'
+  tag-unlocked: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟᴏᴄᴋᴇᴅ ᴛʜᴇ ᴛᴀɢ&#555555:
+    %tag%'
+  reload: '&#00a8a8&lTAGS &#555555⏩ &#fbfbfcʀᴇʟᴏᴀᴅᴇᴅ ᴘʟᴜɢɪɴ&#555555.'
+  no-permission: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcɴᴏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ&#555555.'
+  no-tags: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcʏᴏᴜ ʜᴀᴠᴇ ɴᴏ ᴛᴀɢꜱ ʏᴇᴛ&#555555.'
+  tag-command-disabled: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcᴛᴀɢ ᴄᴏᴍᴍᴀɴᴅ ɪꜱ ᴅɪꜱᴀʙʟᴇᴅ
+    ɪɴ ᴛʜɪꜱ ᴡᴏʀʟᴅ&#555555.'
+  invalid-tag: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcᴛʜɪꜱ ᴛᴀɢ ᴅᴏᴇꜱ ɴᴏᴛ ᴇxɪꜱᴛ&#555555.'
+  valid-tag: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcᴛʜɪꜱ ᴛᴀɢ ᴀʟʀᴇᴀᴅʏ ᴇxɪꜱᴛꜱ&#555555.'
+  invalid-category: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcᴛʜɪꜱ ᴄᴀᴛᴇɢᴏʀʏ ᴅᴏᴇꜱ ɴᴏᴛ ᴇxɪꜱᴛ&#555555.'
+  locked-tag: '&#00a8a8&lTAGS &#555555⏩&r &#fbfbfcʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ꜱᴇʟᴇᴄᴛ
+    ᴛʜɪꜱ ᴛᴀɢ&#555555!'
+data:
+  
+  # Should SupremeTags cache data? this will optimize the amount of connections being used but will minimize db use across servers.
+  # If disabled, this setting only applies to MySQL type.
+  cache-data: true
+  
+  # types: [H2 OR MYSQL]
+  type: H2
+  
+  # The address for the database server.
+  # - to enable this part, change type to 'MYSQL'
+  # - some hosts can use your domain or server ip.
+  address: host
+  # The standard DB engine port is used by default
+  port: 3306
+  # The name of the database to store tag data in.
+  database: database
+  # Credentials for the database.
+  username: user
+  password: pass
+  # leave this, if you don't know how to use options.
+  options: useSSL=false&autoReconnect=true
+  useSSL: false
+gui:
+  main-menu:
+    title: '&8Main Menu'
+    size: 27
+  tag-menu-none-categories:
+    title: '              &#555555ᴛᴀɢꜱ ᴍᴇɴᴜ'
+    tag-item: # to edit the tags display name, please proceed below to 'tags.<identifier>.displayname'
+      # used for cost lores that are locked
+      locked-lore:
+      - '&#555555▋ &#fbfbfcᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ: &#fada5e&o%description% &r&#555555➖ %tag%'
+      - '&#555555▋ ʙᴜʏ: &r&#555555➖ &#fada5e&oʀɪɢʜᴛ-ᴄʟɪᴄᴋ'
+      - '&#555555▋ ᴄᴏꜱᴛ: &r&#555555➖ &#fada5e$%cost%'
+      - ''
+      - '&#555555▋ &#fada5e&nᴛʜɪꜱ ᴛᴀɢ ɪꜱ ʟᴏᴄᴋᴇᴅ!'
+      # used for when 'locked-view' is enabled and players doesn't have permission
+      locked-permission:
+      - '&#555555▋ &#fbfbfcᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ: &#fada5e&o%description% &r&#555555➖ %tag%'
+      - '&#555555▋ &#fbfbfcɴᴏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ᴛᴀɢ!'
+      - ''
+      - '&#555555▋ &#fada5e&nᴛʜɪꜱ ᴛᴀɢ ɪꜱ ʟᴏᴄᴋᴇᴅ!'
+      # used for unlocked view of the tag
+      unlocked-lore:
+      - '&#555555▋ &#fbfbfcᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ: &#fada5e&o%description% &r&#555555➖ %tag%'
+      - ''
+      - '&#555555▋ &#fada5e&nᴄʟɪᴄᴋ ᴛᴏ ᴀꜱꜱɪɢɴ!'
+  tag-editor-menu:
+    title: '&8Tag Editor'
+    tag-item:
+      displayname: '&#555555▋ &#fbfbfcᴛᴀɢ: %tag%'
+      lore:
+      - '&7&m-----------------------------'
+      - ''
+      - '&bIdentifier: &7%identifier%'
+      - ''
+      - '&dDescription:'
+      - '&7%description%'
+      - ''
+      - '&eClick to Edit!'
+      - '&7&m-----------------------------'
+  # edit the material of all items inside the gui.
+  layout:
+    glass-material: GRAY_STAINED_GLASS_PANE
+    back-next-material: DARK_OAK_BUTTON
+    reset-tag-material: RED_DYE
+    active-tag-material: NAME_TAG
+    close-menu-material: BARRIER
+    refresh-material: GREEN_DYE
+  # edit the item names of all items inside the gui.
+  strings:
+    back-item: '&#fbfbfBack'
+    next-item: '&#fbfbfɴᴇxᴛ'
+    reset-item: '&#fbfbfʀᴇꜱᴇᴛ'
+    active-item: '&#fbfbfcᴀᴄᴛɪᴠᴇ: %tag%'
+    close-item: '&#fbfbfcᴄʟᴏꜱᴇ'
+    refresh-item: '&#fbfbfʀᴇꜰʀᴇꜱʜ'
+  # disable items in the gui.
+  # setting these values to false will not display the item in tag gui.
+  items:
+    close-item: true
+    refresh-item: false
+    reset-item: false
+    glass-item: true
+    active-item: true
+    next-item: false # this only applies to tag type guis.
+    back-item: false # this only applies to tag type guis.
+categories-menu-fill-empty: false
