@@ -47,10 +47,10 @@ Actualmente, soportamos las traducciones y configuraciones para los siguientes p
 2. Reemplaza el archivo en la carpeta del plugin de tu servidor (normalmente `plugins/[nombre-del-plugin]/`).
 3. Reinicia el servidor de Minecraft para aplicar los cambios.
 
-> [!TIP] 
+> [!WARNING] 
 > Asegúrate de que tu servidor esté apagado antes de modificar cualquier archivo de configuración o traducción para evitar conflictos.
 
-> [!WARNING] 
+> [!CAUTION] 
 > **Haz siempre un respaldo** de tus configuraciones y traducciones antes de aplicar nuevas para evitar pérdidas de información.
 
 ### Recomendaciones:
@@ -83,5 +83,5 @@ Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo `LICENSE` 
 
 Si tienes alguna duda, sugerencia o reporte de error, no dudes en abrir un **Issue** en el repositorio o contactarnos directamente.
 
-> [!ADVERTISE] 
+> [!IMPORTANT] 
 > ¿Te gustaría apoyar este proyecto? ¡Dale una estrella ⭐ al repositorio para que más personas lo conozcan!
