@@ -12,7 +12,7 @@ En este repositorio podrás encontrar:
 ## 📁 Estructura del Proyecto
 
 ```bash
-📦 Plugin-Translations-Configurations
+📦 Oasis-Configs
  ┣ 📂 plugins/
  ┃ ┣ 📂 [nombre-del-plugin]/
  ┃ ┃ ┣ 📜 messages.yml
