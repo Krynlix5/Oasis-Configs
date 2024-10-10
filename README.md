@@ -11,7 +11,7 @@ En este repositorio podrás encontrar:
 
 ## 📁 Estructura del Proyecto
 
-
+```bash
 📦 Plugin-Translations-Configurations
  ┣ 📂 plugins/
  ┃ ┣ 📂 [nombre-del-plugin]/
@@ -19,7 +19,7 @@ En este repositorio podrás encontrar:
  ┃ ┃ ┣ 📜 config.yml
  ┃ ┃ ┗ 📜 otros-archivos-relacionados...
  ┗ 📜 README.md
-
+```
 
 - **plugins**: Dentro de esta carpeta, encontrarás subcarpetas con el nombre de cada plugin.
   - Dentro de cada subcarpeta, se incluyen los archivos de traducción y configuración específicos para el plugin.
@@ -47,15 +47,18 @@ Actualmente, soportamos las traducciones y configuraciones para los siguientes p
 2. Reemplaza el archivo en la carpeta del plugin de tu servidor (normalmente `plugins/[nombre-del-plugin]/`).
 3. Reinicia el servidor de Minecraft para aplicar los cambios.
 
-[!TIP] Asegúrate de que tu servidor esté apagado antes de modificar cualquier archivo de configuración o traducción para evitar conflictos.
+> [!TIP] 
+> Asegúrate de que tu servidor esté apagado antes de modificar cualquier archivo de configuración o traducción para evitar conflictos.
 
-[!WARNING] **Haz siempre un respaldo** de tus configuraciones y traducciones antes de aplicar nuevas para evitar pérdidas de información.
+> [!WARNING] 
+> **Haz siempre un respaldo** de tus configuraciones y traducciones antes de aplicar nuevas para evitar pérdidas de información.
 
 ### Recomendaciones:
 
 - Verifica que el plugin que estás usando sea compatible con la versión del archivo que estás descargando.
 
-[!NOTE]  Las configuraciones y traducciones han sido probadas en las versiones más recientes de los plugins. Asegúrate de revisar la compatibilidad con tu versión específica.
+> [!NOTE]  
+> Las configuraciones y traducciones han sido probadas en las versiones más recientes de los plugins. Asegúrate de revisar la compatibilidad con tu versión específica.
 
 ## 🤝 Contribuciones
 
@@ -67,7 +70,8 @@ Si deseas contribuir, ya sea con nuevas traducciones, correcciones o configuraci
 4. Envía tus cambios a tu repositorio remoto: `git push origin mi-nueva-traduccion`.
 5. Crea un Pull Request en GitHub.
 
-[!TIP] Antes de enviar un Pull Request, asegúrate de probar tus cambios en un entorno de prueba para verificar que funcionan correctamente.
+> [!TIP]
+> Antes de enviar un Pull Request, asegúrate de probar tus cambios en un entorno de prueba para verificar que funcionan correctamente.
 
 Todas las contribuciones son bienvenidas, ya sean mejoras, nuevos plugins, corrección de errores o propuestas de optimización de configuraciones.
 
@@ -79,4 +83,5 @@ Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo `LICENSE` 
 
 Si tienes alguna duda, sugerencia o reporte de error, no dudes en abrir un **Issue** en el repositorio o contactarnos directamente.
 
-[!ADVERTISE]  ¿Te gustaría apoyar este proyecto? ¡Dale una estrella ⭐ al repositorio para que más personas lo conozcan!
+> [!ADVERTISE] 
+> ¿Te gustaría apoyar este proyecto? ¡Dale una estrella ⭐ al repositorio para que más personas lo conozcan!
