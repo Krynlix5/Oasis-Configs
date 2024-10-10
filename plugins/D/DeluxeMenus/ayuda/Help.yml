@@ -1,0 +1,93 @@
+menu_title: '&8Guía TecnoCraft'
+open_command:
+- guide
+- ayuda
+- guia
+- help
+size: 27
+items:
+  'background_head':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: ' &r '
+    slots:
+    - 0-26
+  'close':
+    material: BARRIER
+    display_name: '&6&l❌ &6Cerrar'
+    click_commands:
+    - '[close]'
+    - '[sound] BLOCK_CHEST_CLOSE'
+    slot: 22
+  'GETTING_STARTED':
+    material: BOOK
+    display_name: '&6� &6&lEmpezando'
+    lore:
+    - ''
+    - '&6Descripción'
+    - ' &6| &7Para comenzar escriba &6/rtp'
+    - ' &6| &7para teletransportarse aleatoriamente al &6Survival World'
+    - ' &6| &7usa tu pala dorada y reclama tu base/casa.'
+    - ''
+    - ' &6| &7Puedes invitar a tus amigos a tu reclamo'
+    - ' &6| &7haciendo &6/trust <nombre del jugador> '
+    - ''
+    slot: 10
+    click_commands:
+    - '[close]'
+    - '[player] tutorial'
+    - '[sound] BLOCK_CHEST_CLOSE'    
+  'ECONOMY':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM4MWM1MjlkNTJlMDNjZDc0YzNiZjM4YmI2YmEzZmRlMTMzN2FlOWJmNTAzMzJmYWE4ODllMGEyOGU4MDgxZiJ9fX0=
+    display_name: '&6⛂ &6&lEconomía'
+    lore:
+    - ''
+    - '&6Descripción'
+    - ' &6| &7Gana dinero consiguiendote a ti mismo'
+    - ' &6| &7empleado con &6/trabajos unirse &e<trabajo>&7 o por'
+    - ' &6| &7también reúne materiales de cualquier'
+    - ' &6| &7escribirlos y &7venderlos&7 en la &6/tienda'
+    - ''
+    - ' &6| &7Consulta tu saldo cuando quieras'
+    - ' &6| &7con &6/saldo&7 y vista global'
+    - ' &6| &7equilibra con el comando &6/baltop&7.'
+    - ''
+    - ' &6| &7Puedes compartir la riqueza con'
+    - ' &6| &6/pagar &e<jugador> &e[cantidad] &7comando.'
+    - ''
+    - ' &6| &7No olvides que también puedes usar'
+    - ' &6| &7Casa de subastas venderá materiales &6/ah sell &e[cantidad]&7!'
+    - ''
+    slot: 12
+  'VOTING':
+    slot: 14
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFmNTBmMTcyYTUxMGZhNjBiMmFmMGNiYjg0ZjM3MTUzNmM5NjVlYTU1MDg4MTI1M2Y3ZWNkMjY0MDc5NjllYiJ9fX0=
+    display_name: '&6☑ &6&lVotación'
+    lore:
+    - ''
+    - '&6Descripción'
+    - ' &6| &7Vota para apoyar al servidor y'
+    - ' &6| &7recibir:'
+    - ' &8-&7$100'
+    - '&8-&7+🔑1 Clave de Voto'
+    - '&c'
+    - ''
+  'RANKS':
+    material: NAME_TAG
+    item_flags:
+    - HIDE_ENCHANTS
+    enchantments:
+    - 'DURABILITY;1'
+    display_name: '&6➓ &6&lRangos'
+    lore:
+    - ''
+    - '&6Descripción'
+    - ' &6| &7Los rangos proporcionan ventajas adicionales y'
+    - ' &6| &7comandos a los jugadores que elijan'
+    - ' &6| &7para dar soporte al servidor.'
+    - ''
+    - ' &6| &7Los rangos actualmente no se pueden obtener'
+    - ''
+  ##  - '&6&l| &6ᴄʟɪᴄᴋ ᴛᴏ ᴠɪᴇᴡ'
+    click_commands:
+    - '[player] ranks'
+    slot: 16
