@@ -37,7 +37,7 @@ Actualmente, soportamos las traducciones y configuraciones para los siguientes p
 ## 🌐 Idiomas
 
 - **Español (es_ES)**: Todas las traducciones se han realizado al español neutral (español de España y Latinoamérica).
-- Si deseas contribuir con traducciones en otros dialectos (por ejemplo, es_MX, es_AR, etc.), ¡eres bienvenido a hacerlo!
+- Si deseas contribuir con traducciones en otros dialectos (por ejemplo, en_US, es_MX, es_AR, etc.), ¡eres bienvenido a hacerlo!
 
 ## 🚀 Instalación
 
