@@ -1,4 +1,6 @@
-# 🏰 Minecraft Plugin Translations & Configurations
+# 🏰 Oasis Configs
+
+## 💻 Configuraciones y traducciones de Minecraft
 
 ¡Bienvenido a este repositorio! Aquí encontrarás traducciones y configuraciones personalizadas para diversos plugins de Minecraft. Este proyecto tiene como objetivo proporcionar configuraciones optimizadas y traducciones precisas para que la experiencia en los servidores de Minecraft sea más accesible y fácil de usar para la comunidad hispanohablante.
 
