@@ -85,5 +85,5 @@ Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo `LICENSE` 
 
 Si tienes alguna duda, sugerencia o reporte de error, no dudes en abrir un **Issue** en el repositorio o contactarnos directamente.
 
-> [!IMPORTANT] 
+> [!IMPORTANTE] 
 > ¿Te gustaría apoyar este proyecto? ¡Dale una estrella ⭐ al repositorio para que más personas lo conozcan!
