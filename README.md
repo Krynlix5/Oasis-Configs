@@ -14,10 +14,11 @@ En este repositorio podrás encontrar:
 ```bash
 📦 Oasis-Configs
  ┣ 📂 plugins/
- ┃ ┣ 📂 [nombre-del-plugin]/
- ┃ ┃ ┣ 📜 messages.yml
- ┃ ┃ ┣ 📜 config.yml
- ┃ ┃ ┗ 📜 otros-archivos-relacionados...
+ ┃ ┣ 📂 [idioma]
+ ┃ ┃ ┣ 📂 [nombre-del-plugin]/
+ ┃ ┃ ┃ ┣ 📜 messages.yml
+ ┃ ┃ ┃ ┣ 📜 config.yml
+ ┃ ┃ ┃ ┗ 📜 otros-archivos-relacionados...
  ┗ 📜 README.md
 ```
 
