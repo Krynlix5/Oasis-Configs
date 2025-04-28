@@ -9,6 +9,9 @@ En este repositorio podrás encontrar:
 - **Traducciones**: Archivos `.yml` o `.json` con traducciones al español de los mensajes de los plugins.
 - **Configuraciones**: Archivos de configuración ajustados para optimizar la experiencia de juego y el rendimiento de los plugins.
 
+> [!CAUTION] 
+> Cualquier otro archivo de configuración que no este entre los archivos permitidos provocará ** el rechazo** de la pull request.
+
 ## 📁 Estructura del Proyecto
 
 ```bash
