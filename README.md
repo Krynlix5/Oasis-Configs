@@ -10,7 +10,7 @@ En este repositorio podrás encontrar:
 - **Configuraciones**: Archivos de configuración ajustados para optimizar la experiencia de juego y el rendimiento de los plugins.
 
 > [!CAUTION] 
-> Cualquier otro archivo de configuración que no este entre los archivos permitidos provocará ** el rechazo** de la pull request.
+> Cualquier otro archivo de configuración que no este entre los archivos permitidos provocará **el rechazo** de la pull request.
 
 ## 📁 Estructura del Proyecto
 
