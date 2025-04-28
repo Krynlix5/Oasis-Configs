@@ -1,5 +1,5 @@
 # 🏰 Oasis Configs 
-[![](https://dcbadge.limes.pink/api/server/INVITE)](https://discord.gg/v4WPndKRKm)
+[![](https://dcbadge.limes.pink/api/server/v4WPndKRKm)](https://discord.gg/v4WPndKRKm)
 
 ## 💻 Configuraciones y traducciones de Minecraft
 
