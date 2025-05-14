@@ -1,4 +1,7 @@
-# 🏰 Minecraft Plugin Translations & Configurations
+# 🏰 Oasis Configs 
+[![](https://dcbadge.limes.pink/api/server/v4WPndKRKm)](https://discord.gg/v4WPndKRKm)
+
+## 💻 Configuraciones y traducciones de Minecraft
 
 ¡Bienvenido a este repositorio! Aquí encontrarás traducciones y configuraciones personalizadas para diversos plugins de Minecraft. Este proyecto tiene como objetivo proporcionar configuraciones optimizadas y traducciones precisas para que la experiencia en los servidores de Minecraft sea más accesible y fácil de usar para la comunidad hispanohablante.
 
@@ -9,15 +12,19 @@ En este repositorio podrás encontrar:
 - **Traducciones**: Archivos `.yml` o `.json` con traducciones al español de los mensajes de los plugins.
 - **Configuraciones**: Archivos de configuración ajustados para optimizar la experiencia de juego y el rendimiento de los plugins.
 
+> [!CAUTION] 
+> Cualquier otro archivo de configuración que no este entre los archivos permitidos provocará **el rechazo** de la pull request.
+
 ## 📁 Estructura del Proyecto
 
 ```bash
-📦 Plugin-Translations-Configurations
+📦 Oasis-Configs
  ┣ 📂 plugins/
- ┃ ┣ 📂 [nombre-del-plugin]/
- ┃ ┃ ┣ 📜 messages.yml
- ┃ ┃ ┣ 📜 config.yml
- ┃ ┃ ┗ 📜 otros-archivos-relacionados...
+ ┃ ┣ 📂 [idioma]
+ ┃ ┃ ┣ 📂 [nombre-del-plugin]/
+ ┃ ┃ ┃ ┣ 📜 messages.yml
+ ┃ ┃ ┃ ┣ 📜 config.yml
+ ┃ ┃ ┃ ┗ 📜 otros-archivos-relacionados...
  ┗ 📜 README.md
 ```
 
@@ -38,6 +45,7 @@ Actualmente, soportamos las traducciones y configuraciones para los siguientes p
 
 - **Español (es_ES)**: Todas las traducciones se han realizado al español neutral (español de España y Latinoamérica).
 - Si deseas contribuir con traducciones en otros dialectos (por ejemplo, es_MX, es_AR, etc.), ¡eres bienvenido a hacerlo!
+- Para poder agregar un nuevo idioma debes de hacer una *pull request* de la carpeta con el idioma de nombre y crear la carpeta del plugin correspondiente con la configuración en ese idioma.
 
 ## 🚀 Instalación
 
@@ -83,5 +91,5 @@ Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo `LICENSE` 
 
 Si tienes alguna duda, sugerencia o reporte de error, no dudes en abrir un **Issue** en el repositorio o contactarnos directamente.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]  
 > ¿Te gustaría apoyar este proyecto? ¡Dale una estrella ⭐ al repositorio para que más personas lo conozcan!
