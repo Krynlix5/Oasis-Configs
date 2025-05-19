@@ -46,6 +46,18 @@ Actualmente, soportamos las traducciones y configuraciones para los siguientes p
 - **Español (es_ES)**: Todas las traducciones se han realizado al español neutral (español de España y Latinoamérica).
 - Si deseas contribuir con traducciones en otros dialectos (por ejemplo, es_MX, es_AR, etc.), ¡eres bienvenido a hacerlo!
 - Para poder agregar un nuevo idioma debes de hacer una *pull request* de la carpeta con el idioma de nombre y crear la carpeta del plugin correspondiente con la configuración en ese idioma.
+- 
+## 💖 Sponsor this project
+
+[![Discord](https://img.shields.io/badge/Join%20us%20on-Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/v4WPndKRKm)
+
+---
+
+## 👥 Contributors
+
+Gracias a todas las personas increíbles que contribuyen a este proyecto 💫
+
+[![Contributors](https://contrib.rocks/image?repo=Krynlix5/Oasis-Configs)](https://github.com/Krynlix5/Oasis-Configs/graphs/contributors)
 
 ## 🚀 Instalación
 
